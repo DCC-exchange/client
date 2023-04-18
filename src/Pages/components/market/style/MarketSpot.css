@@ -18,7 +18,7 @@
     z-index: 1000;
 }
 .favourite_head_spot{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     padding-top: 20px;
     background: #3e0b4a;
@@ -166,7 +166,6 @@ padding-top: 20px;
     border-radius: 5px;
     font-size: 10px;
 }
-
 
 
 .name_last_flex_2_spot{

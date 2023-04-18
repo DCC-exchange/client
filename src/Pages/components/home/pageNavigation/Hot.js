@@ -22,7 +22,6 @@ export default function Hot() {
         { error && <div className="isloading-coin">
             <h1>Network Error</h1>
         </div> }
-
     {Coins &&
       Coins.filter(newEl => filtCoin.includes(newEl.symbol)).map((coin) => (
         <div className="coin-inner" key={coin.id}>

@@ -1,0 +1,28 @@
+.spot-trade{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.spot-trade-container{
+    position: relative;
+    padding: 15;
+    margin: 0;
+}
+.spot-trade-navigation{
+    display: flex;
+    background: #5B2963;
+    width: 92%;
+    border-radius: 10px;
+    margin: 15px;
+}
+.spot-trade-navigation a{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 7.454px;
+    color: #938197;
+}
+.spot-trade-navigation a.active{
+  color: #ffff;
+  background: linear-gradient(270deg, #8D0BA4 0%, #C66AD6 60.33%, #533E57 120.65%);
+}

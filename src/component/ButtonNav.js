@@ -18,19 +18,19 @@ export default function ButtomNav() {
                 <h1><AiOutlineHome /></h1>
             </div>
         </NavLink>
-        <NavLink to="market">
+        <NavLink to="market/spot">
             <div className="NavBar-display-main-flex1">
                 <h1><HiChartBar /></h1>
             </div>
         </NavLink>
-        <NavLink to="">
-        <div className="NavBar-display-main-flex3">
-          <img src={spotImg} alt="copy logo" />
-          <h1>Spot</h1>
-        </div>
+        <NavLink to="spot-trade">
+          <div className="NavBar-display-main-flex3">
+            <img src={spotImg} alt="copy logo" />
+            <h1>Spot</h1>
+          </div>
         </NavLink>
         
-        <NavLink to="">
+        <NavLink to="/hot">
             <div className="NavBar-display-main-flex1">
                 <h1><BiChart /></h1>
             </div>
