@@ -8,6 +8,7 @@ export default function Hot() {
   const { CryptoCoins, Coins, isLoading, error } = useCryptoCoins()
 
   let filtCoin = ["btc", "doge","eth", "gala", "link", "ltc", "trx", "xrp", "matic", "sol"]
+
   useEffect(()=>{
     CryptoCoins()
   },[])

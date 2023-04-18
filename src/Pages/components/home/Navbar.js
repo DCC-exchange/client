@@ -23,10 +23,10 @@ export default function Navbar({hideMenu}) {
       <div className="profile-nav">
         <img src={Ellipse} alt="Ellipse" width={"30px"} />
       </div>
-      <NavLink to='/contact'>
+      <NavLink to='/sign/login'>
         <img src={contact} alt="contact" />
       </NavLink>
-      <NavLink to="/notifiction">
+      <NavLink to="/sign/login">
         <div className="notification-count">
           <img src={notify} alt="Profile logo" />
           <div className="notification-count-num">

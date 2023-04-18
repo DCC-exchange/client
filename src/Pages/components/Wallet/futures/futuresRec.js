@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useState} from 'react'
 import '../futures/futures.css'
-import cal from '../../images/nwimage/cal.svg'
-import eye from '../../images/nwimage/eye.svg'
-import middle from '../../images/nwimage/middleimg.svg'
+import cal from '../images/cal.svg'
+import middle from '../images/middleimg.svg'
+import { FiEye, FiEyeOff  } from "react-icons/fi";
 
+export default function FuturesRec() {
 
-const futuresRec = () => {
+  const [ShowAmount, setShowAmount] = useState(true)
+
+  const handleShowAmount = (()=>{
+    if(ShowAmount){
+      setShowAmount(false)
+    }else{
+      setShowAmount(true)
+    }
+  })
+
   return (
     <div className='futures-rec assets-rec'>
       <div className='futures-rec-first'>
@@ -18,7 +28,9 @@ const futuresRec = () => {
       <div className='futures-secnd'>
         <div className='ineer'>
             <h2>Wallet Balance [USDT]</h2>
-            <img src={eye} alt='' width={'18px'} />
+            <div className="display-amount" onClick={handleShowAmount}>
+              { ShowAmount ? <FiEye /> : <FiEyeOff />}
+            </div>
         </div>
         <div className='transfer'>Transfer</div>
       </div>
@@ -54,5 +66,3 @@ const futuresRec = () => {
     </div>
   )
 }
-
-export default futuresRec

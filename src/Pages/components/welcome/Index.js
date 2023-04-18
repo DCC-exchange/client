@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import "./style/welcome.css";
 import dccLogo from "./images/dcc logo.svg";
 import wallet from "./images/wallet purse.svg";
-// import { useAuthContext } from "../hooks/useAuthContext";
+
 import { useNavigate } from "react-router";
 
-export default function Welcome() {
-  const [loading, setLoading] = useState(false);
+export default function Welcome({handleHome}) {
+  const [loading] = useState(false);
   const navigate = useNavigate();
-  // const { user } = useAuthContext();
-  // const data = window.localStorage.getItem("MY_APP_STATE");
 
-  // redirects to home if user is already signed in
-  // if (user || data === "false") {
-  //   return <Navigate replace to="/home/hot" />;
-  // }
-  // displays preloader once the get started button is clicked
+  const handleContinue = (()=>{
+    handleHome()
+    navigate("/hot") 
+  })
+
+  
+
   if (loading) {
     return (
       <div className="mobile-preloader">
@@ -43,15 +43,7 @@ export default function Welcome() {
             With our app it’s easy and <br /> secured.
           </h3>
         </div>
-        <button
-          onClick={() => {
-            setLoading(true);
-            setTimeout(function () {
-              setLoading(false);
-              navigate("/");
-            }, 5000);
-          }}
-        >
+        <button onClick={handleContinue}>
           Get Started
         </button>
       </div>
