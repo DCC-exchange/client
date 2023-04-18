@@ -48,13 +48,13 @@ export default function MarketSpot() {
           <div onClick={()=> handleMarketSwitch("busd")} className={ActiveClass1}>
               <h3>BUSD</h3>
           </div>
-          <div onClick={()=> handleMarketSwitch("usdt")} className={ActiveClass2} >
+          <div onClick={()=> handleMarketSwitch("busd")} className={ActiveClass2} >
             <h3>USDT</h3>
           </div>
-          <div onClick={()=> handleMarketSwitch("bnb")} className={ActiveClass3}>
+          <div onClick={()=> handleMarketSwitch("busd")} className={ActiveClass3}>
             <h3>BNB</h3>
           </div>
-          <div onClick={()=> handleMarketSwitch("btc")} className={ActiveClass4}>
+          <div onClick={()=> handleMarketSwitch("busd")} className={ActiveClass4}>
             <h3>BTC</h3>
           </div>
        </div>
