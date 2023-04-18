@@ -1,0 +1,46 @@
+@media only screen and (max-width: 700px) {
+    .asset-main-page{
+        background: linear-gradient(196.08deg, #86228E 0.63%, #240426 76.25%);
+        height: 100vh;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .asset-main-page .navigate-back h3{
+        position: absolute;
+        color: #E4E4E4;
+        background: rgba(114, 95, 125, 0.65);
+        padding: 4px;
+        width: 20px;
+        height: 20px;
+        border-radius: 8px;
+        left: 15px;
+        font-size: 17px;
+        top: 15px;
+      }
+    .backarrw-div{
+        padding: 20px;
+    }
+    .asset-page-select{
+        margin: auto;
+        width: 90%;
+        padding-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 60px;
+    }
+    .asset-page-select a{
+        color: #999999;
+        font-size: 12px;
+        font-weight: 800;
+    }
+    .asset-page-select a.active{
+        color: #FFFFFF;
+    }
+    .asset-page-select div{
+        font-size: 11px;
+        color: #878787;
+    }
+}
+
