@@ -1,0 +1,17 @@
+.menu{
+    position: fixed;
+    background: black;
+    color: #ffff;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 20387;
+}
+.menu .menu-container{
+    padding: 10px;
+}
+.login-inputs-container{
+    display: block;
+    margin: 5px 0px;
+}
