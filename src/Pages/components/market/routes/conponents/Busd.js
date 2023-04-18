@@ -4,13 +4,12 @@ import { useCryptoCoins } from "../../../../config/Coins"
 
 export default function Busd() {
 
-  const  { CryptoCoins, Coins, isLoading, error } = useCryptoCoins()
+  const  { CryptoCoins, Coins } = useCryptoCoins()
 
   useEffect(()=>{
     CryptoCoins()
   },[])
 
-  console.log(Coins)
 
   return (
     <div className='favourite_head_spot'> 
