@@ -8,11 +8,10 @@ export default function Market() {
     <div className='market'>
       <div className='market-container'>
           <div className='search_header'>
-          <img  src={search} alt="search"/>
-          <input type="text"  placeholder='Search Coin'/>
+              <img  src={search} alt="search"/>
+              <input type="text"  placeholder='Search Coin'/>
           </div>
           <div className='round_icon'> </div>
-
           <div className='market-routes'>
             <div className='market-routes-container'>
               <div className="market-route-content">
@@ -22,9 +21,9 @@ export default function Market() {
                   <NavLink to='spot'>Spot</NavLink>
               </div>
               <div className="market-route-content">
-                   <NavLink to='market-features'>Features</NavLink>
+                 <NavLink to='market-features'>Features</NavLink>
               </div>
-              </div>
+            </div>
           </div>
         </div>
         <div className="Market-contents-display">

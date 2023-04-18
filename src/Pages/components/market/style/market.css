@@ -1,7 +1,6 @@
 .market{
     padding: 0px;
     margin-top: 0;
-    z-index: 10px;
 }
 .market-container{
     color: #7f638f;
@@ -25,21 +24,20 @@
 }
 
 .search_header{
-    margin: 20px;
+    margin: 15px;
     background-color: #5B2963;
     display: flex;
     border-radius: 30px;
 }
 .search_header img{
-    margin-left: 5px;
+    margin-left: 10px;
     width: 15px;
 }
-
 
 .search_header input{
 width: 282px;
 background: none;
- padding: 10px;
+ padding: 7px;
 border: none;
 outline: none;
 padding-left: 40px;
@@ -52,7 +50,6 @@ padding: 0px;
 }
 .market-routes-container{
     display: flex;
-    gap: 2px;
 }
 .market-route-content{
     width: 100%;
@@ -60,22 +57,20 @@ padding: 0px;
 }
 .market-route-content a{
     color: #7f638f;
-    font-size: 13px;
+    font-size: 12.4px;
     font-weight: 900;
     Line-height: 21px;
 }
 .market-routes-container .market-route-content a.active{
     background: rgba(139, 53, 160, 1);
-    padding: 5.6px 20px;
+    padding: 4.6px 25px;
     color: #fff;
     border-radius: 8px;
 }
 .Market-contents-display{
-        padding: 0;
-        margin: 0;
-        margin-top: 20px;
-        background: linear-gradient(180deg, rgba(199, 0, 248, 0.0819) 0%, rgba(34, 5, 41, 0.13) 100%);
-         border-radius: 29px 29px 0px 0px;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
 }
 
 .market-favourite{
@@ -102,7 +97,6 @@ padding: 0px;
     display: flex;
   text-align: center;
   margin-bottom: 10px;
-
 }
 .market-favourite-content{
     width: 100%;

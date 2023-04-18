@@ -16,6 +16,8 @@ import SpotWallet from "./Pages/components/Wallet/spot/Spot";
 import FuturesRec from "./Pages/components/Wallet/futures/futuresRec";
 import Market from "./Pages/components/market/Market";
 import MarketSpot from "./Pages/components/market/routes/MarketSpot";
+import MarketFavorite from "./Pages/components/market/routes/MarketFavorite";
+import Future from "./Pages/components/market/routes/Future";
 // import TransferSelect from "./Pages/components/Wallet/overview/TransferSelect";
 
 
@@ -47,7 +49,10 @@ function App() {
 
             {/* Market route */}
             <Route path="/market" element={<Market />}>
+                <Route index element={<MarketSpot />} />
                 <Route path="spot" element={<MarketSpot />} />
+                <Route path="market-favourites" element={<MarketFavorite />} />
+                <Route path="market-features" element={<Future />} />
             </Route>
             
             {/* Wallet routes */}
