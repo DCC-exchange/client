@@ -18,7 +18,7 @@ export default function ButtomNav() {
                 <h1><AiOutlineHome /></h1>
             </div>
         </NavLink>
-        <NavLink to="">
+        <NavLink to="market">
             <div className="NavBar-display-main-flex1">
                 <h1><HiChartBar /></h1>
             </div>
