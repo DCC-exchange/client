@@ -20,6 +20,8 @@ import MarketSpot from "./Pages/components/market/routes/MarketSpot";
 import MarketFavorite from "./Pages/components/market/routes/MarketFavorite";
 import Future from "./Pages/components/market/routes/Future";
 import Spot from "./Pages/components/spot/Spot";
+import Convert from "./Pages/components/spot/route/Convert";
+import SpotMarket from "./Pages/components/spot/route/SpotMarket";
 // import TransferSelect from "./Pages/components/Wallet/overview/TransferSelect";
 
 
@@ -44,11 +46,13 @@ function App() {
 
             {/* Spot route */}
             <Route path="/spot-trade" element={<Spot />}>
-                
+                <Route index element={<SpotMarket />} />
+                <Route path="convert" element={<Convert />} />
+                <Route path="spot-market" element={<SpotMarket />} />
             </Route>
 
-                       {/* Login route */}
-                       <Route path="/sign" element={<LoginSystem />}>
+            {/* Login route */}
+              <Route path="/sign" element={<LoginSystem />}>
                 <Route Index element={<Login />} />
                 <Route path="login" element={<Login />} />
                 <Route path="signup" element={<Signup />} />

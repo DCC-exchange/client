@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 import "./styles/spot.css"
 export default function Spot() {
   return (
@@ -9,11 +9,11 @@ export default function Spot() {
                 <NavLink to="convert">
                     <p>Convert</p>
                 </NavLink>
-                <NavLink to="spot">
+                <NavLink to="spot-market">
                     <p>Spot</p>
                 </NavLink>
             </div>
-
+            <Outlet />
         </div>
     </div>
   )
