@@ -13,7 +13,7 @@
     background: #5B2963;
     width: 92%;
     border-radius: 10px;
-    margin: 15px;
+    margin: 25px 15px;
 }
 .spot-trade-navigation a{
     text-align: center;
@@ -45,12 +45,124 @@
     width: 100%;
 }
 .slide-icon-container{
-    width: 60%;
+    width: 83%;
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 .market-chart-container{
-    width: 30%;
+    width: 17%;
     display: flex;
-    gap: 10px;
+    gap: 12px;
+    width: 13px;
+}
+.slide-icon{
+    color: #9999;
+    padding: 0px 5px;
+}
+.content-coin-name{
+    color: #fff;
+    transform: uppercase;
+    font-size: 12px;
+}
+.slide-icon-container .coin-percent{
+    color: red;
+    font-size: 10.56px;
+    font-weight: 600;
+    padding: 5px 2px;
+}
+.market-chart-container .market-chart-icon{
+    color: #9999;
+} 
+.market-star h3 img{
+    background: linear-gradient(180deg, #8B35A0 0%, rgba(243, 22, 221, 0.52) 100%);
+}
+.spot-trading-contaent{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+.spot-trading-contaent .spot-buy-contents{
+    width: 65%;
+    padding: 0;
+    margin: 0;
+}
+.spot-buy-contents .spot-buy-btn{
+    display: flex;
+    padding: 10px 0px 0px 0px;
+}
+.spot-buy-contents .spot-buy-btn img{
+    width: 100px;
+}
+.spot-buy-limit{
+    width: 100%;
+}
+
+.amount-availability{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+.amount-availability-container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: #9999;
+}
+.amount-availability-container .amount-availability{
+    width: 63%;
+}
+.buy-limit{
+    padding: 0;
+    margin: 0;
+}
+.buy-limit-container{
+    width: 100%;
+    padding: 0;
+    display: block;
+}
+.market-limit-btn{
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+.market-limit-btn-container{
+    background: #9999;
+    color: #fff;
+    display: flex;
+    margin: 5px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.market-limit-btn-container .icon{
+    width: 10%;
+}
+.market-limit-btn-container .btn{
+    width: 80%;
+    color: #fff;
+    text-align: center;
+}
+.market-limit-btn-container .btn button{
+    background: none;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 11.5px;
+}
+.market-limit-btn-container .input{
+  width: 80%;
+  text-align: center;
+}
+.market-limit-btn-container .input input{
+    width: 100%;
+    text-align: center;
+    background: none;
+    outline: none;
+    border: none;
+   color: #ffff;
+}
+.market-limit-btn-container .input input::placeholder{
+   color: #ffff;
 }

@@ -7,7 +7,6 @@ import spotImg from './image/logodcc.svg'
 import "./style/buttomNav.css";
 import React from "react";
 
-
 export default function ButtomNav() {
   return (
     <>
