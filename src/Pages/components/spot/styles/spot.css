@@ -92,7 +92,7 @@
     padding: 10px 0px 0px 0px;
 }
 .spot-buy-contents .spot-buy-btn img{
-    width: 100px;
+    width: 120px;
 }
 .spot-buy-limit{
     width: 100%;
@@ -130,10 +130,11 @@
     background: #9999;
     color: #fff;
     display: flex;
-    margin: 5px 0px;
+    margin: 6.5px 0px;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    margin: 5px 0px;
 }
 .market-limit-btn-container .icon{
     width: 10%;
