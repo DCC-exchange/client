@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function MarketPrice() {
+   
   return (
     <div className="spot-display-market-price">
     <div className="spot-display-market-price-contaniner">
@@ -10,6 +11,11 @@ export default function MarketPrice() {
             </div>
             <div className="amount">
                 <h4>Amount</h4>
+            </div>
+        </div>
+        <div className="sell-market-price">
+            <div className="sell-market-price-container">
+
             </div>
         </div>
     </div>

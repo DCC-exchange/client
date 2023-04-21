@@ -74,8 +74,8 @@
 .market-chart-container .market-chart-icon{
     color: #9999;
 }
-.market-star-container .filled-market-star{
-    color: linear-gradient(270deg, #8D0BA4 0%, #C66AD6 60.33%, #533E57 120.65%);
+.market-star-container .filled-market-star svg{
+    stroke: linear-gradient(270deg, #8D0BA4 0%, #C66AD6 60.33%, #533E57 120.65%);
 }
 .market-star-container .market-star{
     color: #9999;
