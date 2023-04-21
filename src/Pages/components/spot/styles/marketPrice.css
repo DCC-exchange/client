@@ -44,6 +44,18 @@
     display: flex;
     justify-content: center;
 }
+
+.buy-market-price{
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+}
+.buy-market-price-container{
+    display: flex;
+    width: 100%;
+    margin: 5px ;
+    font-size: 11px;
+}
 .buy-market-price-container .price-content{
     width: 100%;
     color: rgb(21, 182, 21);
