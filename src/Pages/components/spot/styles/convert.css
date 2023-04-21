@@ -39,6 +39,8 @@
     border-radius: 5px;
     justify-content: center;
     font-size: 13px;
+    top: 20px;
+    left: 15px;
     background-color: hsla(0,0%,60%,.15294117647058825);
 }
 .convert-page-container .navigate-back{
@@ -48,8 +50,9 @@
 .convert-page-container .heading{
     text-align: center;
     font-size: 13px;
-    color: #ffff;
-    font-weight: bold;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px;
 }
 .convert-page-container .spend-coin{
     width: 100%;
@@ -80,20 +83,24 @@
     margin: 0;
 }
 .spend-input-container{
-    padding: 0;
+    padding: 5px 0px;
     display: flex;
     gap: 5px;
-    background: linear-gradient(196.08deg, #86228E 0.63%, #240426 76.25%);
-    border-radius: 4px;
+    margin: 5px 0px;
+    background: #631969;
+    border-radius: 6px;
 }
 .spend-input-container .spend-coin-name{
     display: flex;
-    width: 30%;
-    gap: 5%;
-    font-size: 11.234px;
+    width: 25%;
+    grid-gap: 5%;
+    gap: 10px;
+    margin: 5px 9px;
+    font-size: 12.234px;
 }
 .spend-input-container .spend-coin-name img{
-    width: 30px;
+    width: 15px;
+    height: 15px;
 }
 .spend-input-container .spend-coin-name h4{
     color: #9999;
@@ -119,6 +126,7 @@
     color: rgb(216, 159, 4);
     font-weight: 900;
     font-size: 11.234px;
+    margin: 4px;
 }
 .ref-price{
     width: 100%;
