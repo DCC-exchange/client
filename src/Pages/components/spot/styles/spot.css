@@ -139,6 +139,7 @@
     cursor: pointer;
     width: 100%;
     margin: 5px 0px;
+    position: relative;
 }
 .market-limit-btn-container .icon{
     width: 10%;
