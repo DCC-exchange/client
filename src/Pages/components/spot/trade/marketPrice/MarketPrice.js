@@ -54,6 +54,26 @@ export default function MarketPrice() {
                 </div>
             ))}
         </div>
+
+        <div className="middle-price">
+            <div className="middle-price-container">
+                <h2>2.357</h2>
+                <h5>=$2.34</h5>
+            </div>
+        </div>
+
+        <div className="buy-market-price">
+            { sellPrice.map((sell)=>(
+                <div className="buy-market-price-container">
+                    <div className="price-content">
+                        <h4>{sell.price}</h4>
+                    </div>
+                    <div className="amount-content">
+                        <h4>{sell.amount}</h4>
+                    </div>
+                </div>
+            ))}
+        </div>
     </div>
   </div>
   )

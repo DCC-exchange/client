@@ -32,6 +32,7 @@
     display: flex;
     width: 100%;
     margin: 5px ;
+    font-size: 11px;
 }
 .sell-market-price-container .price-content{
     width: 100%;
@@ -42,4 +43,37 @@
     color: #fff;
     display: flex;
     justify-content: center;
+}
+.buy-market-price-container .price-content{
+    width: 100%;
+    color: rgb(21, 182, 21);
+}
+.buy-market-price-container .amount-content{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.spot-display-market-price .middle-price{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+}
+.spot-display-market-price .middle-price .middle-price-container{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spot-display-market-price .middle-price .middle-price-container h2{
+    color: #fff;
+    font-size: 12.5px;
+    font-weight: bold;
+}
+.spot-display-market-price .middle-price .middle-price-container h5{
+    color: #999;
+    font-size: 11px;
+    font-weight: bold;
 }
