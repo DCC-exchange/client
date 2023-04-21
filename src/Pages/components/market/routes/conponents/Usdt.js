@@ -10,6 +10,8 @@ export default function Usdt() {
     CryptoCoins()
   },[])
 
+  console.log(Coins)
+
   return (
     <div className='favourite_head_spot'>
            { isLoading && <div className="isloading-coin">
