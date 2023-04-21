@@ -1,0 +1,25 @@
+.spot-display-market-price{
+    padding: 0;
+    margin: 0;
+    width: 37%;
+    position: relative;
+}
+.spot-display-market-price-contaniner{
+    display: block;
+    padding: 15px;
+    width: 100%;
+}
+.spot-display-market-price-contaniner .market-price-header{
+    display: flex;
+    width: 100%;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #999;
+    padding: 5px;
+}
+.spot-display-market-price-contaniner .market-price-header .price{
+    width: 100%;
+}
+.spot-display-market-price-contaniner .market-price-header .amount{
+    width: 100%;
+}

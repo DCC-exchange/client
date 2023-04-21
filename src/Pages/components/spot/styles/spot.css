@@ -111,11 +111,19 @@
     display: flex;
     color: #9999;
 }
-.amount-availability-container .amount-availability{
-    width: 70%;
+.amount-availability-container .amount-availability-content{
+    width: 80%;
+    display: flex;
+}
+.amount-availability-container .amount-availability-content h3{
+    color: #8D0BA4;
 }
 .coin-availbility{
     color: #fff;
+    display: flex;
+}
+.coin-availbility h3{
+   color: #8D0BA4;
 }
 .buy-limit{
     padding: 0;
@@ -127,8 +135,8 @@
     display: block;
 }
 .market-limit-btn{
-    margin: 5px 0px;
-    padding: 5px 0px;
+    margin: 0px;
+    padding: 0px;
 }
 .market-limit-btn-container{
     background: #9999992c;

@@ -7,6 +7,8 @@ import sellActive from "../images/ActiveSell.svg"
 import sellInActive from "../images/inactiveSell.svg"
 import Buy from '../trade/buy/Buy';
 import Sell from '../trade/sell/Sell';
+import { IoAddCircleOutline } from "react-icons/io5";
+import MarketPrice from '../trade/marketPrice/MarketPrice';
 
 export default function SpotMarket() {
 
@@ -71,11 +73,13 @@ export default function SpotMarket() {
                   </div> }
                   <div className="amount-availability">
                       <div className="amount-availability-container">
-                          <div className="amount-availability">
+                          <div className="amount-availability-content">
                             <h4>Available</h4>
+                            <h3><BiTransfer /></h3>
                           </div>
                           <div className="coin-availbility">
                             <h4>0 USDT</h4>
+                            <h3><IoAddCircleOutline /></h3>
                           </div>
                       </div>
                   </div>
@@ -83,11 +87,7 @@ export default function SpotMarket() {
                       { buyState ? <Buy /> : <Sell /> }
                   </div>
                 </div>
-                <div className="spot-display-market-price">
-                  <div className="spot-display-market-price-contaniner">
-                      <p>Market Price</p>
-                  </div>
-                </div>
+                  <MarketPrice />
             </div>
         </div>
     </div>
