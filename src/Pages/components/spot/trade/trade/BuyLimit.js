@@ -5,6 +5,8 @@ export default function BuyLimit() {
     const [ marketPrice, setMarketPrice ] = useState(46.78)
     const [ TradeAmount, setTradeAmount ] = useState("")
 
+    const [TotalAmount, setTotalAmount] = useState('')
+
     const [ percentActive1, setPercentActive1 ] = useState("percentage-boxEl")
     const [ percentActive2, setPercentActive2 ] = useState("percentage-boxEl")
     const [ percentActive3, setPercentActive3 ] = useState("percentage-boxEl")
@@ -88,6 +90,28 @@ export default function BuyLimit() {
                     <div className="percentage-figure">
                         <h4>100%</h4>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="market-limit-btn-container">
+            <div className="icon" onClick={()=> setTradeAmount(TotalAmount + 0.1)}>
+                <h4>-</h4>
+            </div>
+            <div className="input">
+                <input type="number" value={TotalAmount} onChange={(e)=> setTotalAmount(e.target.value)} placeholder='Total(USDT)'  />
+            </div>
+            <div className="icon" onClick={()=>setTotalAmount(TotalAmount - 0.1)}>
+                <h4>+</h4>
+            </div>
+        </div>
+        <div className="amount-availability">
+            <div className="amount-availability-container">
+                <div className="amount-availability">
+                <h4>Overview</h4>
+                </div>
+                <div className="coin-availbility">
+                <h4>0 USDT</h4>
                 </div>
             </div>
         </div>
