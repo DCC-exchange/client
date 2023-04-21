@@ -29,6 +29,12 @@ input[type="number"] {
   position: relative;
 }
 
+.App::after {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
 #preloader {
   position: fixed;
   display: flex;
