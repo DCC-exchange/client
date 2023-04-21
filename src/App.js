@@ -65,8 +65,9 @@ function App() {
                 <Route path="spot" element={<MarketSpot />} />
                 <Route path="market-favourites" element={<MarketFavorite />} />
                 <Route path="market-features" element={<Future />} />
-                <Route path="marketChart" element={<MarketChart />} />
             </Route>
+            {/* Market Chart */}
+            <Route path="/marketChart" element={<MarketChart />} />
             
             {/* Wallet routes */}
             <Route path="wallet" element={<Assets />}>

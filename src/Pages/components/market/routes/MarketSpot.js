@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import "../style/MarketSpot.css";
-import { NavLink, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Busd from './conponents/Busd';
 import Usdt from './conponents/Usdt';
 
@@ -34,10 +34,7 @@ export default function MarketSpot() {
             <h3>USD</h3>
           </div>
        </div>
-       <NavLink to='marketChart'>{ composition }</ NavLink>
-       <div className="Market-contents-display">
-          <Outlet />
-        </div>
+       <Link to='/marketChart'>{ composition }</ Link>
     </div>
   );
 }
