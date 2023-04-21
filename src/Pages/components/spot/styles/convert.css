@@ -87,7 +87,7 @@
     display: flex;
     gap: 5px;
     margin: 5px 0px;
-    background: #631969;
+    background: #5B2963;
     border-radius: 6px;
 }
 .spend-input-container .spend-coin-name{
@@ -138,7 +138,7 @@
     font-size: 11.345px;
 }
 .ref-price-container span{
-    color: rgb(3, 90, 3);
+    color: rgb(0, 190, 0);
     font-size: 11.345px;
 }
 .convert-submit-btn{
@@ -151,9 +151,14 @@
 }
 .convert-submit-btn-container{
     width: 100%;
-    height: 60px;
     font-size: 11px;
     background: #631969;
     border-radius: 5px;
-    padding: 6px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+.convert-buttom-bal{
+    color: #fff;
+    font-size: 12px;
 }
