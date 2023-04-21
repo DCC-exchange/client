@@ -15,4 +15,10 @@
     margin-top: 6px;
     padding: 6px  0px;
     width: 100%;
+    background: #9999992c;
+    border-radius: 4px;
+    text-align: center;
+}
+.select-market-trade-container .btn .active{
+   color: #240426;
 }

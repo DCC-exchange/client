@@ -42,8 +42,10 @@ export default function Buy() {
                         <div className="btn" onClick={handleDisplayTradeLimit}>
                             <button>{defaultState}</button>
                         </div>
+                    </div>
+                    <div className="icon"></div>
 
-                        <div className="select-market-trade">
+                    <div className="select-market-trade">
                             <div className="select-market-trade-container">
                                 <div className="btn" onClick={()=>handleTradeLimit("limit")}>
                                     <p className={active1}>limit</p>
@@ -53,8 +55,6 @@ export default function Buy() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="icon"></div>
                 </div>
                 { defaultTrade && <BuyLimit /> }
             </div>
