@@ -6,7 +6,10 @@ export default function BuyLimit() {
 
     const AddPrice = ((e)=>{
         if(e === "add"){
-            let newPrice = marketPrice + 1
+            let newPrice = marketPrice + 0.1
+            setMarketPrice(newPrice)
+        }else{
+            let newPrice = marketPrice - 0.1
             setMarketPrice(newPrice)
         }
     })
@@ -20,7 +23,7 @@ export default function BuyLimit() {
             <div className="input">
                 <input type="number" value={marketPrice} onChange={(e)=> setMarketPrice(e.target.value)} placeholder='Market Price'  />
             </div>
-            <div className="icon">
+            <div className="icon" onClick={()=>AddPrice("asub")}>
                 <h4>+</h4>
             </div>
         </div>
