@@ -3,8 +3,14 @@ import BuyLimit from '../trade/BuyLimit'
 
 export default function Buy() {
 
-    const handleTradeLimit = (()=>{
-        
+    const [ defaultTrade, setDefaultTrade ] = useState(true)
+
+    const handleTradeLimit = ((e)=>{
+        if(e === "limit"){
+            setDefaultTrade(true)
+        }else{
+            setDefaultTrade(false)
+        }
     })
 
   return (
@@ -18,7 +24,7 @@ export default function Buy() {
                     </div>
                     <div className="icon"></div>
                 </div>
-                <BuyLimit />
+                { defaultTrade && <BuyLimit /> }
             </div>
         </div>
     </div>
