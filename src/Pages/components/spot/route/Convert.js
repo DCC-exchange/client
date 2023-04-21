@@ -1,13 +1,14 @@
 import React from 'react'
 import { FaAngleLeft } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom'
+import { RiArrowDropDownFill } from "react-icons/ri";
 import "../styles/convert.css"
 
 export default function Convert() {
 
   const navigate = useNavigate()
   const handleClose = (()=>{
-      navigate("/hot")
+      navigate(-1)
   })
 
   return (
@@ -35,6 +36,7 @@ export default function Convert() {
                   <div className="spend-coin-name">
                       <img src="" alt="" />
                       <h4>BTC</h4>
+                      <h4><RiArrowDropDownFill /></h4>
                   </div>
                   <div className="spend-coin-input">
                       <input type="text" />
