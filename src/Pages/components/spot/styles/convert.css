@@ -8,13 +8,13 @@
     z-index: 34879;
 }
 .convert-page .route{
-    background: #9999;
+    background: #99999921;
     width: 230px;
     height: 230px;
     border-radius: 50%;
     position: fixed;
-    right: -20px;
-    top: -20px;
+    right: -50px;
+    top: -50px;
 }
 .convert-page-container{
     padding: 15px;
@@ -24,6 +24,11 @@
 .convert-page-container .navigate-back{
     height: 15px;
     width: 15px;
+    position: absolute;
+
+}
+.convert-page-container .navigate-back{
+    
     background-color: #99999927;
 }
 .convert-page-container .heading{
