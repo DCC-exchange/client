@@ -31,7 +31,7 @@
 .sell-market-price-container{
     display: flex;
     width: 100%;
-    margin: 5px ;
+    margin: 0px 5px ;
     font-size: 11px;
 }
 .sell-market-price-container .price-content{
