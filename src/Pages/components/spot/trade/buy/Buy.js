@@ -4,12 +4,31 @@ import BuyLimit from '../trade/BuyLimit'
 export default function Buy() {
 
     const [ defaultTrade, setDefaultTrade ] = useState(true)
+    const [ displayLimit, setDisplayLimit ] = useState(false)
+
+    const [ defaultState, setDefaultState ] = useState("Limit")
+
+    const [ active1, setActive1 ] = useState('active')
+    const [ active2, setActive2] = useState("")
 
     const handleTradeLimit = ((e)=>{
         if(e === "limit"){
             setDefaultTrade(true)
+            setActive1("active")
+            setDefaultState("Limit")
+            setActive2("")
         }else{
             setDefaultTrade(false)
+            setActive2("active")
+            setActive1("")
+            setDefaultState("Market")
+        }
+    })
+    const handleDisplayTradeLimit = (()=>{
+        if(displayLimit){
+            setDisplayLimit(true)
+        }else{
+            setDisplayLimit(false)
         }
     })
 
@@ -20,16 +39,17 @@ export default function Buy() {
                 <div className="market-limit-btn-container">
                     <div className="icon"></div>
                     <div className="btn-container">
-                        <div className="btn" onClick={handleTradeLimit}>
-                            <button>Limit</button>
+                        <div className="btn" onClick={handleDisplayTradeLimit}>
+                            <button>{defaultState}</button>
                         </div>
+
                         <div className="select-market-trade">
                             <div className="select-market-trade-container">
-                                <div className="btn" onClick={handleTradeLimit}>
-                                    <button>Market</button>
+                                <div className="btn" onClick={()=>handleTradeLimit("limit")}>
+                                    <p className={active1}>limit</p>
                                 </div>
-                                <div className="btn" onClick={handleTradeLimit}>
-                                    <button>Market</button>
+                                <div className="btn" onClick={()=>handleTradeLimit("market")}>
+                                    <p className={active2}>Market</p>
                                 </div>
                             </div>
                         </div>
