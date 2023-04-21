@@ -27,7 +27,7 @@ const MarketChart = () => {
       <div className="heading">
         <div>
           <BiArrowBack />
-          <p>BTC/USDT</p>
+          <p className="text-[#fff]">BTC/USDT</p>
         </div>
         <div>
           <AiOutlineStar />
