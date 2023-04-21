@@ -1,12 +1,18 @@
 .select-market-trade{
     width: 100%;
     position: absolute;
-    background: #9999995e;
+    background: #6d6d6d;
     color: #fff;
-    top: 10px;
+    top: 25px;
     left: 0;
 }
 .select-market-trade-container{
     padding: 0;
     margin: 0;
+    font-size: 10.5px;
+}
+.select-market-trade-container .btn{
+    margin-top: 6px;
+    padding: 6px  0px;
+    width: 100%;
 }
