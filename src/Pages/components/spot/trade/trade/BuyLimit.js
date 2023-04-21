@@ -1,14 +1,28 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 export default function BuyLimit() {
+
+    const [ marketPrice, setMarketPrice ] = useState(46.78)
+
+    const AddPrice = ((e)=>{
+        if(e === "add"){
+            let newPrice = marketPrice + 1
+            setMarketPrice(newPrice)
+        }
+    })
+
   return (
     <div className="market-limit">
         <div className="market-limit-btn-container">
-            <div className="icon"></div>
-            <div className="input">
-                <input type="number" placeholder='Market Price'  />
+            <div className="icon" onClick={()=>AddPrice("add")}>
+                <h4>-</h4>
             </div>
-            <div className="icon"></div>
+            <div className="input">
+                <input type="number" value={marketPrice} onChange={(e)=> setMarketPrice(e.target.value)} placeholder='Market Price'  />
+            </div>
+            <div className="icon">
+                <h4>+</h4>
+            </div>
         </div>
         <div className="market-limit-btn-container">
         <div className="icon"></div>
