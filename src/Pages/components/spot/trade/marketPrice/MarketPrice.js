@@ -57,8 +57,10 @@ export default function MarketPrice() {
 
         <div className="middle-price">
             <div className="middle-price-container">
-                <h2>2.357</h2>
-                <h5>=$2.34</h5>
+                <div className="cont">
+                    <h2>2.357</h2>
+                    <h5>=$2.34</h5>
+                </div>
             </div>
         </div>
 
