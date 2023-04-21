@@ -5,7 +5,7 @@ export default function BuyLimit() {
     const [ marketPrice, setMarketPrice ] = useState(46.78)
     const [ TradeAmount, setTradeAmount ] = useState("")
 
-    const [ percentActive1, setPercentActive1 ] = useState("percentage-box-buy")
+    const [ percentActive1, setPercentActive1 ] = useState("percentage-boxEl")
     const [ percentActive2, setPercentActive2 ] = useState("percentage-boxEl")
     const [ percentActive3, setPercentActive3 ] = useState("percentage-boxEl")
     const [ percentActive4, setPercentActive4 ] = useState("percentage-boxEl")
