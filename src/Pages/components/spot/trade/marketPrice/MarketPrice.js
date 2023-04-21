@@ -1,6 +1,35 @@
 import React from 'react'
 
 export default function MarketPrice() {
+
+    const sellPrice = [{
+        price : 12.34,
+        amount : 345.45
+    },
+    {
+        price : 12.35,
+        amount : 345.45
+    },
+    {
+        price : 12.36,
+        amount : 645.45
+    },
+    {
+        price : 12.37,
+        amount : 55.45
+    },
+    {
+        price : 12.37,
+        amount : 55.45
+    }, 
+    {
+        price : 12.37,
+        amount : 55.45
+    },
+    {
+        price : 12.37,
+        amount : 55.45
+    }]
    
   return (
     <div className="spot-display-market-price">
@@ -14,22 +43,16 @@ export default function MarketPrice() {
             </div>
         </div>
         <div className="sell-market-price">
-            <div className="sell-market-price-container">
-                <div className="price-content">
-                    <h4>21.34</h4>
+            { sellPrice.map((sell)=>(
+                <div className="sell-market-price-container">
+                    <div className="price-content">
+                        <h4>{sell.price}</h4>
+                    </div>
+                    <div className="amount-content">
+                        <h4>{sell.amount}</h4>
+                    </div>
                 </div>
-                <div className="amount-content">
-                    <h4>271.64</h4>
-                </div>
-            </div>
-            <div className="sell-market-price-container">
-                <div className="price-content">
-                    <h4>21.34</h4>
-                </div>
-                <div className="amount-content">
-                    <h4>271.64</h4>
-                </div>
-            </div>
+            ))}
         </div>
     </div>
   </div>
