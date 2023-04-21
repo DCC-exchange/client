@@ -26,6 +26,12 @@ export default function Buy() {
                     </div>
                     <div className="icon"></div>
                 </div>
+
+                <div className="submit-btn-container">
+                <div className="submit-btn">
+                    <button type='submit'>Buy(ETH)</button>
+                </div>
+            </div>
             </div>
         </div>
     </div>

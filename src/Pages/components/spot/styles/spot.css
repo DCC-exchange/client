@@ -175,12 +175,16 @@
    color: #ffff;
 }
 .submit-btn-container{
-    background: green;
     color: #fff;
     display: flex;
-    margin: 6.5px 0px;
-    border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    margin: 15px 0px;
+    margin: 10px 0px;
+}
+.submit-btn-container .submit-btn button{
+    border: none;
+    padding: 6px;
+    width: 100%;
+    background: green;
+    color: #fff;
 }
