@@ -2,6 +2,7 @@ import React from 'react';
 import './style/marketChart.css';
 import { BiArrowBack } from 'react-icons/bi'
 import { AiOutlineStar } from 'react-icons/ai'
+import { Link } from 'react-router-dom';
 import Chart from "react-google-charts";
 import reload from "./images/Vector.png";
 
@@ -21,13 +22,15 @@ const MarketChart = () => {
     ['Wed', 50, 55, 77, 80, calculateCandlestickColor(50, 80)],
     ['Thu', 77, 77, 66, 50, calculateCandlestickColor(77, 50)],
     ['Fri', 68, 66, 22, 15, calculateCandlestickColor(68, 15)],
+    ['sat', 80, 66, 42, 25, calculateCandlestickColor(68, 15)],
+    ['sun', 48, 66, 42, 15, calculateCandlestickColor(68, 15)],
   ];
   return (
     <div className="candlestick_container">
       <div className="chart_container">
         <div className="flex heading_padding">
           <div className="flex_gap">
-            <BiArrowBack className="back_arrow_icon" />
+            <Link to="/market"><BiArrowBack className="back_arrow_icon" /></Link>
             <p className="">BTC/USDT</p>
           </div>
           <div>
@@ -72,24 +75,37 @@ const MarketChart = () => {
           <li>More</li>
         </ul>
       </div>
-      <Chart
-        width={'100%'}
-        height={450}
-        chartType="CandlestickChart"
-        loader={<div>Loading Chart...</div>}
-        data={data}
-        options={{
-          legend: 'none',
-          backgroundColor: 'white',
-          // chartArea: {
-          //   left: 10,
-          //   top: 10,
-          //   width: '90%',
-          //   height: '80%',
-          // },
-        }}
-        rootProps={{ 'data-testid': '1' }}
-      />
+      <div className="chart_container">
+        <Chart
+          width={'100%'}
+          height={450}
+          chartType="CandlestickChart"
+          loader={<div>Loading Chart...</div>}
+          data={data}
+          options={{
+            legend: 'none',
+            backgroundColor: 'transparent',
+            hAxis: {
+              textStyle: {
+                color: 'white',
+              },
+            },
+            vAxis: {
+              textStyle: {
+                color: 'white',
+              },
+              gridlines: {
+                color: '#ffffffa4'
+              }
+            },
+            chartArea: {
+              width: '90%',
+              height: '80%',
+            },
+          }}
+          rootProps={{ 'data-testid': '1' }}
+        />
+      </div>
       <div className="chart_container">
         <ul className="flex body_padding">
           <li>MA</li>

@@ -1,6 +1,7 @@
 import React, { useEffect} from 'react'
 
 import { useCryptoCoins } from "../../../../config/Coins"
+import { Link } from 'react-router-dom';
 
 export default function Busd() {
 
@@ -21,9 +22,11 @@ export default function Busd() {
     { Coins && Coins.map((coin)=>(
        <div key={coin.id} className='name_last_flex_1_spot'>
        <div className='content-name'>
-          <h3>{ coin.symbol } <span className='spaner_spot'>/USD</span>
-              <span className='ten_spot'>10x</span>
-          </h3>
+          <Link to="/marketChart">
+            <h3>{ coin.symbol } <span className='spaner_spot'>/USD</span>
+                <span className='ten_spot'>10x</span>
+            </h3>
+          </Link>
        </div>
        <div className='content-price'>
          <h3>{coin.current_price} <span className='span_block_spot'>${coin.current_price}</span></h3>
