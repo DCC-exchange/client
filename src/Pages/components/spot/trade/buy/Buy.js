@@ -12,6 +12,7 @@ export default function Buy() {
     const [ active2, setActive2] = useState("")
 
     const handleTradeLimit = ((e)=>{
+        setDisplayLimit(false)
         if(e === "limit"){
             setDefaultTrade(true)
             setActive1("active")
@@ -26,9 +27,9 @@ export default function Buy() {
     })
     const handleDisplayTradeLimit = (()=>{
         if(displayLimit){
-            setDisplayLimit(true)
-        }else{
             setDisplayLimit(false)
+        }else{
+            setDisplayLimit(true)
         }
     })
 
