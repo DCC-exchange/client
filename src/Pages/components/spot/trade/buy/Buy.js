@@ -19,8 +19,20 @@ export default function Buy() {
             <div className="market-limit-btn">
                 <div className="market-limit-btn-container">
                     <div className="icon"></div>
-                    <div className="btn" onClick={handleTradeLimit}>
-                        <button>Market</button>
+                    <div className="btn-container">
+                        <div className="btn" onClick={handleTradeLimit}>
+                            <button>Limit</button>
+                        </div>
+                        <div className="select-market-trade">
+                            <div className="select-market-trade-container">
+                                <div className="btn" onClick={handleTradeLimit}>
+                                    <button>Market</button>
+                                </div>
+                                <div className="btn" onClick={handleTradeLimit}>
+                                    <button>Market</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="icon"></div>
                 </div>

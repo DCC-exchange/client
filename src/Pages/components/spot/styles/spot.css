@@ -131,7 +131,7 @@
     padding: 5px 0px;
 }
 .market-limit-btn-container{
-    background: #9999;
+    background: #9999992c;
     color: #fff;
     display: flex;
     margin: 6.5px 0px;
@@ -143,10 +143,11 @@
 .market-limit-btn-container .icon{
     width: 10%;
 }
-.market-limit-btn-container .btn{
+.market-limit-btn-container .btn-container{
     width: 80%;
     color: #fff;
     text-align: center;
+    position: relative;
 }
 .market-limit-btn-container .btn button{
     background: none;
