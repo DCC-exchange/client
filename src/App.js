@@ -30,7 +30,6 @@ function App() {
 
   return (
     <div className="App">
-      <ButtomNav />
         <Routes>
           {/* Welcome route */}
           <Route path="/welcome" element={<Welcome />}></Route>
@@ -77,6 +76,7 @@ function App() {
                 <Route path="futures" element={<FuturesRec />} />
             </Route>
         </Routes>
+      <ButtomNav />
     </div>
   );
 }

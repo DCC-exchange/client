@@ -23,49 +23,55 @@ const MarketChart = () => {
     ['Fri', 68, 66, 22, 15, calculateCandlestickColor(68, 15)],
   ];
   return (
-    <div className="chart_container">
-      <div className="heading">
-        <div>
-          <BiArrowBack />
-          <p className="text-[#fff]">BTC/USDT</p>
-        </div>
-        <div>
-          <AiOutlineStar />
-        </div>
-      </div>
-      <hr />
-      <div className="subheading">
-        <div>
-          <p>23,061.81</p>
-          <div>
-            <p>$ 23,061.8 1</p>
-            <span>+0.78%</span>
-          </div>
-        </div>
-        <div>
-          <div>
-            <p>High</p>
-            <p>23,152.60</p>
+    <div className="candlestick_container">
+      <div className="chart_container">
+        <div className="flex heading_padding">
+          <div className="flex_gap">
+            <BiArrowBack className="back_arrow_icon" />
+            <p className="">BTC/USDT</p>
           </div>
           <div>
-            <p>Low</p>
-            <p>22,636.77</p>
-          </div>
-          <div>
-            <p>24H</p>
-            <p>246,938.98 [BTC]</p>
+            <AiOutlineStar className="star_icon" />
           </div>
         </div>
       </div>
       <hr />
-      <ul className="chart_outline">
-        <li>Line</li>
-        <li>15m</li>
-        <li>1H</li>
-        <li>4H</li>
-        <li>1D</li>
-        <li>More</li>
-      </ul>
+      <div className="chart_container">
+        <div className="flex_start body_padding">
+          <div>
+            <p className="green coin_amount">23,061.81</p>
+            <div className="flex">
+              <p className="font_two">$ 23,061.8 1</p>
+              <small className="green">+0.78%</small>
+            </div>
+          </div>
+          <div>
+            <div className="flex">
+              <p className="font_one">High</p>
+              <p className="font_one">23,152.60</p>
+            </div>
+            <div className="flex">
+              <p className="font_one">Low</p>
+              <p className="font_one">22,636.77</p>
+            </div>
+            <div className="flex_gap">
+              <p className="font_one">24H</p>
+              <p className="font_one">246,938.98 [BTC]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div className="chart_container">
+        <ul className="flex body_padding">
+          <li>Line</li>
+          <li>15m</li>
+          <li>1H</li>
+          <li>4H</li>
+          <li>1D</li>
+          <li>More</li>
+        </ul>
+      </div>
       <Chart
         width={'100%'}
         height={450}
@@ -84,63 +90,71 @@ const MarketChart = () => {
         }}
         rootProps={{ 'data-testid': '1' }}
       />
-      <ul className="chart_outline">
-        <li>MA</li>
-        <li>EMA</li>
-        <li>BOLL</li>
-        <li>|</li>
-        <li>VOL</li>
-        <li>MACD</li>
-        <li>RSI</li>
-      </ul>
+      <div className="chart_container">
+        <ul className="flex body_padding">
+          <li>MA</li>
+          <li>EMA</li>
+          <li>BOLL</li>
+          <li>|</li>
+          <li>VOL</li>
+          <li>MACD</li>
+          <li>RSI</li>
+        </ul>
+      </div>
       <hr />
-      <ul>
-        <li>Order Book</li>
-        <li>Market History</li>
-        <li><span>125x</span>BTCUSDT</li>
-      </ul>
-      <hr />
-      <div>
-        <div>
-          <div>
-            <p>Amount</p>
-            <ul>
-              <li>0.003896</li>
-              <li>0.856706</li>
-            </ul>
+      <div className="chart_container">
+        <ul className="flex heading_padding outline_list">
+          <li>Order Book</li>
+          <li>Market History</li>
+          <li><span className="coin_boost">125x</span>BTCUSDT</li>
+        </ul>
+      </div>
+      <hr className="line" />
+      <div className="chart_container">
+        <div className="flex body_padding">
+          <div className="flex_gap">
+            <div>
+              <p>Amount</p>
+              <ul>
+                <li>0.003896</li>
+                <li>0.856706</li>
+              </ul>
+            </div>
+            <div>
+              <p>Price</p>
+              <ul>
+                <li className="green">22,003.86</li>
+                <li className="green">20,856.06</li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <p>Price</p>
-            <ul>
-              <li>22,003.86</li>
-              <li>20,856.06</li>
-            </ul>
-          </div>
-        </div>
-        <div>
-        <div>
-            <p>Price</p>
-            <ul>
-              <li>22,003.86</li>
-              <li>20,856.06</li>
-            </ul>
-          </div>
-          <div>
-            <p>Amount</p>
-            <ul>
-              <li>0.003896</li>
-              <li>0.856706</li>
-            </ul>
+          <div className="flex_gap">
+            <div>
+              <p>Price</p>
+              <ul>
+                <li className="red">22,003.86</li>
+                <li className="red">20,856.06</li>
+              </ul>
+            </div>
+            <div>
+              <p>Amount</p>
+              <ul>
+                <li>0.003896</li>
+                <li>0.856706</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div>
-        <div>
-          <img src={reload} alt="reload_icon" />
-        </div>
-        <div>
-          <button type="button">Buy</button>
-          <button type="button">Sell</button>
+      <div className="chart_container">
+        <div className="flex heading_padding trade_coin">
+          <div>
+            <img src={reload} alt="reload_icon" />
+          </div>
+          <div className="btn_container">
+            <button className="buttons BGgreen" type="button">Buy</button>
+            <button className="buttons BGred" type="button">Sell</button>
+          </div>
         </div>
       </div>
     </div>
