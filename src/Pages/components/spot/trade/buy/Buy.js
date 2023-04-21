@@ -1,37 +1,24 @@
-import React from 'react'
+import React, { useState} from 'react'
+import BuyLimit from '../trade/BuyLimit'
 
 export default function Buy() {
+
+    const handleTradeLimit = (()=>{
+        
+    })
+
   return (
     <div className="buy-limit">
         <div className="buy-limit-container">
             <div className="market-limit-btn">
                 <div className="market-limit-btn-container">
                     <div className="icon"></div>
-                    <div className="btn">
+                    <div className="btn" onClick={handleTradeLimit}>
                         <button>Market</button>
                     </div>
                     <div className="icon"></div>
                 </div>
-                <div className="market-limit-btn-container">
-                    <div className="icon"></div>
-                    <div className="input">
-                        <input type="number" placeholder='Market Price'  />
-                    </div>
-                    <div className="icon"></div>
-                </div>
-                  <div className="market-limit-btn-container">
-                  <div className="icon"></div>
-                    <div className="btn">
-                        <button>Market</button>
-                    </div>
-                    <div className="icon"></div>
-                </div>
-
-                <div className="submit-btn-container">
-                <div className="submit-btn">
-                    <button type='submit'>Buy(ETH)</button>
-                </div>
-            </div>
+                <BuyLimit />
             </div>
         </div>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import "./styles/spot.css"
+import "./styles/limit.css"
 export default function Spot() {
   return (
     <div className="spot-trade">
