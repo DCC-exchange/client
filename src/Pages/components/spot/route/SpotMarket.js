@@ -1,6 +1,7 @@
 import React,{ useState} from 'react'
 import { BiTransfer } from "react-icons/bi";
-import { BsBarChart, BsStarHalf } from "react-icons/bs";
+import { AiOutlineStar, AiFillStar } from "react-icons/ai";
+import { BsBarChart} from "react-icons/bs";
 import buyActive from "../images/buyActive1.svg"
 import buyInActive from "../images/sellBtn.svg"
 import sellActive from "../images/ActiveSell.svg"
@@ -20,6 +21,16 @@ export default function SpotMarket() {
       }else{
         setBuyState(false)
       }
+  })
+
+  const [ favouritePair, setFavouritePair] = useState(false)
+
+  const Addfavourite = (()=>{
+    if(favouritePair){
+      setFavouritePair(false)
+    }else{
+      setFavouritePair(true)
+    }
   })
 
   return (
@@ -42,9 +53,13 @@ export default function SpotMarket() {
                     <div className="market-chart-icon">
                         <h3><BsBarChart /> </h3>
                     </div>
-                    <div className="market-star">
-                        <h3><BsStarHalf /></h3>
-                    </div>
+                    <div className="market-star-container" onClick={Addfavourite}>
+                        { favouritePair ? <div className="filled-market-star">
+                            <h3><AiFillStar /></h3>
+                        </div> : <div className="market-star">
+                            <h3><AiOutlineStar /></h3>
+                        </div> }
+                    </div>    
                   </div>
               </div>
             </div>
