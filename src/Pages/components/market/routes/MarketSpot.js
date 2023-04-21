@@ -33,7 +33,7 @@ export default function MarketSpot() {
             <h3>USD</h3>
           </div>
        </div>
-        { composition }
+       { composition }
     </div>
   );
 }
