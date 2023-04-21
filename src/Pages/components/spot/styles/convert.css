@@ -1,11 +1,20 @@
 .convert-page{
-    position: absolute;
+    position: fixed;
     background: #240426;
     width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
     z-index: 34879;
+}
+.convert-page .route{
+    background: #9999;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    position: fixed;
+    right: -20px;
+    top: -20px;
 }
 .convert-page-container{
     padding: 15px;
@@ -45,4 +54,7 @@
     width: 100%;
     display: flex;
     justify-content: end;
+}
+.convert-page-container .spend-input{
+
 }
