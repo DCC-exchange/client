@@ -13,10 +13,10 @@
     font-size: 10.5px;
 }
 .select-market-trade-container .btn{
-    margin: 6px 0px ;
+    margin: 6px 10px ;
     padding: 6px  0px;
-    width: 100%;
-    background: #240426;
+    width: 90%;
+    background: #2404267e;
     border-radius: 4px;
     text-align: center;
     color: #9999;
