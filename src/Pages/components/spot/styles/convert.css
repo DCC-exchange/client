@@ -83,7 +83,7 @@
     padding: 0;
     display: flex;
     gap: 5px;
-    background: #3D0C48;
+    background: linear-gradient(196.08deg, #86228E 0.63%, #240426 76.25%);
     border-radius: 4px;
 }
 .spend-input-container .spend-coin-name{
@@ -107,9 +107,11 @@
     outline: none;
     border: none;
     color: #fff;
+    font-size: 11.23;
 }
 .spend-coin-input input::placeholder{ 
     color: #999;
+    font-size: 11.23;
 }
 .spend-coin-maximum{
     display: flex;
@@ -117,4 +119,33 @@
     color: rgb(216, 159, 4);
     font-weight: 900;
     font-size: 11.234px;
+}
+.ref-price{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.ref-price-container{
+    color: #9999;
+    font-size: 11.345px;
+}
+.ref-price-container span{
+    color: rgb(3, 90, 3);
+    font-size: 11.345px;
+}
+.convert-submit-btn{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.convert-submit-btn-container{
+    width: 100%;
+    height: 60px;
+    font-size: 11px;
+    background: #631969;
+    border-radius: 5px;
+    padding: 6px;
 }

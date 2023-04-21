@@ -77,7 +77,7 @@ export default function Convert() {
           </div>
           <div className="convert-submit-btn">
               <div className="convert-submit-btn-container">
-                  <button>Confirm</button>
+                  <p>Confirm</p>
               </div>
           </div>
           </div>
