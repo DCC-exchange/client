@@ -21,6 +21,7 @@ export default function Convert() {
           <div className="heading">
               <h4>Convert</h4>
           </div>
+          <div className="convert-page-content">
           <div className="spend-coin">
             <div className="spend-coin-container">
                 <div className="label">
@@ -79,6 +80,8 @@ export default function Convert() {
                   <button>Confirm</button>
               </div>
           </div>
+          </div>
+       
           <div className="convert-buttom-bal">
               <h4>Balance</h4>
           </div>
