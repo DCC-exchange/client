@@ -6,7 +6,7 @@
 }
 .spot-display-market-price-contaniner{
     display: block;
-    padding: 15px;
+    padding: 5px 15px;
     width: 100%;
 }
 .spot-display-market-price-contaniner .market-price-header{
@@ -15,7 +15,7 @@
     font-size: 11.5px;
     font-weight: 600;
     color: #999;
-    padding: 5px;
+    padding:  5px;
 }
 .spot-display-market-price-contaniner .market-price-header .price{
     width: 100%;
