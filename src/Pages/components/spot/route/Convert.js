@@ -35,12 +35,12 @@ export default function Convert() {
             <div className="spend-input">
               <div className="spend-input-container">
                   <div className="spend-coin-name">
-                      <img src="" alt="" />
+                      <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579" alt="" />
                       <h4>BTC</h4>
                       <h4><RiArrowDropDownFill /></h4>
                   </div>
                   <div className="spend-coin-input">
-                      <input type="text" />
+                      <input type="text" placeholder='Convert 0.00000000' />
                   </div>
                   <div className="spend-coin-maximum">
                       <p>Max</p>

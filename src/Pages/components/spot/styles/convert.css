@@ -69,5 +69,46 @@
     justify-content: end;
 }
 .convert-page-container .spend-input{
-
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.spend-input-container{
+    padding: 0;
+    display: flex;
+    gap: 5px;
+    background: #99999933;
+    border-radius: 4px;
+}
+.spend-input-container .spend-coin-name{
+    display: flex;
+    width: 30%;
+    gap: 5%;
+    font-size: 11.234px;
+}
+.spend-input-container .spend-coin-name img{
+    width: 30px;
+}
+.spend-input-container .spend-coin-name h4{
+    color: #9999;
+}
+.spend-coin-input{
+    width: 55%;
+}
+.spend-coin-input input{ 
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.spend-coin-input input::placeholder{ 
+    color: #999;
+}
+.spend-coin-maximum{
+    display: flex;
+    justify-content: end;
+    color: yellow;
+    font-weight: 900;
+    font-size: 11.234px;
 }
