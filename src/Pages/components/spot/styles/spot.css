@@ -134,16 +134,16 @@
     background: #9999992c;
     color: #fff;
     display: flex;
-    margin-top: 20px;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    margin: 5px 0px;
+    margin: 13px 0px;
     position: relative;
 }
 .market-limit-btn-container .icon{
     width: 10%;
     text-align: center;
+    color: #9999;
 }
 .market-limit-btn-container .btn-container{
     width: 80%;
@@ -175,7 +175,7 @@
    font-size: 10.7px;
 }
 .market-limit-btn-container .input input::placeholder{
-   color: #ffff;
+   color: #9999;
 }
 .submit-btn-container{
     color: #fff;

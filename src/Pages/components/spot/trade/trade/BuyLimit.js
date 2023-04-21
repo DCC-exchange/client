@@ -5,8 +5,6 @@ export default function BuyLimit() {
     const [ marketPrice, setMarketPrice ] = useState(46.78)
     const [ TradeAmount, setTradeAmount ] = useState("")
 
-
-
   return (
     <div className="market-limit">
         <div className="market-limit-btn-container">
