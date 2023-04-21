@@ -29,6 +29,42 @@ export default function BuyLimit() {
                 <h4>+</h4>
             </div>
         </div>
+        <div className="amount-percentage">
+            <div className="amount-percentage-container">
+                <div className="amount-percentage-contents">
+                    <div className="percentage-box">
+                        <div className="data"></div>
+                    </div>
+                    <div className="percentage-figure">
+                        <h4>25%</h4>
+                    </div>
+                </div>
+                <div className="amount-percentage-contents">
+                    <div className="percentage-box">
+                        <div className="data"></div>
+                    </div>
+                    <div className="percentage-figure">
+                        <h4>50%</h4>
+                    </div>
+                </div>
+                <div className="amount-percentage-contents">
+                    <div className="percentage-box">
+                        <div className="data"></div>
+                    </div>
+                    <div className="percentage-figure">
+                        <h4>75%</h4>
+                    </div>
+                </div>
+                <div className="amount-percentage-contents">
+                    <div className="percentage-box">
+                        <div className="data"></div>
+                    </div>
+                    <div className="percentage-figure">
+                        <h4>100%</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div className="submit-btn-container">
             <div className="submit-btn">
                 <button type='submit'>Buy(ETH)</button>

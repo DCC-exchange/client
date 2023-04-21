@@ -26,3 +26,26 @@
 .select-market-trade-container .btn .active{
    color: #fff;
 }
+
+.amount-percentage{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+.amount-percentage-container{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.amount-percentage-contents{
+    font-size: #9999;
+    width: 100%;
+    font-weight: bold;
+}
+.percentage-box{
+    width: 100%;
+    height: 6px;
+    background: hsla(0,0%,60%,.17254901960784313);
+    border-radius: 2px;
+}

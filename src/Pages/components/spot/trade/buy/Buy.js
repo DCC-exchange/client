@@ -1,5 +1,6 @@
 import React, { useState} from 'react'
 import BuyLimit from '../trade/BuyLimit'
+import MarketPrice from '../trade/MarketPrice'
 
 export default function Buy() {
 
@@ -56,7 +57,7 @@ export default function Buy() {
                             </div>
                         </div> }
                 </div>
-                { defaultTrade && <BuyLimit /> }
+                { defaultTrade ? <BuyLimit />  : <MarketPrice />}
             </div>
         </div>
     </div>
