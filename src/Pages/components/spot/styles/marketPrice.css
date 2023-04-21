@@ -23,3 +23,23 @@
 .spot-display-market-price-contaniner .market-price-header .amount{
     width: 100%;
 }
+.sell-market-price{
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+}
+.sell-market-price-container{
+    display: flex;
+    width: 100%;
+    margin: 10px 15px ;
+}
+.sell-market-price-container .price-content{
+    width: 100%;
+    color: red;
+}
+.sell-market-price-container .amount-content{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+}

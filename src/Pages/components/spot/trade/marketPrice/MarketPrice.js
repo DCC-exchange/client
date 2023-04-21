@@ -15,7 +15,20 @@ export default function MarketPrice() {
         </div>
         <div className="sell-market-price">
             <div className="sell-market-price-container">
-
+                <div className="price-content">
+                    <h4>21.34</h4>
+                </div>
+                <div className="amount-content">
+                    <h4>271.64</h4>
+                </div>
+            </div>
+            <div className="sell-market-price-container">
+                <div className="price-content">
+                    <h4>21.34</h4>
+                </div>
+                <div className="amount-content">
+                    <h4>271.64</h4>
+                </div>
             </div>
         </div>
     </div>
