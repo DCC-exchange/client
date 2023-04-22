@@ -51,10 +51,10 @@ export default function CoinRoute({handleShowCoinSlide}) {
 
                 <div className="route-psa">
                     <div className="route-psa-container">
-                        <div onClick={()=>handleActive(1)} className={ActiveRoute1}>
+                        <div onClick={()=>handleActive(2)} className={ActiveRoute1}>
                             <h4>Favourite</h4>
                         </div>
-                        <div onClick={()=>handleActive(2)} className={ActiveRoute2} >
+                        <div onClick={()=>handleActive(1)} className={ActiveRoute2} >
                             <h4>All</h4>
                         </div>
                     </div>
