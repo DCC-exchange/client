@@ -7,9 +7,9 @@ import buyInActive from "../images/sellBtn.svg"
 import sellActive from "../images/ActiveSell.svg"
 import sellInActive from "../images/inactiveSell.svg"
 import { IoAddCircleOutline } from "react-icons/io5";
-import MarketPrice from '../trade/marketPrice/MarketPrice';
 import Buy from '../trade/buy/Buy';
 import Sell from '../trade/sell/Sell';
+import MarketPrice from '../trade/market/MarketPrice';
 
 export default function UsdtM() {
 
