@@ -15,8 +15,8 @@ export default function Favourite() {
             setActive1("coin")
             setActive2("fa")
         }else{
-            setActive2("fa")
-            setActive1("coin")
+            setActive2("coin")
+            setActive1("fa")
             setChangeRoute(true)
         }
     })
