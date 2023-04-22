@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Coins() {
+export default function CoinsM() {
   return (
     <div>Coins</div>
   )

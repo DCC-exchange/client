@@ -24,9 +24,8 @@ import Spot from "./Pages/components/spot/Spot";
 import Convert from "./Pages/components/spot/route/Convert";
 import SpotMarket from "./Pages/components/spot/route/SpotMarket";
 import Futures from "./Pages/components/futures/Futures";
-import Usdt from "./Pages/components/market/routes/conponents/Usdt";
-import Coins from "./Pages/components/futures/route/Coins";
-
+import UsdtM from "./Pages/components/futures/route/UsdtM";
+import CoinsM from "./Pages/components/futures/route/CoinsM";
 
 function App() {
 
@@ -55,9 +54,9 @@ function App() {
 
                 {/* Futures route */}
             <Route path="/futures" element={<Futures />}>
-                <Route index element={<Usdt />} />
-                <Route path="coin-m" element={<Coins />} />
-                <Route path="usdt-m" element={<Usdt />} />
+                <Route index element={<UsdtM />} />
+                <Route path="coin-m" element={<CoinsM />} />
+                <Route path="usdt-m" element={<UsdtM />} />
             </Route>
 
 

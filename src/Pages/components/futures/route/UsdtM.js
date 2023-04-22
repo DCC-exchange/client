@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function USDT() {
+export default function UsdtM() {
   return (
     <div>USDT</div>
   )
