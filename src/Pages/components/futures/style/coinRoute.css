@@ -79,5 +79,22 @@
     padding: 3px 10px;
     color: #999;
     margin: 2px 3px;
-
+    font-size: 14px;
+}
+.route-psa{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.route-psa-container{
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    color: #9999;
+    font-weight: bold;
+}
+.route-psa-container .favourite{
+ color: #fff;
+ font-weight: bold;
+ font-size: 12px;
 }

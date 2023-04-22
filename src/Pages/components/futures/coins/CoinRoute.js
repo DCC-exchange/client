@@ -1,12 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { RiCloseLine } from "react-icons/ri";
 import "../style/coinRoute.css"
 import { CgSearch } from "react-icons/cg";
+import All from './All';
+import Favourite from './Favourite';
 
 export default function CoinRoute({handleShowCoinSlide}) {
 
+    const [ ActiveRoute1, setActive1] = useState('favourite')
+    const [ ActiveRoute2, setActive2] = useState('favourite1')
+
+    const [ changeRoute, setChangeRoute ] = useState(true)
+
     const handleClear = (()=>{
         handleShowCoinSlide()
+    })
+
+    const handleActive = ((e)=>{
+        if(e === 1){
+            setChangeRoute(true)
+            setActive1("favourite")
+            setActive2("favourite1")
+        }else{
+            setActive2("favourite")
+            setActive1("favourite2")
+            setChangeRoute(false)
+        }
     })
 
   return (
@@ -28,6 +47,20 @@ export default function CoinRoute({handleShowCoinSlide}) {
                             <input type="text" placeholder='Search' />
                         </div>
                     </div>
+                </div>
+
+                <div className="route-psa">
+                    <div className="route-psa-container">
+                        <div onClick={()=>handleActive(1)} className={ActiveRoute1}>
+                            <h4>Favourite</h4>
+                        </div>
+                        <div onClick={()=>handleActive(2)} className={ActiveRoute2} >
+                            <h4>All</h4>
+                        </div>
+                    </div>
+                </div>
+                <div className="coin-drop">
+                    { changeRoute ? <All /> : <Favourite /> }
                 </div>
             </div>
         </div>
