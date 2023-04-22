@@ -10,6 +10,7 @@ import { IoAddCircleOutline } from "react-icons/io5";
 import Buy from '../trade/buy/Buy';
 import Sell from '../trade/sell/Sell';
 import MarketPrice from '../trade/market/MarketPrice';
+import CoinRoute from '../coins/CoinRoute';
 
 export default function UsdtM() {
 
@@ -33,13 +34,24 @@ export default function UsdtM() {
     }
   })
 
+  const [coinSlide, setCoinSlide] = useState(false)
+
+  const handleShowCoinSlide = (()=>{
+    if(coinSlide){
+      setCoinSlide(false)
+    }else{
+      setCoinSlide(true)
+    }
+  })
+
   return (
     <div className="spot-market">
+      { coinSlide && <CoinRoute handleShowCoinSlide={handleShowCoinSlide} /> }
     <div className="spot-market-container">
         <div className="coin-title">
           <div className="coin-title-container">
             <div className="slide-icon-container">
-              <div className="slide-icon">
+              <div className="slide-icon" onClick={handleShowCoinSlide}>
                     <h4><BiTransfer /></h4>
                 </div>
                 <div className="content-coin-name">

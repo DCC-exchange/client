@@ -2,12 +2,17 @@ import React from 'react'
 import { RiCloseLine } from "react-icons/ri";
 import "../style/coinRoute.css"
 
-export default function CoinRoute() {
+export default function CoinRoute({handleShowCoinSlide}) {
+
+    const handleClear = (()=>{
+        handleShowCoinSlide()
+    })
+
   return (
     <div className='coin-route'>
         <div className="coin-route-container">
             <div className="close">
-                <div className="close-container">
+                <div className="close-container" onClick={handleClear} >
                     <h3><RiCloseLine /></h3>
                 </div>
             </div>
