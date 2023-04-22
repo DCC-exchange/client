@@ -22,13 +22,13 @@ export default function ButtomNav() {
                 <h1><HiChartBar /></h1>
             </div>
         </NavLink>
-        <NavLink to="spot-trade/spot-market">
+        <NavLink to="futures/usdt-m">
           <div className="NavBar-display-main-flex3">
             <img src={spotImg} alt="copy logo" />
-            <h1>Spot</h1>
+            <h1>Futures</h1>
           </div>
         </NavLink>
-        <NavLink to="/hot">
+        <NavLink to="/spot-trade/spot-market">
             <div className="NavBar-display-main-flex1">
                 <h1><BiChart /></h1>
             </div>

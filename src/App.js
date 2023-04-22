@@ -23,7 +23,7 @@ import Future from "./Pages/components/market/routes/Future";
 import Spot from "./Pages/components/spot/Spot";
 import Convert from "./Pages/components/spot/route/Convert";
 import SpotMarket from "./Pages/components/spot/route/SpotMarket";
-// import TransferSelect from "./Pages/components/Wallet/overview/TransferSelect";
+import Futures from "./Pages/components/futures/Futures";
 
 
 function App() {
@@ -50,6 +50,12 @@ function App() {
                 <Route path="convert" element={<Convert />} />
                 <Route path="spot-market" element={<SpotMarket />} />
             </Route>
+
+                {/* Futures route */}
+            <Route path="/futures" element={<Futures />}>
+                
+            </Route>
+
 
             {/* Login route */}
               <Route path="/sign" element={<LoginSystem />}>
