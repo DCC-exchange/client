@@ -24,8 +24,8 @@ export default function ButtomNav() {
         </NavLink>
         <NavLink to="futures/usdt-m">
           <div className="NavBar-display-main-flex3">
-            <img src={spotImg} alt="copy logo" />
-            <h1>Futures</h1>
+              <img src={spotImg} alt="copy logo" />
+              <h1>Futures</h1>
           </div>
         </NavLink>
         <NavLink to="/spot-trade/spot-market">

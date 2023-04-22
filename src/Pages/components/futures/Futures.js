@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
-import "./styles/futures.css"
+import "./style/futures.css"
 
 export default function Futures() {
   return (
