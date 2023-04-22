@@ -2,7 +2,7 @@ import React from 'react';
 import './style/marketChart.css';
 import { BiArrowBack } from 'react-icons/bi'
 import { AiOutlineStar } from 'react-icons/ai'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Chart from "react-google-charts";
 import reload from "./images/Vector.png";
 
@@ -14,6 +14,8 @@ const MarketChart = () => {
       return 'color: red';
     }
   };
+  const location = useLocation();
+  const cryptoCoin = location.state;
 
   const data = [
     ['Day', 'a', 'b', 'c', 'd', { role: 'style' }],
@@ -31,7 +33,7 @@ const MarketChart = () => {
         <div className="flex heading_padding">
           <div className="flex_gap">
             <Link to="/market"><BiArrowBack className="back_arrow_icon" /></Link>
-            <p className="">BTC/USDT</p>
+            <p className="">{cryptoCoin.symbol}/USDT</p>
           </div>
           <div>
             <AiOutlineStar className="star_icon" />

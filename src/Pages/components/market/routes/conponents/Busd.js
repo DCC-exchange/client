@@ -22,7 +22,7 @@ export default function Busd() {
     { Coins && Coins.map((coin)=>(
        <div key={coin.id} className='name_last_flex_1_spot'>
        <div className='content-name'>
-          <Link to="/marketChart">
+          <Link state={coin} to="/marketChart">
             <h3>{ coin.symbol } <span className='spaner_spot'>/USD</span>
                 <span className='ten_spot'>10x</span>
             </h3>
