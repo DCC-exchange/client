@@ -18,13 +18,13 @@ export default function CoinRoute({handleShowCoinSlide}) {
 
     const handleActive = ((e)=>{
         if(e === 1){
-            setChangeRoute(true)
+            setChangeRoute(false)
             setActive1("favourite")
             setActive2("favourite1")
         }else{
             setActive2("favourite")
             setActive1("favourite2")
-            setChangeRoute(false)
+            setChangeRoute(true)
         }
     })
 
