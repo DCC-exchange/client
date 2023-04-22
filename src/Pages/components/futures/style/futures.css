@@ -13,7 +13,7 @@
     display: flex;
     width: 100%;
     margin: 0;
-    height: 90px;
+    height: 60px;
     justify-content: center;
     align-items: center;
 }
@@ -36,6 +36,7 @@
   background: linear-gradient(270deg, #8D0BA4 0%, #C66AD6 60.33%, #533E57 120.65%);
 }
 
+/* ======================================================== */
 .spot-market{
     padding: 20px 15px;
     border-radius: 30px 30px 0px 0px;
