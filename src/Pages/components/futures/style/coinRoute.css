@@ -1,11 +1,13 @@
 .coin-route{
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.452);
+    background: rgba(0,0,0,.452);
     padding: 0;
     margin: 0;
     position: fixed;
     z-index: 1287;
+    top: 0;
+    left: 0;
 }
 .coin-route-container{
     background: linear-gradient(196.08deg,#86228e .63%,#240426 76.25%);
@@ -15,11 +17,11 @@
     position: fixed;
     z-index: 1288;
     left: 0;
+    height: 100%;
     border-radius: 0 8px 0 8px;
 }
 .close{
     width: 100%;
-    position: relative;
 }
 .close-container{
     height: 18px;
@@ -33,7 +35,7 @@
     justify-content: center;
     font-size: 13px;
     top: 10px;
-    right: 1px;
+    right: 10px;
     background-color: hsla(0,0%,60%,.15294117647058825);
 }
 .coin-route-content{
@@ -43,9 +45,10 @@
     margin: 0;
 }
 .coin-route-content .heading{
-    color: #ffff;
-    font-size: 13px;
-    font-weight: bold;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 5px;
 }
 .coin-route .search-engine{
     width: 100%;
@@ -54,8 +57,8 @@
     position: relative;
 }
 .search-engine-container{
-    margin: 10px;
-    width: 92%;
+    margin: 15px 0px;
+    width: 100%;
 }
 .search-engine-content{
     background: rgba(0, 0, 0, 0.452);
@@ -69,8 +72,12 @@
    border: none;
    outline: none;
    padding: 4px;
+   color: #ffff;
 }
 
 .search-engine-content h4{
-    padding: 4px 10px;    
+    padding: 3px 10px;
+    color: #999;
+    margin: 2px 3px;
+
 }
