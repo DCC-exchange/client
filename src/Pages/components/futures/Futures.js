@@ -4,15 +4,17 @@ import "./style/futures.css"
 
 export default function Futures() {
   return (
-    <div className="spot-trade">
-        <div className="spot-trade-container">
-            <div className="spot-trade-navigation">
-                <NavLink to="usdt-m">
-                    <p>USDT-M</p>
-                </NavLink>
-                <NavLink to="coin-m">
-                    <p>COIN-M</p>
-                </NavLink>
+    <div className="futures-trade">
+        <div className="futures-trade-container">
+            <div className="futures-trade-navigation">
+                <div className="futures-trade-navigation-container">
+                    <NavLink to="usdt-m">
+                        <p>USDT-M</p>
+                    </NavLink>
+                    <NavLink to="coin-m">
+                        <p>COIN-M</p>
+                    </NavLink>
+                </div>
             </div>
             <Outlet />
         </div>
