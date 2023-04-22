@@ -1,6 +1,7 @@
 import React from 'react'
 import { RiCloseLine } from "react-icons/ri";
 import "../style/coinRoute.css"
+import { GrSearch } from "react-icons/gr";
 
 export default function CoinRoute({handleShowCoinSlide}) {
 
@@ -17,7 +18,17 @@ export default function CoinRoute({handleShowCoinSlide}) {
                 </div>
             </div>
             <div className="coin-route-content">
-                <h1>Futures</h1>
+                <div className="heading">
+                    <h1>Futures</h1>
+                </div>
+                <div className="search-engine">
+                    <div className="search-engine-container">
+                        <div className="search-engine-content">
+                            <h4><GrSearch /></h4>
+                            <input type="text" placeholder='Search' />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
