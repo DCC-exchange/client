@@ -15,8 +15,8 @@ export default function All() {
             setActive1("coin")
             setActive2("fa")
         }else{
-            setActive2("fa")
-            setActive1("coin")
+            setActive2("coin")
+            setActive1("ghj")
             setChangeRoute(true)
         }
     })
