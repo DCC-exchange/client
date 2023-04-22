@@ -99,3 +99,9 @@
  font-weight: bold;
  font-size: 12px;
 }
+.coin-drop{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}

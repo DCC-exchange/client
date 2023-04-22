@@ -7,8 +7,8 @@ import Favourite from './Favourite';
 
 export default function CoinRoute({handleShowCoinSlide}) {
 
-    const [ ActiveRoute1, setActive1] = useState('favourite')
-    const [ ActiveRoute2, setActive2] = useState('favourite1')
+    const [ ActiveRoute1, setActive1] = useState('favourite1')
+    const [ ActiveRoute2, setActive2] = useState('favourite')
 
     const [ changeRoute, setChangeRoute ] = useState(true)
 
