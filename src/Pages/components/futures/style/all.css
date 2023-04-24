@@ -5,7 +5,8 @@
     width: 100%;
 }
 .features-all-page-container{
-    font-size: 11px;
+    font-size: 7.5px;
+    color: #999;
 }
 .features-all-page-heading{
     display: flex;
