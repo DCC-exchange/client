@@ -1,10 +1,17 @@
 import React from 'react'
+import { MdOutlineContentPasteSearch} from "react-icons/md";
 
 export default function CoinM() {
   return (
     <div className='coin-drop-list'>
         <div className="coin-drop-list-container">
 
+            <div className="no-data">
+                <div className="no-data-container">
+                    <h4>No data</h4>
+                    <h4><MdOutlineContentPasteSearch /></h4>
+                </div>
+            </div>
 
             <div className="coin-drop-list-content">
                 <div className="image-name-container">
