@@ -92,9 +92,9 @@ export default function CoinsM() {
                 </div>
                 <div className="funding-container">
                     <div className="funding-content">
-                        <h4>Funding/Countdown</h4>
-                        <h4>------------------</h4>
-                        <h4><span>0.000045%/ 03:05:56</span></h4>
+                        <p>Funding/Countdown</p>
+                        <p>------------------</p>
+                        <p><span>0.000045%/ 03:05:56</span></p>
                     </div>
                 </div>
             </div>
