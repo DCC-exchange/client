@@ -218,3 +218,42 @@
     color: #fff;
     border-radius: 4px;
 }
+.cross-margin{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.cross-margin-container{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+}
+.leverage-container{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.leverage-container .cross-content{
+    background: #999;
+    padding: 3px 12px;
+}
+.leverage-container .cross-content h3{
+    color: #fff;
+    font-size: 11.23px;
+}
+.leverage-container .cross-content h3{
+    color: #fff;
+    font-size: 11.23px;
+}
+.leverage-container .cross-content h2{
+    color: #4d4d4d;
+    font-size: 11.23px;
+}
+.funding-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.funding-content{
+    font-size: 11.23px;
+}

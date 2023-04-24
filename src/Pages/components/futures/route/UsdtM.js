@@ -12,6 +12,8 @@ import Sell from '../trade/sell/Sell';
 import MarketPrice from '../trade/market/MarketPrice';
 import CoinRoute from '../coins/CoinRoute';
 
+import { RxTriangleDown } from "react-icons/rx";
+
 export default function UsdtM() {
 
   const [ buyState, setBuyState ] = useState(true)
@@ -75,6 +77,29 @@ export default function UsdtM() {
               </div>
           </div>
         </div>
+
+        <div className="cross-margin">
+            <div className="cross-margin-container">
+                <div className="leverage-container">
+                    <div className="cross-content">
+                        <h3>Cross</h3>
+                        <h2><RxTriangleDown /></h2>
+                    </div>
+                    <div className="cross-content">
+                        <h3>5X</h3>
+                        <h2><RxTriangleDown /></h2>
+                    </div>
+                </div>
+                <div className="funding-container">
+                    <div className="funding-content">
+                        <h4>Funding/Countdown</h4>
+                        <h4>------------------</h4>
+                        <h4><span>0.000045%/ 03:05:56</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div className="spot-trading-contaent">
             <div className="spot-buy-contents">
             { buyState ?  
