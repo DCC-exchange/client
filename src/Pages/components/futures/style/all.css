@@ -28,8 +28,12 @@
 .search-coin-wrap-header-content{
     display: flex;
     width: 100%;
-    color: #9999;
+    color: hsla(0,0%,60%,.6);
     font-size: 11px;
+    border-top: 1px solid #ffffff14;
+    padding: 10px 0px;
+    margin-top: 10px;
+    font-weight: 900;
 }
 .search-coin-wrap-header-content .price{
     display: flex;
@@ -38,4 +42,44 @@
 }
 .search-coin-wrap-header-content .name{
    width: 100%;
+}
+
+.coin-drop-list{
+    padding: 0;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+.coin-drop-list-container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+}
+.coin-drop-list-content{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    margin: 0;
+}
+.coin-drop-list-content .image-name-container{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    gap: 10px;
+}
+.image-name-container .image img{
+    width: 20px;
+    height: 20px;
+}
+.image-name-container .image{
+    width: 20px;
+    height: 20px;
+}
+.coin-drop-list-content .lastprice-container{
+    padding: 1px;
+    margin: 0;
+    width: 100%;
+    justify-content: end;
 }
