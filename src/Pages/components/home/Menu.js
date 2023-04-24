@@ -67,7 +67,7 @@ export default function Menu({cancel}) {
           <h1 className="title">Welcome to DCC Exchange</h1>
         </div>
         <div className="user_info">
-          <img src={userPhoto} alt="user_photo" />
+          <img className="userPhoto" src={userPhoto} alt="user_photo" />
           <div className="username_id">
             <p>John Doe</p>
             <span>wuidp984579hj38769df87875</span>
