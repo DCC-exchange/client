@@ -111,8 +111,9 @@
     align-items: center;
     height: 300px;
     color: #999;
+    text-align: center;
     font-size: 13px;
 }
 .no-data-content h3{
-    font-size: 20px;
+    font-size: 55px;
 }

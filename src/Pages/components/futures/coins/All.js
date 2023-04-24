@@ -4,8 +4,8 @@ import CoinM from './route/CoinM'
 
 export default function All() {
 
-    const [ ActiveRoute1, setActive1] = useState('coin')
-    const [ ActiveRoute2, setActive2] = useState('fave')
+    const [ ActiveRoute1, setActive1] = useState('rew')
+    const [ ActiveRoute2, setActive2] = useState('coin')
 
     const [ changeRoute , setChangeRoute ] = useState(true)
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import UsdtM from './route/UsdtM'
-import CoinM from './route/CoinM'
+import FavouriteCoin from './route/favourite/FavouriteCoin'
+import FavouriteUsdt from './route/favourite/FavouriteUsdt'
 
 export default function Favourite() {
 
@@ -44,7 +44,7 @@ export default function Favourite() {
                             </div>
                         </div>
                     </div>
-                      {  changeRoute ? <CoinM /> : <UsdtM />  }
+                      {  changeRoute ? <FavouriteCoin /> : <FavouriteUsdt />  }
                 </div>
             </div>
         </div>
