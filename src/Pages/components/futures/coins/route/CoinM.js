@@ -1336,8 +1336,6 @@ export default function CoinM() {
                     </div>
                 </div>
             </div>
-            
-
 
         </div>
     </div>

@@ -11,13 +11,13 @@ export default function Favourite() {
 
     const handleActive = ((e)=>{
         if(e === 1){
-            setChangeRoute(false)
+            setChangeRoute(true)
             setActive1("coin")
             setActive2("fa")
         }else{
             setActive2("coin")
             setActive1("fa")
-            setChangeRoute(true)
+            setChangeRoute(false)
         }
     })
 
@@ -44,7 +44,7 @@ export default function Favourite() {
                             </div>
                         </div>
                     </div>
-                      {  changeRoute ? <UsdtM /> : <CoinM /> }
+                      {  changeRoute ? <CoinM /> : <UsdtM />  }
                 </div>
             </div>
         </div>
