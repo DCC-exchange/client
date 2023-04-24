@@ -80,6 +80,8 @@
 .coin-drop-list-content .lastprice-container{
     padding: 1px;
     margin: 0;
+    display: flex;
     width: 100%;
     justify-content: end;
+    gap: 10px;
 }
