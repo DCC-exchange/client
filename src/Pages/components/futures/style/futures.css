@@ -307,11 +307,13 @@
     width: 100%;
     text-align: center;
     font-size: 11.234px;
-    color: #9999;
+    color: hsla(0,0%,60%,.6);
+    padding: 5px;
 }
 .amount-display-content{
     width: 100%;
     text-align: center;
     font-size: 11.234px;
     color: #fff;
+    padding: 5px;
 }
