@@ -64,11 +64,13 @@ export default function BuyLimit() {
 
     const [ StopLost, setStopLost ] = useState(false)
 
-    const handleStopLost = (()=>{
-        if(StopLost){
-            setStopLost(false)
-        }else{
-            setStopLost(true)
+    const handleStopLost = ((e)=>{
+        if(e === "tp"){
+            if(StopLost){
+                setStopLost(false)
+            }else{
+                setStopLost(true)
+            }
         }
     })
 

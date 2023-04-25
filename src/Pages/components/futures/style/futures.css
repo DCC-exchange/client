@@ -203,12 +203,12 @@
 .market-limit-btn-container .input input::placeholder{
    color: #9999;
 }
-.submit-btn-container{
+.market-limit .submit-btn-container{
     color: #fff;
     display: flex;
     cursor: pointer;
     width: 100%;
-    margin: 25px 0px 0px 0px ;
+    margin: 0px;
 }
 .submit-btn-container .submit-btn button{
     border: none;
