@@ -13,6 +13,7 @@ import MarketPrice from '../trade/market/MarketPrice';
 import CoinRoute from '../coins/CoinRoute';
 
 import { RxTriangleDown } from "react-icons/rx";
+import Index from '../trade/position/Index';
 
 export default function UsdtM() {
 
@@ -141,6 +142,7 @@ export default function UsdtM() {
             </div>
               <MarketPrice />
         </div>
+        <Index />
     </div>
 </div>
   )
