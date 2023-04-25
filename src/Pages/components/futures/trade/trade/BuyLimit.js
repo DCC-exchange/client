@@ -62,10 +62,14 @@ export default function BuyLimit() {
         }
     })
 
-    // const [ StopLost, setStopLost ] = useState(false)
+    const [ StopLost, setStopLost ] = useState(false)
 
     const handleStopLost = (()=>{
-        
+        if(StopLost){
+            setStopLost(false)
+        }else{
+            setStopLost(true)
+        }
     })
 
   return (
@@ -128,12 +132,13 @@ export default function BuyLimit() {
         </div>
 
             <div className="set-stoplost">
-                <div className="set-stoplost-container">
+                <div className={ StopLost ? "active" : "set-stoplost-container" }>
                     <h3 onClick={()=>handleStopLost("tp")} ><HiCheckBadge /></h3>
                     <h4>TP/SL</h4>
                 </div>
             </div>
-            <div className="stop-lose">
+
+            { StopLost &&  <div className="stop-lose">
                 <div className="stop-lose-container">
                     <div className="tp-content">
                         <input type="text" placeholder='TP' />
@@ -142,7 +147,8 @@ export default function BuyLimit() {
                         <input type="text" placeholder='SL' />
                     </div>
                 </div>
-            </div>
+            </div> }
+          
 
             <div className="set-stoplost">
                 <div className="set-stoplost-container">
@@ -150,6 +156,28 @@ export default function BuyLimit() {
                     <h4>Reduce only</h4>
                 </div>
             </div>
+
+            <div className="max-margin">
+                <div className="max-magin-container">
+                    <div className="max-margin-content">
+                        <div className="name-tag">
+                            <h3>Max</h3>
+                        </div>
+                        <div className="coin-price-tag">
+                            <h3> 0 USDT</h3>
+                        </div>
+                    </div>
+                    <div className="max-margin-content">
+                        <div className="name-tag">
+                            <h3>Max</h3>
+                        </div>
+                        <div className="coin-price-tag">
+                            <h3> 0 USDT</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         <div className="submit-btn-container">
             <div className="submit-btn">
