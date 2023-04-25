@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { TbSquareRotated } from "react-icons/tb";
+import { HiCheckBadge } from "react-icons/hi2";
 
 export default function BuyLimit() {
 
@@ -119,6 +120,21 @@ export default function BuyLimit() {
                 </div>
             </div>
         </div>
+
+            <div className="set-stoplost">
+                <div className="set-stoplost-container">
+                    <h4><HiCheckBadge /></h4>
+                    <h4>TP/SL</h4>
+                </div>
+            </div>
+
+            <div className="set-stoplost">
+                <div className="set-stoplost-container">
+                    <h3><HiCheckBadge /></h3>
+                    <h4>TP/SL</h4>
+                </div>
+            </div>
+
         <div className="submit-btn-container">
             <div className="submit-btn">
                 <button type='submit'>Buy(ETH)</button>

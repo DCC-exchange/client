@@ -329,3 +329,21 @@
     color: #fff;
     padding: 5px;
 }
+
+/* ========================================================== */
+.set-stoplost{
+    width: 100%;
+    color: #9999;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 10px;
+    margin: 5px 0px;
+}
+.set-stoplost-container{
+    display: flex;
+    gap: 10px;
+}
+
+.set-stoplost-container h3{
+   font-size: 15px;
+}
