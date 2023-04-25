@@ -342,6 +342,10 @@
     display: flex;
     gap: 10px;
 }
+.set-stoplost .active{
+    display: flex;
+    gap: 10px;
+}
 
 .set-stoplost .active h3{
     color: yellow;
@@ -404,13 +408,13 @@
     width: 100%;
     color: #999;
     font-weight: 800;
-    font-size: 11px;
+    font-size: 8.6px;
  }
  .max-margin-content .coin-price-tag{
     width: 100%;
     color: #fff;
     font-weight: 800;
-    font-size: 11px;
+    font-size: 8.6px;
     display: flex;
     justify-content: end;
  }
