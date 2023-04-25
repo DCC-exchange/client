@@ -226,6 +226,7 @@
 .cross-margin-container{
     display: flex;
     width: 100%;
+    border-bottom: 1px solid #ffffff14;
     padding: 5px;
 }
 .leverage-container{
@@ -261,8 +262,27 @@
     display: flex;
     justify-content: end;
 }
-.funding-content{
+.funding-container .funding-content{
     font-size: 7px;
     color: #999;
 
+}
+
+
+/* =============================================================== */
+
+.futures-percent{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.futures-percent-container{
+    display: flex;
+    color: #9999;
+    font-size: 15px;
+}
+.future-percent-content .connection{
+    height: 15px;
+    width: 60px;
+    background: #999;
 }

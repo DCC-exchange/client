@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { TbSquareRotated } from "react-icons/tb";
 
 export default function BuyLimit() {
 
@@ -61,35 +62,27 @@ export default function BuyLimit() {
                 <h4>+</h4>
             </div>
         </div>
-        <div className="amount-percentage">
-            <div className="amount-percentage-container">
-                <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(25)} >
-                    <div className={percentActive1}>
-                    </div>
-                    <div className="percentage-figure">
-                        <h4>25%</h4>
-                    </div>
+
+        <div className="futures-percent">
+            <div className="futures-percent-container">
+                <div onClick={()=>SetPercentageActive(0)} className="future-percent-content">
+                    <h3><TbSquareRotated /></h3>
                 </div>
-                <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(50)}>
-                    <div className={percentActive2}>
-                    </div>
-                    <div className="percentage-figure">
-                        <h4>50%</h4>
-                    </div>
+                <div onClick={()=>SetPercentageActive(25)} className="future-percent-content">
+                    <div className="connection"></div>
+                    <h3><TbSquareRotated /></h3>
                 </div>
-                <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(75)} >
-                    <div className={percentActive3}>
-                    </div>
-                    <div className="percentage-figure">
-                        <h4>75%</h4>
-                    </div>
+                <div onClick={()=>SetPercentageActive(50)} className="future-percent-content">
+                    <div className="connection"></div>
+                    <h3><TbSquareRotated /></h3>
                 </div>
-                <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(100)}>
-                    <div className={percentActive4}>
-                    </div>
-                    <div className="percentage-figure">
-                        <h4>100%</h4>
-                    </div>
+                <div onClick={()=>SetPercentageActive(75)} className="future-percent-content">
+                    <div className="connection"></div>
+                    <h3><TbSquareRotated /></h3>
+                </div>
+                <div onClick={()=>SetPercentageActive(100)} className="future-percent-content">
+                    <div className="connection"></div>
+                    <h3><TbSquareRotated /></h3>
                 </div>
             </div>
         </div>
