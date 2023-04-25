@@ -178,7 +178,7 @@ export default function SellMarket() {
 
         <div className="submit-btn-container">
             <div className="submit-btn">
-                <button type='submit'>Buy/Long</button>
+                <button type='submit'>Sell/Short</button>
             </div>
         </div>
         <div className="time-in-force">

@@ -2,7 +2,6 @@ import React, { useState} from 'react'
 import SellLimit from './SellLimit'
 import SellMarket from './SellMarket'
 
-
 export default function Buy() {
 
     const [ defaultTrade, setDefaultTrade ] = useState(true)
