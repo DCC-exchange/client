@@ -142,8 +142,9 @@ export default function CoinsM() {
             </div>
               <MarketPrice />
         </div>
-          <Index />
     </div>
+    <h3>hello</h3>
+    <Index />
 </div>
   )
 }
