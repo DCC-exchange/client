@@ -281,6 +281,9 @@
     color: #9999;
     font-size: 15px;
 }
+.futures-percent-container .future-percent-content{
+    display: flex;
+}
 .future-percent-content .connection{
     height: 15px;
     width: 60px;
