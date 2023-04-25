@@ -183,7 +183,19 @@ export default function BuyLimit() {
 
         <div className="submit-btn-container">
             <div className="submit-btn">
-                <button type='submit'>Buy(ETH)</button>
+                <button type='submit'>Buy/Long</button>
+            </div>
+        </div>
+        <div className="time-in-force">
+            <div className="time-in-force-container">
+                <div className="time-in-force-content">
+                    <div className="topic">
+                        <h4>Time In Force (TIF) </h4>
+                    </div>
+                    <div className="btn">
+                        <h4>GTC</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
