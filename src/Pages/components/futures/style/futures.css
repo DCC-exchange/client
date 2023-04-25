@@ -284,6 +284,18 @@
 .futures-percent-container .future-percent-content{
     display: flex;
     font-size: 10.5px;
+    color: #9999;
+}
+.futures-percent-container .future-percent-contents{
+    display: flex;
+    font-size: 10.5px;
+    color: yellow;
+}
+.future-percent-contents .connection{
+    height: 3px;
+    width: 36px;
+    background: yellow;
+    margin-top: 5px;
 }
 .future-percent-content .connection{
     height: 3px;

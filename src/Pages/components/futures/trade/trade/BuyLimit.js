@@ -17,37 +17,37 @@ export default function BuyLimit() {
 
     const SetPercentageActive = ((e)=>{
         if(e === 0){
-            setPercentActive("percentage-box-buy")
-            setPercentActive1('percentage-boxEl')
-            setPercentActive2('percentage-boxEl')
-            setPercentActive3('percentage-boxEl')
-            setPercentActive4('percentage-boxEl')
+            setPercentActive("future-percent-contents")
+            setPercentActive1('future-percent-content')
+            setPercentActive2('future-percent-content')
+            setPercentActive3('future-percent-content')
+            setPercentActive4('future-percent-content')
         }
         else if(e === 25){
-            setPercentActive("percentage-box-buy")
-            setPercentActive1("percentage-box-buy")
-            setPercentActive2('percentage-boxEl')
-            setPercentActive3('percentage-boxEl')
-            setPercentActive4('percentage-boxEl')
+            setPercentActive("future-percent-contents")
+            setPercentActive1("future-percent-contents")
+            setPercentActive2('future-percent-content')
+            setPercentActive3('future-percent-content')
+            setPercentActive4('future-percent-content')
         }else if( e === 50){
-            setPercentActive("percentage-box-buy")
-            setPercentActive1("percentage-box-buy")
-            setPercentActive2('percentage-box-buy')
-            setPercentActive3('percentage-boxEl')
-            setPercentActive4('percentage-boxEl')
+            setPercentActive("future-percent-contents")
+            setPercentActive1("future-percent-contents")
+            setPercentActive2('future-percent-contents')
+            setPercentActive3('future-percent-content')
+            setPercentActive4('future-percent-content')
         }
         else if( e === 75){
-            setPercentActive("percentage-box-buy")
-            setPercentActive1("percentage-box-buy")
-            setPercentActive2('percentage-box-buy')
-            setPercentActive3('percentage-box-buy')
-            setPercentActive4('percentage-boxEl')
+            setPercentActive("future-percent-contents")
+            setPercentActive1("future-percent-contents")
+            setPercentActive2('future-percent-contents')
+            setPercentActive3('future-percent-contents')
+            setPercentActive4('future-percent-content')
         }else{
-            setPercentActive("percentage-box-buy")
-            setPercentActive1("percentage-box-buy")
-            setPercentActive2('percentage-box-buy')
-            setPercentActive3('percentage-box-buy')
-            setPercentActive4('percentage-box-buy')
+            setPercentActive("future-percent-contents")
+            setPercentActive1("future-percent-contents")
+            setPercentActive2('future-percent-contents')
+            setPercentActive3('future-percent-contents')
+            setPercentActive4('future-percent-contents')
         }
     })
 
