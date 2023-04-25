@@ -62,6 +62,12 @@ export default function BuyLimit() {
         }
     })
 
+    const [ StopLost, setStopLost ] = useState(false)
+
+    const handleStopLost = (()=>{
+        
+    })
+
   return (
     <div className="market-limit">
         <div className="market-limit-btn-container">
@@ -123,15 +129,25 @@ export default function BuyLimit() {
 
             <div className="set-stoplost">
                 <div className="set-stoplost-container">
-                    <h4><HiCheckBadge /></h4>
+                    <h3 onClick={()=>handleStopLost("tp")} ><HiCheckBadge /></h3>
                     <h4>TP/SL</h4>
+                </div>
+            </div>
+            <div className="stop-lose">
+                <div className="stop-lose-container">
+                    <div className="tp-content">
+                        <input type="text" placeholder='TP' />
+                    </div>
+                    <div className="tp-content">
+                        <input type="text" placeholder='SL' />
+                    </div>
                 </div>
             </div>
 
             <div className="set-stoplost">
                 <div className="set-stoplost-container">
-                    <h3><HiCheckBadge /></h3>
-                    <h4>TP/SL</h4>
+                    <h3 onClick={()=>handleStopLost("reduce")} ><HiCheckBadge /></h3>
+                    <h4>Reduce only</h4>
                 </div>
             </div>
 
