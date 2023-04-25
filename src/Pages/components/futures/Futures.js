@@ -3,7 +3,6 @@ import { NavLink, Outlet } from 'react-router-dom'
 import "./style/futures.css"
 import "./style/all.css"
 import "./style/position.css"
-import Index from './trade/position/Index'
 
 export default function Futures() {
   return (
@@ -20,7 +19,6 @@ export default function Futures() {
                 </div>
             </div>
             <Outlet />
-            <Index />
         </div>
     </div>
   )

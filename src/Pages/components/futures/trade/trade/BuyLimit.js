@@ -107,7 +107,6 @@ export default function BuyLimit() {
                 <h4>+</h4>
             </div>
         </div>
-
         <div className="futures-percent">
             <div className="futures-percent-container">
                 <div onClick={()=>SetPercentageActive(0)} className={percentActive}>
@@ -150,7 +149,6 @@ export default function BuyLimit() {
                 </div>
             </div> }
           
-
             <div className="set-stoplost">
                 <div className="set-stoplost-container">
                     <h3 onClick={()=>handleStopLost("reduce")} ><HiCheckBadge /></h3>
