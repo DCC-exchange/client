@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { TbSquareRotated } from "react-icons/tb";
 import { HiCheckBadge } from "react-icons/hi2";
+import Index from '../position/Index';
 
 export default function BuyLimit() {
 
@@ -198,6 +199,7 @@ export default function BuyLimit() {
                 </div>
             </div>
         </div>
+        <Index />
     </div>
   )
 }
