@@ -1,198 +1,64 @@
-import React, {useState} from 'react'
-import { TbSquareRotated } from "react-icons/tb";
-import { HiCheckBadge } from "react-icons/hi2";
-export default function Sell() {
+import React, { useState} from 'react'
+import SellLimit from './SellLimit'
+import SellMarket from './SellMarket'
 
-    const [ marketPrice, setMarketPrice ] = useState(46.78)
-    const [ TradeAmount, setTradeAmount ] = useState("")
 
-    const [ switchFirst, setSwitchFirst ] = useState("amount-display-content")
-    const [ switchSecond, setSwitchSecond ] = useState("amount-display-contents")
+export default function Buy() {
 
-    const [ percentActive, setPercentActive ] = useState("future-percent-content")
-    const [ percentActive1, setPercentActive1 ] = useState("future-percent-content")
-    const [ percentActive2, setPercentActive2 ] = useState("future-percent-content")
-    const [ percentActive3, setPercentActive3 ] = useState("future-percent-content")
-    const [ percentActive4, setPercentActive4 ] = useState("future-percent-content")
+    const [ defaultTrade, setDefaultTrade ] = useState(true)
+    const [ displayLimit, setDisplayLimit ] = useState(false)
 
-    const SetPercentageActive = ((e)=>{
-        if(e === 0){
-            setPercentActive("future-percent-contents")
-            setPercentActive1('future-percent-content')
-            setPercentActive2('future-percent-content')
-            setPercentActive3('future-percent-content')
-            setPercentActive4('future-percent-content')
-        }
-        else if(e === 25){
-            setPercentActive("future-percent-contents")
-            setPercentActive1("future-percent-contents")
-            setPercentActive2('future-percent-content')
-            setPercentActive3('future-percent-content')
-            setPercentActive4('future-percent-content')
-        }else if( e === 50){
-            setPercentActive("future-percent-contents")
-            setPercentActive1("future-percent-contents")
-            setPercentActive2('future-percent-contents')
-            setPercentActive3('future-percent-content')
-            setPercentActive4('future-percent-content')
-        }
-        else if( e === 75){
-            setPercentActive("future-percent-contents")
-            setPercentActive1("future-percent-contents")
-            setPercentActive2('future-percent-contents')
-            setPercentActive3('future-percent-contents')
-            setPercentActive4('future-percent-content')
+    const [ defaultState, setDefaultState ] = useState("Limit")
+
+    const [ active1, setActive1 ] = useState('active')
+    const [ active2, setActive2] = useState("")
+
+    const handleTradeLimit = ((e)=>{
+        setDisplayLimit(false)
+        if(e === "limit"){
+            setDefaultTrade(true)
+            setActive1("active")
+            setDefaultState("Limit")
+            setActive2("")
         }else{
-            setPercentActive("future-percent-contents")
-            setPercentActive1("future-percent-contents")
-            setPercentActive2('future-percent-contents')
-            setPercentActive3('future-percent-contents')
-            setPercentActive4('future-percent-contents')
+            setDefaultTrade(false)
+            setActive2("active")
+            setActive1("")
+            setDefaultState("Market")
         }
     })
-
-    const SwitchAmount = ((e)=>{
-        if(e === 1){
-            setSwitchFirst('amount-display-content')
-            setSwitchSecond("amount-display-contents")
+    const handleDisplayTradeLimit = (()=>{
+        if(displayLimit){
+            setDisplayLimit(false)
         }else{
-            setSwitchSecond("amount-display-content")
-            setSwitchFirst("amount-display-contents")
-        }
-    })
-
-    const [ StopLost, setStopLost ] = useState(false)
-
-    const handleStopLost = ((e)=>{
-        if(e === "tp"){
-            if(StopLost){
-                setStopLost(false)
-            }else{
-                setStopLost(true)
-            }
+            setDisplayLimit(true)
         }
     })
 
   return (
-    <div className="market-limit">
-        <div className="market-limit-btn-container">
-            <div className="icon" onClick={()=>setMarketPrice(marketPrice + 0.1)}>
-                <h4>-</h4>
-            </div>
-            <div className="input">
-                <input type="number" value={marketPrice} onChange={(e)=> setMarketPrice(e.target.value)} placeholder='Market Price'  />
-            </div>
-            <div className="icon" onClick={()=>setMarketPrice(marketPrice - 0.1)}>
-                <h4>+</h4>
-            </div>
-        </div>
-        <div className="amount-display">
-            <div className="amount-display-container">
-                <div onClick={()=>SwitchAmount(1)} className={switchFirst}>
-                    <h4>Matic</h4>
-                </div>
-                <div onClick={()=>SwitchAmount(2)} className={switchSecond}>
-                    <h4>USDT</h4>
-                </div>
-            </div>
-        </div>
-        <div className="market-limit-btn-container">
-            <div className="icon" onClick={()=> setTradeAmount(TradeAmount + 0.1)}>
-                <h4>-</h4>
-            </div>
-            <div className="input">
-                <input type="number" value={TradeAmount} onChange={(e)=> setTradeAmount(e.target.value)} placeholder={"Amount"}  />
-            </div>
-            <div className="icon" onClick={()=>setTradeAmount(TradeAmount - 0.1)}>
-                <h4>+</h4>
-            </div>
-        </div>
-        <div className="futures-percent">
-            <div className="futures-percent-container">
-                <div onClick={()=>SetPercentageActive(0)} className={percentActive}>
-                    <h3><TbSquareRotated /></h3>
-                </div>
-                <div onClick={()=>SetPercentageActive(25)} className={percentActive1}>
-                    <div className="connection"></div>
-                    <h3><TbSquareRotated /></h3>
-                </div>
-                <div onClick={()=>SetPercentageActive(50)} className={percentActive2}>
-                    <div className="connection"></div>
-                    <h3><TbSquareRotated /></h3>
-                </div>
-                <div onClick={()=>SetPercentageActive(75)} className={percentActive3}>
-                    <div className="connection"></div>
-                    <h3><TbSquareRotated /></h3>
-                </div>
-                <div onClick={()=>SetPercentageActive(100)} className={percentActive4}>
-                    <div className="connection"></div>
-                    <h3><TbSquareRotated /></h3>
-                </div>
-            </div>
-        </div>
-
-            <div className="set-stoplost">
-                <div className={ StopLost ? "active" : "set-stoplost-container" }>
-                    <h3 onClick={()=>handleStopLost("tp")} ><HiCheckBadge /></h3>
-                    <h4>TP/SL</h4>
-                </div>
-            </div>
-
-            { StopLost &&  <div className="stop-lose">
-                <div className="stop-lose-container">
-                    <div className="tp-content">
-                        <input type="text" placeholder='TP' />
-                    </div>
-                    <div className="tp-content">
-                        <input type="text" placeholder='SL' />
-                    </div>
-                </div>
-            </div> }
-          
-            <div className="set-stoplost">
-                <div className="set-stoplost-container">
-                    <h3 onClick={()=>handleStopLost("reduce")} ><HiCheckBadge /></h3>
-                    <h4>Reduce only</h4>
-                </div>
-            </div>
-
-            <div className="max-margin">
-                <div className="max-magin-container">
-                    <div className="max-margin-content">
-                        <div className="name-tag">
-                            <h3>Max</h3>
-                        </div>
-                        <div className="coin-price-tag">
-                            <h3> 0 USDT</h3>
+    <div className="buy-limit">
+        <div className="buy-limit-container">
+            <div className="market-limit-btn">
+                <div className="market-limit-btn-container">
+                    <div className="icon"></div>
+                    <div className="btn-container">
+                        <div className="btn" onClick={handleDisplayTradeLimit}>
+                            <button>{defaultState}</button>
                         </div>
                     </div>
-                    <div className="max-margin-content">
-                        <div className="name-tag">
-                            <h3>Max</h3>
-                        </div>
-                        <div className="coin-price-tag">
-                            <h3> 0 USDT</h3>
-                        </div>
-                    </div>
+                    <div className="icon"></div>
+                    { displayLimit && <div className="select-market-trade">
+                            <div className="select-market-trade-container">
+                                <div className="btn" onClick={()=>handleTradeLimit("limit")}>
+                                    <p className={active1}>Limit</p>
+                                </div>
+                                <div className="btn" onClick={()=>handleTradeLimit("market")}>
+                                    <p className={active2}>Market</p>
+                                </div>
+                            </div>
+                        </div> }
                 </div>
-            </div>
-
-
-        <div className="submit-btn-container">
-            <div className="submit-btn">
-                <button type='submit'>Sell/Short</button>
-            </div>
-        </div>
-        <div className="time-in-force">
-            <div className="time-in-force-container">
-                <div className="time-in-force-content">
-                    <div className="topic">
-                        <h4>Time In Force (TIF) </h4>
-                    </div>
-                    <div className="btn">
-                        <h4>GTC</h4>
-                    </div>
-                </div>
+                { defaultTrade ? <SellLimit />  : <SellMarket />}
             </div>
         </div>
     </div>

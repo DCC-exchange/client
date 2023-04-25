@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import { TbSquareRotated } from "react-icons/tb";
 import { HiCheckBadge } from "react-icons/hi2";
-
-export default function SellMarket() {
-
+export default function SellLimit() {
+ 
+    const [ marketPrice, setMarketPrice ] = useState(46.78)
     const [ TradeAmount, setTradeAmount ] = useState("")
 
     const [ switchFirst, setSwitchFirst ] = useState("amount-display-content")
@@ -76,14 +76,16 @@ export default function SellMarket() {
   return (
     <div className="market-limit">
         <div className="market-limit-btn-container">
-        <div className="icon">
-        </div>
-            <div className="btn">
-            <button>Market Price</button>
+            <div className="icon" onClick={()=>setMarketPrice(marketPrice + 0.1)}>
+                <h4>-</h4>
             </div>
-        <div className="icon">
+            <div className="input">
+                <input type="number" value={marketPrice} onChange={(e)=> setMarketPrice(e.target.value)} placeholder='Market Price'  />
+            </div>
+            <div className="icon" onClick={()=>setMarketPrice(marketPrice - 0.1)}>
+                <h4>+</h4>
+            </div>
         </div>
-    </div>
         <div className="amount-display">
             <div className="amount-display-container">
                 <div onClick={()=>SwitchAmount(1)} className={switchFirst}>
