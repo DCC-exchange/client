@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
 import { TbSquareRotated } from "react-icons/tb";
 import { HiCheckBadge } from "react-icons/hi2";
-import Index from '../position/Index';
-
 export default function BuyLimit() {
 
     const [ marketPrice, setMarketPrice ] = useState(46.78)
