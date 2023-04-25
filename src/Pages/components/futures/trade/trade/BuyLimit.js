@@ -199,7 +199,6 @@ export default function BuyLimit() {
                 </div>
             </div>
         </div>
-        <Index />
     </div>
   )
 }
