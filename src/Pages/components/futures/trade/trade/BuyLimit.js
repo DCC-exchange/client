@@ -6,7 +6,8 @@ export default function BuyLimit() {
     const [ marketPrice, setMarketPrice ] = useState(46.78)
     const [ TradeAmount, setTradeAmount ] = useState("")
 
-    const [TotalAmount, setTotalAmount] = useState('')
+    const [ switchFirst, setSwitchFirst ] = useState("amount-display-content")
+    const [ switchSecond, setSwitchSecond ] = useState("amount-display-contents")
 
     const [ percentActive, setPercentActive ] = useState("future-percent-content")
     const [ percentActive1, setPercentActive1 ] = useState("future-percent-content")
@@ -50,6 +51,16 @@ export default function BuyLimit() {
         }
     })
 
+    const SwitchAmount = ((e)=>{
+        if(e === 1){
+            setSwitchFirst('amount-display-content')
+            setSwitchSecond("amount-display-contents")
+        }else{
+            setSwitchSecond("amount-display-content")
+            setSwitchFirst("amount-display-contents")
+        }
+    })
+
   return (
     <div className="market-limit">
         <div className="market-limit-btn-container">
@@ -63,12 +74,22 @@ export default function BuyLimit() {
                 <h4>+</h4>
             </div>
         </div>
+        <div className="amount-display">
+            <div className="amount-display-container">
+                <div onClick={()=>SwitchAmount(1)} className={switchFirst}>
+                    <h4>Matic</h4>
+                </div>
+                <div onClick={()=>SwitchAmount(2)} className={switchSecond}>
+                    <h4>USDT</h4>
+                </div>
+            </div>
+        </div>
         <div className="market-limit-btn-container">
             <div className="icon" onClick={()=> setTradeAmount(TradeAmount + 0.1)}>
                 <h4>-</h4>
             </div>
             <div className="input">
-                <input type="number" value={TradeAmount} onChange={(e)=> setTradeAmount(e.target.value)} placeholder='Amount(ETH)'  />
+                <input type="number" value={TradeAmount} onChange={(e)=> setTradeAmount(e.target.value)} placeholder={"Amount"}  />
             </div>
             <div className="icon" onClick={()=>setTradeAmount(TradeAmount - 0.1)}>
                 <h4>+</h4>
@@ -95,28 +116,6 @@ export default function BuyLimit() {
                 <div onClick={()=>SetPercentageActive(100)} className={percentActive4}>
                     <div className="connection"></div>
                     <h3><TbSquareRotated /></h3>
-                </div>
-            </div>
-        </div>
-
-        <div className="market-limit-btn-container">
-            <div className="icon" onClick={()=> setTradeAmount(TotalAmount + 0.1)}>
-                <h4>-</h4>
-            </div>
-            <div className="input">
-                <input type="number" value={TotalAmount} onChange={(e)=> setTotalAmount(e.target.value)} placeholder='Total(USDT)'  />
-            </div>
-            <div className="icon" onClick={()=>setTotalAmount(TotalAmount - 0.1)}>
-                <h4>+</h4>
-            </div>
-        </div>
-        <div className="amount-availability">
-            <div className="amount-availability-container">
-                <div className="amount-availability">
-                <h4>Overview</h4>
-                </div>
-                <div className="coin-availbility">
-                <h4>0 USDT</h4>
                 </div>
             </div>
         </div>

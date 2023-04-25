@@ -283,9 +283,35 @@
 }
 .futures-percent-container .future-percent-content{
     display: flex;
+    font-size: 10.5px;
 }
 .future-percent-content .connection{
-    height: 15px;
-    width: 60px;
-    background: #999;
+    height: 3px;
+    width: 36px;
+    background: #9999994f;
+    margin-top: 5px;
+}
+
+.amount-display{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.amount-display-container{
+    display: flex;
+    width: 100%;
+    color: #9999;
+    background: #9999992c;
+}
+.amount-display-contents{
+    width: 100%;
+    text-align: center;
+    font-size: 11.234px;
+    color: #9999;
+}
+.amount-display-content{
+    width: 100%;
+    text-align: center;
+    font-size: 11.234px;
+    color: #fff;
 }
