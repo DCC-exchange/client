@@ -62,7 +62,7 @@ export default function BuyLimit() {
         }
     })
 
-    const [ StopLost, setStopLost ] = useState(false)
+    // const [ StopLost, setStopLost ] = useState(false)
 
     const handleStopLost = (()=>{
         
