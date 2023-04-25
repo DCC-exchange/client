@@ -34,10 +34,10 @@ const MarketChart = () => {
       if (lowPrice === null || price < lowPrice) {
         setLowPrice(price);
       }
+      setCurrentDate(new Date());
     }
     const intervalId = setInterval(() => {
       fetchPrice();
-      setCurrentDate(new Date());
     }, 5000);
     fetchPrice();
     return () => {
