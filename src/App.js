@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import React from "react"
+import React, {useEffect} from "react"
+import { useNavigate } from "react-router-dom";
 import Welcome from "./Pages/components/welcome/Index";
 import Home from "./Pages/components/home/Index";
 import Favourite from "./Pages/components/home/pageNavigation/Favourite";
@@ -31,6 +32,19 @@ import CoinsM from "./Pages/components/futures/route/CoinsM";
 import { useAuthContext } from "./hooks/useAuthContext";
 
 function App() {
+
+  const navigate = useNavigate()
+
+  useEffect(()=>{
+  const first = JSON.parse(localStorage.getItem("firstHit"));
+  console.log(first)
+
+    if(!first){
+      navigate('/welcome')
+    }
+    // localStorage.setItem('firstHit', true)
+  },[navigate])
+
 
   const { user } = useAuthContext()
 
