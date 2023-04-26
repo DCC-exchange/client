@@ -1,6 +1,5 @@
 import { Route, Routes, Navigate } from "react-router-dom";
 import React, {useEffect} from "react"
-import { useNavigate } from "react-router-dom";
 import Welcome from "./Pages/components/welcome/Index";
 import Home from "./Pages/components/home/Index";
 import Favourite from "./Pages/components/home/pageNavigation/Favourite";
@@ -92,10 +91,10 @@ function App() {
             
             {/* Wallet routes */}
             <Route path="wallet" element={user ? <Assets /> : <Navigate to="/sign" /> }>
-                <Route index element={<Overview />} />
-                <Route path="over-view" element={<Overview />} />
-                <Route path="spot" element={<SpotWallet />} />
-                <Route path="futures" element={<FuturesRec />} />
+                <Route index element={user ? <Overview /> : <Navigate to="/sign" />  } />
+                <Route path="over-view" element={ user ? <Overview /> : <Navigate to="/sign" />  } />
+                <Route path="spot" element={user ? <SpotWallet /> : <Navigate to="/sign" />  } />
+                <Route path="futures" element={ user ? <FuturesRec /> : <Navigate to="/sign" /> } />
             </Route>
         </Routes>
       <ButtomNav />
