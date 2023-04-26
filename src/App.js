@@ -52,7 +52,7 @@ function App() {
     <div className="App">
         <Routes>
           {/* Welcome route */}
-          <Route path="/welcome" element={ user ? <Welcome /> : <Login />}></Route>
+          <Route path="/welcome" element={<Welcome /> }></Route>
 
           {/* Home Route */}
             <Route path="/" element={<Home />}>
