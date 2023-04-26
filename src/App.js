@@ -42,7 +42,6 @@ function App() {
     if(!first){
       navigate('/welcome')
     }
-    // localStorage.setItem('firstHit', true)
   },[navigate])
 
 

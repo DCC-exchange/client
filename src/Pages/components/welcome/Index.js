@@ -5,16 +5,15 @@ import wallet from "./images/wallet purse.svg";
 
 import { useNavigate } from "react-router";
 
-export default function Welcome({handleHome}) {
+export default function Welcome() {
   const [loading] = useState(false);
   const navigate = useNavigate();
 
   const handleContinue = (()=>{
-    handleHome()
+    localStorage.setItem('firstHit', true)
     navigate("/hot") 
   })
 
-  
 
   if (loading) {
     return (
