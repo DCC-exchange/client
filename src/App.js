@@ -30,18 +30,15 @@ import CoinsM from "./Pages/components/futures/route/CoinsM";
 // ==========================================================
 import { useAuthContext } from "./hooks/useAuthContext";
 
-
 function App() {
 
   const { user } = useAuthContext()
-
-  console.log(user)
 
   return (
     <div className="App">
         <Routes>
           {/* Welcome route */}
-          <Route path="/welcome" element={<Welcome />}></Route>
+          <Route path="/welcome" element={ user ? <Welcome /> : <Login />}></Route>
 
           {/* Home Route */}
             <Route path="/" element={<Home />}>
