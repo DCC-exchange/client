@@ -27,7 +27,15 @@ import Futures from "./Pages/components/futures/Futures";
 import UsdtM from "./Pages/components/futures/route/UsdtM";
 import CoinsM from "./Pages/components/futures/route/CoinsM";
 
+// ==========================================================
+import { useAuthContext } from "./hooks/useAuthContext";
+
+
 function App() {
+
+  const { user } = useAuthContext()
+
+  console.log(user)
 
   return (
     <div className="App">
