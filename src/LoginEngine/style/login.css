@@ -52,7 +52,7 @@
  font-size: 12px;
 }
 .login-nav-container .login a h3{
-  padding: 7px;
+  padding: 6px;
   text-align: center;
   color: #a5a5a5;
 }
@@ -81,7 +81,6 @@
 }
 .login-inputs-container{
   display: block;
-  margin-top: 20px;
 }
 .login-inputs-container .titl{
   font-size: 12px;

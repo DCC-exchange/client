@@ -92,11 +92,11 @@ function App() {
             <Route path="/marketChart" element={<MarketChart />} />
             
             {/* Wallet routes */}
-            <Route path="wallet" element={user ? <Assets /> : <Navigate to="/sign" /> }>
-                <Route index element={user ? <Overview /> : <Navigate to="/sign" />  } />
-                <Route path="over-view" element={ user ? <Overview /> : <Navigate to="/sign" />  } />
-                <Route path="spot" element={user ? <SpotWallet /> : <Navigate to="/sign" />  } />
-                <Route path="futures" element={ user ? <FuturesRec /> : <Navigate to="/sign" /> } />
+            <Route path="wallet" element={user ? <Assets /> : <Navigate to="/sign/login" /> }>
+                <Route index element={user ? <Overview /> : <Navigate to="/sign/login" />  } />
+                <Route path="over-view" element={ user ? <Overview /> : <Navigate to="/sign/login" />  } />
+                <Route path="spot" element={user ? <SpotWallet /> : <Navigate to="/sign/login" />  } />
+                <Route path="futures" element={ user ? <FuturesRec /> : <Navigate to="/sign/login" /> } />
             </Route>
         </Routes>
       <ButtomNav />
