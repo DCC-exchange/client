@@ -18,7 +18,6 @@ export default function Signup() {
 
     setError("Something went wrong")
     console.log(data)
-
   })
   const handleShowPassword = (()=>{
     if(showPassword){
@@ -27,7 +26,6 @@ export default function Signup() {
     }else{
       setShowPassword(true)
       setDisplayPassword('password')
-
     }
   })
   return (

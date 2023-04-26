@@ -12,7 +12,11 @@ import settings from "./images/setting.png";
 import help from "./images/Help.svg";
 import copy from "./images/Copy-icon.png"
 
+import { useAuthContext } from '../../../hooks/useAuthContext';
+
 export default function Menu({cancel}) {
+
+  const { user } = useAuthContext()
 
   const handleCancel = (()=>{
     cancel()
@@ -66,42 +70,67 @@ export default function Menu({cancel}) {
         <div>
           <h1 className="title">Welcome to DCC Exchange</h1>
         </div>
-        <div className="user_info">
-          <img src={userPhoto} alt="user_photo" />
-          <div className="username_id">
-            <p>John Doe</p>
-            <span>wuidp984579hj38769df87875</span>
+        { user ?  
+        <div className="menu-profile">
+          <div className="user_info">
+            <img src={userPhoto} alt="user_photo" />
+            <div className="username_id">
+              <p>John Doe</p>
+              <span>wuidp984579hj38769df87875</span>
+            </div>
+            <img src={copy} alt="copy_icon" />
           </div>
-          <img src={copy} alt="copy_icon" />
-        </div>
-        <div className="highlights">
-          <div className="flex_column">
-            <p>Copy</p>
-            <span>0</span>
+          <div className="highlights">
+            <div className="flex_column">
+              <p>Copy</p>
+              <span>0</span>
+            </div>
+            <div className="flex_column">
+              <p>Reward</p>
+              <span>0</span>
+            </div>
+            <div className="flex_column">
+              <p>Invitees</p>
+              <span>0</span>
+            </div>
+            <div className="flex_column">
+              <p>Subscribe</p>
+              <span>0</span>
+            </div>
           </div>
-          <div className="flex_column">
-            <p>Reward</p>
-            <span>0</span>
-          </div>
-          <div className="flex_column">
-            <p>Invitees</p>
-            <span>0</span>
-          </div>
-          <div className="flex_column">
-            <p>Subscribe</p>
-            <span>0</span>
-          </div>
-        </div>
+         </div> : <div className="menu-login">
+            <div className="menu-login-container">
+                <div className="menu-login-content">
+                    <div className="menu-login-email">
+                        <button>Log In With Email</button>
+                    </div>
+                    <div className="menu-login-middle">
+                        <hr />
+                        <h4>or</h4>
+                        <hr />
+                    </div>
+                    <div className="menu-login-google">
+                        <button>Continue with Google</button>
+                    </div>
+                </div>
+            </div>
+         </div> }
+
         <div className="features">
-          {
-            features.map((feature) => (
-              <div className="feature_con">
-                <img src={feature.img} alt="icon" />
-                <p>{feature.name}</p>
-              </div>
-            ))
-          }
+          <div className="features-container">
+            {
+              features.map((feature) => (
+                <div className="feature_contents">
+                  <div className="feature_details">
+                    <img src={feature.img} alt="icon" />
+                    <p>{feature.name}</p>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
         </div>
+
       </div>
     </div>
   )
