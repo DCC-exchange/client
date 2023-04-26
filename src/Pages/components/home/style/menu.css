@@ -97,7 +97,7 @@
   color: #fff;
   font-size: 10px;
 }
-.feature_details .img{
+.feature_details img{
   width: 60px;
 }
 .menu-login{
@@ -123,9 +123,9 @@
   background: #8b35a0;
   border-radius: 5px;
   font-weight: 900;
-  padding: 6px;
+  padding: 6.5px;
   border: none;
-  color: #ffff;
+  color: #fff;
 }
 .menu-login-content  .menu-login-middle{
     display: flex;
@@ -136,8 +136,8 @@
     padding: 10px 0px;
 }
 .menu-login-content  .menu-login-middle .line{
-  padding: 3px;
-  width: 70%;
+  padding: 7px 0px;
+    width: 70%;
 }
 .menu-login-middle .line hr{
   border: 1.06309px solid rgba(134, 120, 120, 0.33);
@@ -149,8 +149,10 @@
 .menu-login-google button{
   width: 100%;
   display: block;
-  background: #CCCDD2;
+  background: #cccdd2;
   border-radius: 5px;
   padding: 5px;
   border: none;
+  color: black;
+  font-weight: 900;
 }
