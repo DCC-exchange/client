@@ -105,9 +105,13 @@ export default function Menu({cancel}) {
                         <button>Log In With Email</button>
                     </div>
                     <div className="menu-login-middle">
+                      <div className="line">
                         <hr />
-                        <h4>or</h4>
+                      </div>
+                       <div className="or"><h4>or</h4></div>
+                       <div className="line">
                         <hr />
+                      </div>
                     </div>
                     <div className="menu-login-google">
                         <button>Continue with Google</button>
