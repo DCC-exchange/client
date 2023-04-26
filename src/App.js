@@ -1,4 +1,4 @@
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes, Navigate, useNavigate } from "react-router-dom";
 import React, {useEffect} from "react"
 import Welcome from "./Pages/components/welcome/Index";
 import Home from "./Pages/components/home/Index";
@@ -32,13 +32,15 @@ import { useAuthContext } from "./hooks/useAuthContext";
 
 function App() {
 
+  const navigation = useNavigate()
+
   // Welcome first timer
   useEffect(()=>{
   const first = JSON.parse(localStorage.getItem("firstHit"));
     if(!first){
-      <Navigate to="/welcome" />
+      navigation('/welcome')
     }
-  },[])
+  },[navigation])
 
   const { user } = useAuthContext()
 
