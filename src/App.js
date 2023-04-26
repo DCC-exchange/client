@@ -35,15 +35,13 @@ function App() {
 
   const navigate = useNavigate()
 
+  // Welcome first timer
   useEffect(()=>{
   const first = JSON.parse(localStorage.getItem("firstHit"));
-  console.log(first)
-
     if(!first){
       navigate('/welcome')
     }
   },[navigate])
-
 
   const { user } = useAuthContext()
 
@@ -79,7 +77,6 @@ function App() {
                 <Route path="usdt-m" element={<UsdtM />} />
             </Route>
 
-
             {/* Login route */}
               <Route path="/sign" element={<LoginSystem />}>
                 <Route Index element={<Login />} />
@@ -98,8 +95,8 @@ function App() {
             <Route path="/marketChart" element={<MarketChart />} />
             
             {/* Wallet routes */}
-            <Route path="wallet" element={<Assets />}>
-                <Route index element={<Overview />} />s
+            <Route path="wallet" element={user ? <Assets /> : navigate("/sign/login") }>
+                <Route index element={<Overview />} />
                 <Route path="over-view" element={<Overview />} />
                 <Route path="spot" element={<SpotWallet />} />
                 <Route path="futures" element={<FuturesRec />} />
