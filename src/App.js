@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import React, {useEffect} from "react"
 import { useNavigate } from "react-router-dom";
 import Welcome from "./Pages/components/welcome/Index";
@@ -33,18 +33,17 @@ import { useAuthContext } from "./hooks/useAuthContext";
 
 function App() {
 
-  const navigate = useNavigate()
+  const navig = useNavigate()
 
   // Welcome first timer
   useEffect(()=>{
   const first = JSON.parse(localStorage.getItem("firstHit"));
     if(!first){
-      navigate('/welcome')
+      navig('/welcome')
     }
-  },[navigate])
+  },[navig])
 
   const { user } = useAuthContext()
-
 
   return (
     <div className="App">
@@ -94,7 +93,7 @@ function App() {
             <Route path="/marketChart" element={<MarketChart />} />
             
             {/* Wallet routes */}
-            <Route path="wallet" element={user ? <Assets /> : navigate("/sign/login") }>
+            <Route path="wallet" element={user ? <Assets /> : <Navigate to="sign/login" /> }>
                 <Route index element={<Overview />} />
                 <Route path="over-view" element={<Overview />} />
                 <Route path="spot" element={<SpotWallet />} />
