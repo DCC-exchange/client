@@ -39,6 +39,8 @@ export default function BuyLimit() {
 
   return (
     <div className="market-limit">
+
+        <div className="measure-height">
             <div className="market-limit-btn-container">
                 <div className="icon" onClick={()=>setMarketPrice(marketPrice + 0.1)}>
                     <h4>-</h4>
@@ -50,6 +52,9 @@ export default function BuyLimit() {
                     <h4>+</h4>
                 </div>
             </div>
+        </div>
+
+        <div className="measure-height">
             <div className="market-limit-btn-container">
                 <div className="icon" onClick={()=> setTradeAmount(TradeAmount + 0.1)}>
                     <h4>-</h4>
@@ -61,6 +66,8 @@ export default function BuyLimit() {
                     <h4>+</h4>
                 </div>
             </div>
+        </div>
+
             <div className="amount-percentage">
                 <div className="amount-percentage-container">
                     <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(25)} >
@@ -93,17 +100,21 @@ export default function BuyLimit() {
                     </div>
                 </div>
             </div>
-            <div className="market-limit-btn-container">
-                <div className="icon" onClick={()=> setTradeAmount(TotalAmount + 0.1)}>
-                    <h4>-</h4>
-                </div>
-                <div className="input">
-                    <input type="number" value={TotalAmount} onChange={(e)=> setTotalAmount(e.target.value)} placeholder='Total(USDT)'  />
-                </div>
-                <div className="icon" onClick={()=>setTotalAmount(TotalAmount - 0.1)}>
-                    <h4>+</h4>
+
+            <div className="measure-height">
+                <div className="market-limit-btn-container">
+                    <div className="icon" onClick={()=> setTradeAmount(TotalAmount + 0.1)}>
+                        <h4>-</h4>
+                    </div>
+                    <div className="input">
+                        <input type="number" value={TotalAmount} onChange={(e)=> setTotalAmount(e.target.value)} placeholder='Total(USDT)'  />
+                    </div>
+                    <div className="icon" onClick={()=>setTotalAmount(TotalAmount - 0.1)}>
+                        <h4>+</h4>
+                    </div>
                 </div>
             </div>
+
             <div className="amount-availability">
                 <div className="amount-availability-container">
                     <div className="amount-availability">
@@ -114,7 +125,8 @@ export default function BuyLimit() {
                     </div>
                 </div>
             </div>
-                 <div className="submit-btn-container">
+
+        <div className="submit-btn-container">
             <div className="submit-btn">
                 <button type='submit'>Buy(ETH)</button>
             </div>
