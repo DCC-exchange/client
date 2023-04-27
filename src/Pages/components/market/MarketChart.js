@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import './style/marketChart.css';
 import { BiArrowBack } from 'react-icons/bi'
 import { AiOutlineStar } from 'react-icons/ai'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Chart from "react-google-charts";
 import reload from "./images/Vector.png";
 
@@ -14,16 +14,51 @@ const MarketChart = () => {
       return 'color: red';
     }
   };
+  const location = useLocation();
+  const {
+    symbol, current_price, high_24h,
+    low_24h, price_change_percentage_24h,
+  } = location.state;
+
+  const [price, setPrice] = useState(null);
+  const [highPrice, setHighPrice] = useState(null);
+  const [lowPrice, setLowPrice] = useState(null);
+  const [currentDate, setCurrentDate] = useState(new Date());
+
+  useEffect(() => {
+    const fetchPrice = () => {
+      setPrice(current_price);
+      if (highPrice === null || price > highPrice) {
+        setHighPrice(price);
+      }
+      if (lowPrice === null || price < lowPrice) {
+        setLowPrice(price);
+      }
+      setCurrentDate(new Date());
+    }
+    const intervalId = setInterval(() => {
+      fetchPrice();
+    }, 5000);
+    fetchPrice();
+    return () => {
+      clearInterval(intervalId); // Clear the interval when the component unmounts
+    };
+  }, [highPrice, lowPrice, price])
 
   const data = [
     ['Day', 'a', 'b', 'c', 'd', { role: 'style' }],
-    ['Mon', 20, 28, 38, 45, calculateCandlestickColor(20, 45)],
-    ['Tue', 31, 38, 55, 66, calculateCandlestickColor(31, 66)],
-    ['Wed', 50, 55, 77, 80, calculateCandlestickColor(50, 80)],
-    ['Thu', 77, 77, 66, 50, calculateCandlestickColor(77, 50)],
-    ['Fri', 68, 66, 22, 15, calculateCandlestickColor(68, 15)],
-    ['sat', 80, 66, 42, 25, calculateCandlestickColor(68, 15)],
-    ['sun', 48, 66, 42, 15, calculateCandlestickColor(68, 15)],
+    [
+      currentDate.toLocaleString("en-US", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      }),
+      lowPrice,
+      high_24h,
+      low_24h,
+      highPrice,
+      calculateCandlestickColor(lowPrice, highPrice),
+    ],
   ];
   return (
     <div className="candlestick_container">
@@ -31,7 +66,7 @@ const MarketChart = () => {
         <div className="flex heading_padding">
           <div className="flex_gap">
             <Link to="/market"><BiArrowBack className="back_arrow_icon" /></Link>
-            <p className="">BTC/USDT</p>
+            <p className="">{symbol}/USDT</p>
           </div>
           <div>
             <AiOutlineStar className="star_icon" />
@@ -42,24 +77,24 @@ const MarketChart = () => {
       <div className="chart_container">
         <div className="flex_start body_padding">
           <div>
-            <p className="green coin_amount">23,061.81</p>
+            <p className="green coin_amount">{current_price}</p>
             <div className="flex">
-              <p className="font_two">$ 23,061.8 1</p>
-              <small className="green">+0.78%</small>
+              <p className="font_two">{current_price}</p>
+              <small className="green">{price_change_percentage_24h}</small>
             </div>
           </div>
           <div>
             <div className="flex">
               <p className="font_one">High</p>
-              <p className="font_one">23,152.60</p>
+              <p className="font_one">{high_24h}</p>
             </div>
             <div className="flex">
               <p className="font_one">Low</p>
-              <p className="font_one">22,636.77</p>
+              <p className="font_one">{low_24h}</p>
             </div>
             <div className="flex_gap">
               <p className="font_one">24H</p>
-              <p className="font_one">246,938.98 [BTC]</p>
+              <p className="font_one">{price_change_percentage_24h} [{symbol}]</p>
             </div>
           </div>
         </div>
@@ -99,7 +134,7 @@ const MarketChart = () => {
               }
             },
             chartArea: {
-              width: '90%',
+              width: '75%',
               height: '80%',
             },
           }}
