@@ -71,7 +71,10 @@
     display: flex;
     width: 100%;
     padding: 5px;
+    grid-gap: 10px;
     gap: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 .coin-drop-list-content .image-name-container .pair span{
     color: #999;
@@ -92,11 +95,16 @@
     display: flex;
     width: 100%;
     justify-content: end;
+    grid-gap: 10px;
     gap: 10px;
+    font-size: 10px;
 }
-
-.coin-drop-list-content .lastprice-container .percent{
-   color: red;
+.coin-drop-list-content .lastprice-content{
+    padding: 0;
+    margin: 0;
+}
+.coin-drop-list-content .lastprice-content .percent{
+    color: green;
 }
 
 .coin-drop-list .no-data{

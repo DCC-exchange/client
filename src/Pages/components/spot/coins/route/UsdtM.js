@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { MdOutlineContentPasteSearch} from "react-icons/md";
 import { useCryptoCoins } from '../../../../config/Coins'; 
 
-
 export default function UsdtM() {
 
     const  { CryptoCoins, Coins, isLoading, error } = useCryptoCoins()
@@ -34,11 +33,13 @@ export default function UsdtM() {
                     </div>
                 </div>
                 <div className="lastprice-container">
-                    <div className="price">
-                        <h4>{coin.current_price}</h4>
-                    </div>
-                    <div className="percent">
-                        <h4>+{coin.price_change_percentage_24h}% </h4>
+                    <div className="lastprice-content">
+                        <div className="price">
+                            <h4>{coin.current_price}</h4>
+                        </div>
+                        <div className="percent">
+                            <h4>+{coin.price_change_percentage_24h}% </h4>
+                        </div>
                     </div>
                 </div>
             </div>
