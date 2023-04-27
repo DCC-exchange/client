@@ -228,6 +228,14 @@
     color: #fff;
     border-radius: 4px;
 }
+.submit-btn-container .submit-btn-sell button{
+    border: none;
+    padding: 6px;
+    width: 100%;
+    background: red;
+    color: #fff;
+    border-radius: 4px;
+}
 .cross-margin{
     width: 100%;
     padding: 0;
