@@ -13,26 +13,26 @@ export default function SellLimit() {
 
     const SetPercentageActive = ((e)=>{
         if(e === 25){
-            setPercentActive1("percentage-box-buy")
+            setPercentActive1("percentage-box-sell")
             setPercentActive2('percentage-boxEl')
             setPercentActive3('percentage-boxEl')
             setPercentActive4('percentage-boxEl')
         }else if( e === 50){
-            setPercentActive1("percentage-box-buy")
-            setPercentActive2('percentage-box-buy')
+            setPercentActive1("percentage-box-sell")
+            setPercentActive2('percentage-box-sell')
             setPercentActive3('percentage-boxEl')
             setPercentActive4('percentage-boxEl')
         }
         else if( e === 75){
-            setPercentActive1("percentage-box-buy")
-            setPercentActive2('percentage-box-buy')
-            setPercentActive3('percentage-box-buy')
+            setPercentActive1("percentage-box-sell")
+            setPercentActive2('percentage-box-sell')
+            setPercentActive3('percentage-box-sell')
             setPercentActive4('percentage-boxEl')
         }else{
-            setPercentActive1("percentage-box-buy")
-            setPercentActive2('percentage-box-buy')
-            setPercentActive3('percentage-box-buy')
-            setPercentActive4('percentage-box-buy')
+            setPercentActive1("percentage-box-sell")
+            setPercentActive2('percentage-box-sell')
+            setPercentActive3('percentage-box-sell')
+            setPercentActive4('percentage-box-sell')
         }
     })
 
