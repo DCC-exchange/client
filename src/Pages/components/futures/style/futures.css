@@ -171,8 +171,8 @@
     text-align: center;
     color: #9999;
 }
-.market-limit-btn-container .btn{
-    width: 80%;
+.market-limit-btn-container .btn-container .btn{
+    width: 100%;
 }
 .market-limit-btn-container .btn-container{
     width: 80%;
