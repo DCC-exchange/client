@@ -172,11 +172,9 @@
     color: #9999;
 }
 .market-limit-btn-container .btn{
-    width: 100%;
+    width: 90%;
 }
-.market-limit-btn-container .btn{
-    width: 100%;
-}
+
 .market-limit-btn-container .btn-container{
     width: 80%;
     color: #fff;
@@ -187,10 +185,11 @@
     background: none;
     border: none;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     color: #fff;
     font-size: 10.5px;
-    padding: 6px 0px;
+    padding: 6px 0;
+    width: 100%;
 }
 .market-limit-btn-container .input{
   width: 80%;

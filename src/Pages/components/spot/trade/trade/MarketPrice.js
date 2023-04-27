@@ -88,6 +88,21 @@ export default function MarketPrice() {
             </div>
         </div>
     </div>
+
+
+    <div className="market-limit-btn-container">
+        <div className="icon" >
+            <h4>{""}</h4>
+        </div>
+        <div className="input">
+            {""}
+        </div>
+        <div className="icon" >
+            {""}
+        </div>
+    </div>
+
+
     <div className="amount-availability">
         <div className="amount-availability-container">
             <div className="amount-availability">
