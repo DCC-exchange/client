@@ -46,9 +46,6 @@ function App() {
 
   return (
     <div className="App">
-      <div className="app-container">
-        <h1>This app works works better on Mobile</h1>
-      </div>
         <Routes>
           {/* Welcome route */}
           <Route path="/welcome" element={<Welcome /> }></Route>
@@ -70,7 +67,7 @@ function App() {
                 <Route path="spot-market" element={<SpotMarket />} />
             </Route>
 
-                {/* Futures route */}
+            {/* Futures route */}
             <Route path="/futures" element={<Futures />}>
                 <Route index element={<UsdtM />} />
                 <Route path="coin-m" element={<CoinsM />} />
@@ -102,6 +99,7 @@ function App() {
                 <Route path="spot" element={user ? <SpotWallet /> : <Navigate to="/sign/login" />  } />
                 <Route path="futures" element={ user ? <FuturesRec /> : <Navigate to="/sign/login" /> } />
             </Route>
+            
         </Routes>
       <ButtomNav />
     </div>
