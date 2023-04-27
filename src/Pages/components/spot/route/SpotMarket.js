@@ -11,6 +11,7 @@ import Sell from '../trade/sell/Sell';
 import { IoAddCircleOutline } from "react-icons/io5";
 import MarketPrice from '../trade/marketPrice/MarketPrice';
 import CoinRoute from '../coins/CoinRoute';
+import Index from '../trade/position/Index';
 
 export default function SpotMarket() {
 
@@ -115,6 +116,8 @@ export default function SpotMarket() {
                 </div>
                   <MarketPrice />
             </div>
+
+            <Index />
         </div>
     </div>
   )
