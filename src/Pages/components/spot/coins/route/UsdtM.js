@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { MdOutlineContentPasteSearch} from "react-icons/md";
 import { useCryptoCoins } from '../../../../config/Coins'; 
 
