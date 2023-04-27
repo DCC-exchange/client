@@ -37,9 +37,17 @@ export default function UsdtM() {
                         <div className="price">
                             <h4>{coin.current_price}</h4>
                         </div>
-                        <div className="percent">
-                            <h4>+{coin.price_change_percentage_24h}% </h4>
-                        </div>
+                        {coin.price_change_percentage_24h >= 0 && (
+                               <div className="percent">
+                               <h4>+{coin.price_change_percentage_24h}% </h4>
+                           </div>
+                         )}
+                        {coin.price_change_percentage_24h < 0 && (
+                                <div className="percentoooo">
+                                <h4>{coin.price_change_percentage_24h}% </h4>
+                            </div>
+                        )}
+                       
                     </div>
                 </div>
             </div>

@@ -97,14 +97,18 @@
     justify-content: end;
     grid-gap: 10px;
     gap: 10px;
-    font-size: 10px;
+    font-size: 11px;
+    text-align: center;
 }
 .coin-drop-list-content .lastprice-content{
     padding: 0;
     margin: 0;
 }
 .coin-drop-list-content .lastprice-content .percent{
-    color: green;
+    color: #0ec70e;
+}
+.coin-drop-list-content .lastprice-content .percentoooo{
+    color: red;
 }
 
 .coin-drop-list .no-data{
