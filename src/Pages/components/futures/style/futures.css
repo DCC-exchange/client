@@ -181,6 +181,11 @@
     text-align: center;
     position: relative;
 }
+
+.measure-height{
+    height: 35px;
+}
+
 .market-limit-btn-container .btn button{
     background: none;
     border: none;

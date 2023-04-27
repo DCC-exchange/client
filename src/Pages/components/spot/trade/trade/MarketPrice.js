@@ -36,26 +36,34 @@ export default function MarketPrice() {
 
   return (
     <div className="market-limit">
-    <div className="market-limit-btn-container">
-        <div className="icon">
+
+     <div className="measure-height">
+     
+        <div className="market-limit-btn-container">
+            <div className="icon">
+            </div>
+            <div className="btn">
+            <button>Market Price</button>
+            </div>
+            <div className="icon">
+            </div>
         </div>
-        <div className="btn">
-           <button>Market Price</button>
+    </div>  
+    <div className="measure-height">
+        <div className="market-limit-btn-container">
+            <div className="icon" onClick={()=> setTradeAmount(TradeAmount + 0.1)}>
+                <h4>-</h4>
+            </div>
+            <div className="input">
+                <input type="number" value={TradeAmount} onChange={(e)=> setTradeAmount(e.target.value)} placeholder='Total(ETH)'  />
+            </div>
+            <div className="icon" onClick={()=>setTradeAmount(TradeAmount - 0.1)}>
+                <h4>+</h4>
+            </div>
         </div>
-        <div className="icon">
-        </div>
-    </div>
-    <div className="market-limit-btn-container">
-        <div className="icon" onClick={()=> setTradeAmount(TradeAmount + 0.1)}>
-            <h4>-</h4>
-        </div>
-        <div className="input">
-            <input type="number" value={TradeAmount} onChange={(e)=> setTradeAmount(e.target.value)} placeholder='Total(ETH)'  />
-        </div>
-        <div className="icon" onClick={()=>setTradeAmount(TradeAmount - 0.1)}>
-            <h4>+</h4>
-        </div>
-    </div>
+    </div>  
+    
+    
     <div className="amount-percentage">
         <div className="amount-percentage-container">
             <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(25)} >
@@ -89,19 +97,19 @@ export default function MarketPrice() {
         </div>
     </div>
 
-
-    <div className="market-limit-btn-container">
-        <div className="icon" >
-            <h4>{""}</h4>
-        </div>
-        <div className="input">
-            {""}
-        </div>
-        <div className="icon" >
-            {""}
+    <div className="measure-height">
+        <div className="market-limit-btn-container">
+            <div className="icon" >
+                <h4>{""}</h4>
+            </div>
+            <div className="input">
+                {""}
+            </div>
+            <div className="icon" >
+                {""}
+            </div>
         </div>
     </div>
-
 
     <div className="amount-availability">
         <div className="amount-availability-container">
