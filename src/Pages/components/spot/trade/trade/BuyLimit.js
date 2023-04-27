@@ -127,7 +127,7 @@ export default function BuyLimit() {
             </div>
 
         <div className="submit-btn-container">
-            <div className="submit-btn">
+            <div className="submit-btn-buy">
                 <button type='submit'>Buy(ETH)</button>
             </div>
         </div>
