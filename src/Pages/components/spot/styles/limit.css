@@ -55,6 +55,13 @@
     background: rgb(2, 150, 2);
     border-radius: 2px;
 }
+.percentage-box-sell{
+    width: 100%;
+    height: 8.53px;
+    background: red;
+    border-radius: 2px;
+}
+
 .percentage-figure{
     font-size: 10.77px;
     font-weight: bold;
