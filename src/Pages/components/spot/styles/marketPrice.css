@@ -1,0 +1,91 @@
+.spot-display-market-price{
+    padding: 0;
+    margin: 0;
+    width: 37%;
+    position: relative;
+}
+.spot-display-market-price-contaniner{
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+}
+.spot-display-market-price-contaniner .market-price-header{
+    display: flex;
+    width: 100%;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #999;
+    padding:  5px;
+}
+.spot-display-market-price-contaniner .market-price-header .price{
+    width: 100%;
+}
+.spot-display-market-price-contaniner .market-price-header .amount{
+    width: 100%;
+}
+.sell-market-price{
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+}
+.sell-market-price-container{
+    display: flex;
+    width: 100%;
+    margin: 0px 5px ;
+    font-size: 9.789px;
+}
+.sell-market-price-container .price-content{
+    width: 100%;
+    color: red;
+}
+.sell-market-price-container .amount-content{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.buy-market-price{
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+}
+.buy-market-price-container{
+    display: flex;
+    width: 100%;
+    margin: 5px ;
+    font-size: 9.789px;
+}
+.buy-market-price-container .price-content{
+    width: 100%;
+    color: rgb(21, 182, 21);
+}
+.buy-market-price-container .amount-content{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.spot-display-market-price .middle-price{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+}
+.spot-display-market-price .middle-price .middle-price-container{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spot-display-market-price .middle-price .middle-price-container h2{
+    color: #fff;
+    font-size: 12.5px;
+    font-weight: bold;
+}
+.spot-display-market-price .middle-price .middle-price-container h5{
+    color: #999;
+    font-size: 11px;
+    font-weight: bold;
+}

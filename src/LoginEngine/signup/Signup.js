@@ -18,7 +18,6 @@ export default function Signup() {
 
     setError("Something went wrong")
     console.log(data)
-
   })
   const handleShowPassword = (()=>{
     if(showPassword){
@@ -27,7 +26,6 @@ export default function Signup() {
     }else{
       setShowPassword(true)
       setDisplayPassword('password')
-
     }
   })
   return (
@@ -35,7 +33,7 @@ export default function Signup() {
     <div className='login-page-inner'>
       <form onSubmit={handleLogin}>
       <div className='login-inputs-container'>
-          <div className='title'>
+          <div className='titl'>
             <h3>Username</h3>
           </div>
           <div className="input">
@@ -43,7 +41,7 @@ export default function Signup() {
           </div>
         </div>
         <div className='login-inputs-container'>
-          <div className='title'>
+          <div className='titl'>
             <h3>Email</h3>
           </div>
           <div className="input">
@@ -51,7 +49,7 @@ export default function Signup() {
           </div>
         </div>
           <div className='login-inputs-container'>
-            <div className='title'>
+            <div className='titl'>
               <h3>Password</h3>
             </div>
             <div className="input">

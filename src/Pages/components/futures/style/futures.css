@@ -1,0 +1,456 @@
+.futures-trade{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.futures-trade-container{
+    position: relative;
+    padding: 15;
+    margin: 0;
+}
+.futures-trade-navigation{
+    padding: 0;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.futures-trade-navigation-container{
+    width: 92%;
+    display: flex;
+    background: #5B2963;
+    border-radius: 10px;
+}
+.futures-trade-navigation a{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 7.454px;
+    color: #938197;
+    font-size: 11.5px;
+}
+.futures-trade-navigation a.active{
+  color: #ffff;
+  background: linear-gradient(270deg, #8D0BA4 0%, #C66AD6 60.33%, #533E57 120.65%);
+}
+
+/* ======================================================== */
+.spot-market{
+    padding: 0px 15px 0px 15px;
+    border-radius: 30px 30px 0 0;
+    background: #240426;
+}
+.spot-market-container{
+    position: relative;
+    display: block;
+}
+.coin-title{
+    padding-top: 10px;
+    margin: 0;
+}
+.coin-title-container{
+    display: flex;
+    width: 100%;
+}
+.slide-icon-container{
+    width: 83%;
+    display: flex;
+    gap: 5px;
+}
+.market-chart-container{
+    width: 17%;
+    display: flex;
+    gap: 12px;
+    width: 13px;
+}
+.slide-icon{
+    color: #9999;
+    padding: 0px 5px;
+}
+.content-coin-name{
+    color: #fff;
+    transform: uppercase;
+    font-size: 12px;
+}
+.slide-icon-container .coin-percent{
+    color: red;
+    font-size: 10.56px;
+    font-weight: 600;
+    padding: 5px 2px;
+}
+.market-chart-container .market-chart-icon{
+    color: #9999;
+}
+.market-star-container .filled-market-star{
+    color: yellow;
+}
+.market-star-container .market-star{
+    color: #9999;
+}
+.market-star h3 img{
+    background: linear-gradient(180deg, #8B35A0 0%, rgba(243, 22, 221, 0.52) 100%);
+}
+.spot-trading-contaent{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+.spot-trading-contaent .spot-buy-contents{
+    width: 61%;
+    padding: 0;
+    margin: 0;
+}
+.spot-buy-contents .spot-buy-btn{
+    display: flex;
+    padding: 10px 0px 0px 0px;
+}
+.spot-buy-contents .spot-buy-btn img{
+    width: 105px;
+}
+.spot-buy-limit{
+    width: 100%;
+}
+
+.amount-availability{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+}
+.amount-availability-container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: #9999;
+}
+.amount-availability-container .amount-availability-content{
+    width: 80%;
+    display: flex;
+}
+.amount-availability-container .amount-availability-content h3{
+    color: #8D0BA4;
+}
+.coin-availbility{
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 9px;
+}
+.coin-availbility h3{
+   color: #8D0BA4;
+}
+.buy-limit{
+    padding: 0;
+    margin: 0;
+}
+.buy-limit-container{
+    width: 100%;
+    padding: 0;
+    display: block;
+}
+.market-limit-btn{
+    margin: 0px;
+    padding: 0px;
+}
+.market-limit-btn-container{
+    background: #9999992c;
+    color: #fff;
+    display: flex;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin: 13px 0px;
+    position: relative;
+}
+.market-limit-btn-container .icon{
+    width: 10%;
+    text-align: center;
+    color: #9999;
+}
+.market-limit-btn-container .btn-container{
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.market-limit-btn-container .btn button{
+    background: none;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 10.5px;
+    padding: 6px 0px;
+}
+.market-limit-btn-container .input{
+  width: 80%;
+  text-align: center;
+}
+.market-limit-btn-container .input input{
+    width: 100%;
+    text-align: center;
+    background: none;
+    outline: none;
+    border: none;
+   color: #ffff;
+   padding: 6px 0px;
+   font-size: 10.7px;
+}
+.market-limit-btn-container .input input::placeholder{
+   color: #9999;
+}
+.market-limit .submit-btn-container{
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    margin: 0px;
+}
+.submit-btn-container .submit-btn button{
+    border: none;
+    padding: 6px;
+    width: 100%;
+    background: green;
+    color: #fff;
+    border-radius: 4px;
+}
+.cross-margin{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.cross-margin-container{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #ffffff14;
+    padding: 5px;
+}
+.leverage-container{
+    display: flex;
+    width: 100%;
+    grid-gap: 10px;
+    gap: 10px;
+    margin-top: 6px;
+}
+.leverage-container .cross-content{
+    background: hsla(0,0%,60%,.3803921568627451);
+    padding: 2px 18px;
+    display: flex;
+    height: 20px;
+    border-radius: 3px;
+    grid-gap: 7px;
+    gap: 7px;
+}
+.leverage-container .cross-content h3{
+    color: #fff;
+    font-size: 11.23px;
+}
+.leverage-container .cross-content h3{
+    color: #fff;
+    font-size: 11.23px;
+}
+.leverage-container .cross-content h2{
+    color: #999;
+    font-size: 15.23px;
+}
+.funding-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.funding-container .funding-content{
+    font-size: 7px;
+    color: #999;
+
+}
+
+
+/* =============================================================== */
+
+.futures-percent{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.futures-percent-container{
+    display: flex;
+    color: #9999;
+    font-size: 15px;
+}
+.futures-percent-container .future-percent-content{
+    display: flex;
+    font-size: 10.5px;
+    color: #9999;
+}
+.futures-percent-container .future-percent-contents{
+    display: flex;
+    font-size: 10.5px;
+    color: yellow;
+}
+.future-percent-contents .connection{
+    height: 3px;
+    width: 36px;
+    background: #484802;
+    margin-top: 5px;
+}
+.future-percent-content .connection{
+    height: 3px;
+    width: 36px;
+    background: #9999994f;
+    margin-top: 5px;
+}
+
+.amount-display{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.amount-display-container{
+    display: flex;
+    width: 100%;
+    color: #9999;
+    background: #9999992c;
+}
+.amount-display-contents{
+    width: 100%;
+    text-align: center;
+    font-size: 11.234px;
+    color: hsla(0,0%,60%,.6);
+    padding: 5px;
+}
+.amount-display-content{
+    width: 100%;
+    text-align: center;
+    font-size: 11.234px;
+    color: #fff;
+    padding: 5px;
+}
+
+/* ========================================================== */
+.set-stoplost{
+    width: 100%;
+    color: hsla(0,0%,60%,.6);
+    font-weight: 700;
+    font-size: 11px;
+    padding: 4px;
+}
+.set-stoplost-container{
+    display: flex;
+    gap: 10px;
+}
+.set-stoplost .active{
+    display: flex;
+    gap: 10px;
+}
+
+.set-stoplost .active h3{
+    color: yellow;
+}
+
+.set-stoplost-container h3{
+   font-size: 14px;
+}
+
+.stop-lose{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.stop-lose-container{
+    display: flex;
+    gap: 1px;
+    width: 100%;
+}
+.stop-lose-container .tp-content{
+    width: 100%;
+    font-size: 11.23px;
+}
+
+.stop-lose-container .tp-content input{
+    color: #fff;
+    text-align: center;
+    font-size: 11.23px;
+    border: none;
+    outline: none;
+    padding: 7px;
+    width: 80%;
+    background: #99999930;
+    border-radius: 3px;
+}
+.stop-lose-container .tp-content input::placeholder{
+   color: #9999;
+   font-size: 11.23px;
+ }
+
+ .max-margin{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+ }
+
+ .max-magin-container{
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+ }
+ .max-margin-content{
+    width: 100%;
+    display: flex;
+    padding: 5px 0px;
+ }
+
+ .max-margin-content .name-tag{
+    width: 100%;
+    color: #999;
+    font-weight: 800;
+    font-size: 8.6px;
+ }
+ .max-margin-content .coin-price-tag{
+    width: 100%;
+    color: #fff;
+    font-weight: 800;
+    font-size: 8.6px;
+    display: flex;
+    justify-content: end;
+ }
+
+ .time-in-force{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+ }
+ .time-in-force-container{
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+ }
+ .time-in-force-content{
+    display: flex;
+    grid-gap: 10px;
+    gap: 20px;
+ }
+ .time-in-force-content .topic{
+    color: #999;
+    font-size: 9px;
+    font-weight: 600;
+    width: 100%;
+    padding: 3px 0px;
+ }
+ .time-in-force-content .btn{
+    color: #fff;
+    background: hsla(0,0%,60%,.18823529411764706);
+    font-size: 9px;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    padding: 3px;
+    border-radius: 3px;
+ }
+ .time-in-force-content .btn h4{
+    margin: 0px 3px;
+ }

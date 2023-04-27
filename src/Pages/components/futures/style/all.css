@@ -1,0 +1,120 @@
+.features-all-page{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+.features-all-page-container{
+    font-size: 7.5px;
+    color: #999;
+}
+.features-all-page-heading{
+    display: flex;
+    grid-gap: 15px;
+    gap: 15px;
+    padding: 5px 10px;
+    font-weight: 900;
+    color: #999;
+    border-top: 1px solid #ffffff12;
+}
+.features-all-page-heading .coin{
+    color: #fff;
+}
+.search-coin-wrap{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+.search-coin-wrap-header-content{
+    display: flex;
+    width: 100%;
+    color: hsla(0,0%,60%,.6);
+    font-size: 11px;
+    border-top: 1px solid #ffffff14;
+    padding: 10px 0px;
+    margin-top: 10px;
+    font-weight: 900;
+}
+.search-coin-wrap-header-content .price{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+.search-coin-wrap-header-content .name{
+   width: 100%;
+}
+
+.coin-drop-list{
+    padding: 0;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+.coin-drop-list-container{
+    width: 100%;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.coin-drop-list-container::-webkit-scrollbar{
+    display: none;
+}
+
+.coin-drop-list-content{
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    margin: 0;
+}
+.coin-drop-list-content .image-name-container{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    gap: 10px;
+}
+.coin-drop-list-content .image-name-container .pair span{
+    color: #999;
+    font-size: 11.23px;
+    font-weight: bold;
+}
+.image-name-container .image img{
+    width: 20px;
+    height: 20px;
+}
+.image-name-container .image{
+    width: 20px;
+    height: 20px;
+}
+.coin-drop-list-content .lastprice-container{
+    padding: 1px;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 10px;
+}
+
+.coin-drop-list-content .lastprice-container .percent{
+   color: red;
+}
+
+.coin-drop-list .no-data{
+    display: block;
+    position: relative;
+   margin: 0;
+   padding: 0;
+}
+.coin-drop-list .no-data .no-data-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: #999;
+    text-align: center;
+    font-size: 13px;
+}
+.no-data-content h3{
+    font-size: 55px;
+}

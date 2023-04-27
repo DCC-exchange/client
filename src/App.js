@@ -1,5 +1,5 @@
-import { Route, Routes } from "react-router-dom";
-import React from "react"
+import { Route, Routes, Navigate, useNavigate } from "react-router-dom";
+import React, {useEffect} from "react"
 import Welcome from "./Pages/components/welcome/Index";
 import Home from "./Pages/components/home/Index";
 import Favourite from "./Pages/components/home/pageNavigation/Favourite";
@@ -23,16 +23,32 @@ import Future from "./Pages/components/market/routes/Future";
 import Spot from "./Pages/components/spot/Spot";
 import Convert from "./Pages/components/spot/route/Convert";
 import SpotMarket from "./Pages/components/spot/route/SpotMarket";
-// import TransferSelect from "./Pages/components/Wallet/overview/TransferSelect";
+import Futures from "./Pages/components/futures/Futures";
+import UsdtM from "./Pages/components/futures/route/UsdtM";
+import CoinsM from "./Pages/components/futures/route/CoinsM";
 
+// ==========================================================
+import { useAuthContext } from "./hooks/useAuthContext";
 
 function App() {
+
+  const navigation = useNavigate()
+
+  // Welcome first timer
+  useEffect(()=>{
+  const first = JSON.parse(localStorage.getItem("firstHit"));
+    if(!first){
+      navigation('/welcome')
+    }
+  },[navigation])
+
+  const { user } = useAuthContext()
 
   return (
     <div className="App">
         <Routes>
           {/* Welcome route */}
-          <Route path="/welcome" element={<Welcome />}></Route>
+          <Route path="/welcome" element={<Welcome /> }></Route>
 
           {/* Home Route */}
             <Route path="/" element={<Home />}>
@@ -49,6 +65,13 @@ function App() {
                 <Route index element={<SpotMarket />} />
                 <Route path="convert" element={<Convert />} />
                 <Route path="spot-market" element={<SpotMarket />} />
+            </Route>
+
+                {/* Futures route */}
+            <Route path="/futures" element={<Futures />}>
+                <Route index element={<UsdtM />} />
+                <Route path="coin-m" element={<CoinsM />} />
+                <Route path="usdt-m" element={<UsdtM />} />
             </Route>
 
             {/* Login route */}
@@ -69,11 +92,11 @@ function App() {
             <Route path="/marketChart" element={<MarketChart />} />
             
             {/* Wallet routes */}
-            <Route path="wallet" element={<Assets />}>
-                <Route index element={<Overview />} />s
-                <Route path="over-view" element={<Overview />} />
-                <Route path="spot" element={<SpotWallet />} />
-                <Route path="futures" element={<FuturesRec />} />
+            <Route path="wallet" element={user ? <Assets /> : <Navigate to="/sign/login" /> }>
+                <Route index element={user ? <Overview /> : <Navigate to="/sign/login" />  } />
+                <Route path="over-view" element={ user ? <Overview /> : <Navigate to="/sign/login" />  } />
+                <Route path="spot" element={user ? <SpotWallet /> : <Navigate to="/sign/login" />  } />
+                <Route path="futures" element={ user ? <FuturesRec /> : <Navigate to="/sign/login" /> } />
             </Route>
         </Routes>
       <ButtomNav />

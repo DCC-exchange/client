@@ -10,11 +10,11 @@
   padding: 10px 0px;
 }
 
-hr {
+.candlestick_container hr {
   border: 3px solid rgba(89, 51, 111, 0.5);
 }
 
-ul {
+.candlestick_container ul {
   list-style: none;
 }
 
@@ -28,16 +28,16 @@ ul {
   font-size: 24.75px;
 }
 
-.line {
+.candlestick_container .line {
   border: 1px solid #59336F;
 }
 
-.coin_amount {
+.candlestick_container .coin_amount {
   font-weight: 600;
   font-size: 30px;
 }
 
-.green {
+.candlestick_container .green {
   color: #149833;
 }
 
@@ -49,7 +49,7 @@ ul {
   background-color: #EB1A1A;
 }
 
-.red {
+.candlestick_container .red {
   color: #EB1A1A;
 }
 
