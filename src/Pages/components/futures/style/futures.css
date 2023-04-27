@@ -171,8 +171,10 @@
     text-align: center;
     color: #9999;
 }
-
-.market-limit-btn-container .btni{
+.market-limit-btn-container .btn{
+    width: 100%;
+}
+.market-limit-btn-container .btn{
     width: 100%;
 }
 .market-limit-btn-container .btn-container{
@@ -181,7 +183,7 @@
     text-align: center;
     position: relative;
 }
-.market-limit-btn-container .btni button{
+.market-limit-btn-container .btn button{
     background: none;
     border: none;
     text-align: center;

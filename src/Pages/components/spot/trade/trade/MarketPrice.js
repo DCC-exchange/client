@@ -39,7 +39,7 @@ export default function MarketPrice() {
     <div className="market-limit-btn-container">
         <div className="icon">
         </div>
-        <div className="btni">
+        <div className="btn">
            <button>Market Price</button>
         </div>
         <div className="icon">
