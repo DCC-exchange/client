@@ -46,6 +46,9 @@ function App() {
 
   return (
     <div className="App">
+      <div className="app-container">
+        <h1>This app works works better on Mobile</h1>
+      </div>
         <Routes>
           {/* Welcome route */}
           <Route path="/welcome" element={<Welcome /> }></Route>
@@ -88,7 +91,7 @@ function App() {
                 <Route path="market-favourites" element={<MarketFavorite />} />
                 <Route path="market-features" element={<Future />} />
             </Route>
-            
+
             {/* Market Chart */}
             <Route path="/marketChart" element={<MarketChart />} />
             
