@@ -34,14 +34,23 @@ export default function SpotMarket() {
     }
   })
 
+  const [ showCoinRoute, setShowCoinRoute ] = useState(false)
+  const handleShowCoinSlide = ((e)=>{
+    if(e === 1){
+      setShowCoinRoute(true)
+    }else{
+      setShowCoinRoute(false)
+    }
+  })
+
   return (
     <div className="spot-market">
-        <CoinRoute />
+      { showCoinRoute && <CoinRoute handleShowCoinSlide={()=>handleShowCoinSlide(2)} /> }
         <div className="spot-market-container">
             <div className="coin-title">
               <div className="coin-title-container">
                 <div className="slide-icon-container">
-                  <div className="slide-icon">
+                  <div className="slide-icon" onClick={()=>handleShowCoinSlide(1)}>
                         <h4><BiTransfer /></h4>
                     </div>
                     <div className="content-coin-name">
