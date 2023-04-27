@@ -39,83 +39,82 @@ export default function BuyLimit() {
 
   return (
     <div className="market-limit">
-        <div className="market-limit-btn-container">
-            <div className="icon" onClick={()=>setMarketPrice(marketPrice + 0.1)}>
-                <h4>-</h4>
-            </div>
-            <div className="input">
-                <input type="number" value={marketPrice} onChange={(e)=> setMarketPrice(e.target.value)} placeholder='Market Price'  />
-            </div>
-            <div className="icon" onClick={()=>setMarketPrice(marketPrice - 0.1)}>
-                <h4>+</h4>
-            </div>
-        </div>
-        <div className="market-limit-btn-container">
-            <div className="icon" onClick={()=> setTradeAmount(TradeAmount + 0.1)}>
-                <h4>-</h4>
-            </div>
-            <div className="input">
-                <input type="number" value={TradeAmount} onChange={(e)=> setTradeAmount(e.target.value)} placeholder='Amount(ETH)'  />
-            </div>
-            <div className="icon" onClick={()=>setTradeAmount(TradeAmount - 0.1)}>
-                <h4>+</h4>
-            </div>
-        </div>
-        <div className="amount-percentage">
-            <div className="amount-percentage-container">
-                <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(25)} >
-                    <div className={percentActive1}>
-                    </div>
-                    <div className="percentage-figure">
-                        <h4>25%</h4>
-                    </div>
+            <div className="market-limit-btn-container">
+                <div className="icon" onClick={()=>setMarketPrice(marketPrice + 0.1)}>
+                    <h4>-</h4>
                 </div>
-                <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(50)}>
-                    <div className={percentActive2}>
-                    </div>
-                    <div className="percentage-figure">
-                        <h4>50%</h4>
-                    </div>
+                <div className="input">
+                    <input type="number" value={marketPrice} onChange={(e)=> setMarketPrice(e.target.value)} placeholder='Market Price'  />
                 </div>
-                <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(75)} >
-                    <div className={percentActive3}>
-                    </div>
-                    <div className="percentage-figure">
-                        <h4>75%</h4>
-                    </div>
-                </div>
-                <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(100)}>
-                    <div className={percentActive4}>
-                    </div>
-                    <div className="percentage-figure">
-                        <h4>100%</h4>
-                    </div>
+                <div className="icon" onClick={()=>setMarketPrice(marketPrice - 0.1)}>
+                    <h4>+</h4>
                 </div>
             </div>
-        </div>
-
-        <div className="market-limit-btn-container">
-            <div className="icon" onClick={()=> setTradeAmount(TotalAmount + 0.1)}>
-                <h4>-</h4>
-            </div>
-            <div className="input">
-                <input type="number" value={TotalAmount} onChange={(e)=> setTotalAmount(e.target.value)} placeholder='Total(USDT)'  />
-            </div>
-            <div className="icon" onClick={()=>setTotalAmount(TotalAmount - 0.1)}>
-                <h4>+</h4>
-            </div>
-        </div>
-        <div className="amount-availability">
-            <div className="amount-availability-container">
-                <div className="amount-availability">
-                <h4>Overview</h4>
+            <div className="market-limit-btn-container">
+                <div className="icon" onClick={()=> setTradeAmount(TradeAmount + 0.1)}>
+                    <h4>-</h4>
                 </div>
-                <div className="coin-availbility">
-                <h4>0 USDT</h4>
+                <div className="input">
+                    <input type="number" value={TradeAmount} onChange={(e)=> setTradeAmount(e.target.value)} placeholder='Amount(ETH)'  />
+                </div>
+                <div className="icon" onClick={()=>setTradeAmount(TradeAmount - 0.1)}>
+                    <h4>+</h4>
                 </div>
             </div>
-        </div>
-        <div className="submit-btn-container">
+            <div className="amount-percentage">
+                <div className="amount-percentage-container">
+                    <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(25)} >
+                        <div className={percentActive1}>
+                        </div>
+                        <div className="percentage-figure">
+                            <h4>25%</h4>
+                        </div>
+                    </div>
+                    <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(50)}>
+                        <div className={percentActive2}>
+                        </div>
+                        <div className="percentage-figure">
+                            <h4>50%</h4>
+                        </div>
+                    </div>
+                    <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(75)} >
+                        <div className={percentActive3}>
+                        </div>
+                        <div className="percentage-figure">
+                            <h4>75%</h4>
+                        </div>
+                    </div>
+                    <div className="amount-percentage-contents" onClick={()=>SetPercentageActive(100)}>
+                        <div className={percentActive4}>
+                        </div>
+                        <div className="percentage-figure">
+                            <h4>100%</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="market-limit-btn-container">
+                <div className="icon" onClick={()=> setTradeAmount(TotalAmount + 0.1)}>
+                    <h4>-</h4>
+                </div>
+                <div className="input">
+                    <input type="number" value={TotalAmount} onChange={(e)=> setTotalAmount(e.target.value)} placeholder='Total(USDT)'  />
+                </div>
+                <div className="icon" onClick={()=>setTotalAmount(TotalAmount - 0.1)}>
+                    <h4>+</h4>
+                </div>
+            </div>
+            <div className="amount-availability">
+                <div className="amount-availability-container">
+                    <div className="amount-availability">
+                    <h4>Overview</h4>
+                    </div>
+                    <div className="coin-availbility">
+                    <h4>0 USDT</h4>
+                    </div>
+                </div>
+            </div>
+                 <div className="submit-btn-container">
             <div className="submit-btn">
                 <button type='submit'>Buy(ETH)</button>
             </div>
