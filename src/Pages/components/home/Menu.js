@@ -12,9 +12,13 @@ import settings from "./images/setting.png";
 import help from "./images/Help.svg";
 import copy from "./images/Copy-icon.png"
 
+import {  useNavigate } from "react-router-dom";
+
 import { useAuthContext } from '../../../hooks/useAuthContext';
 
 export default function Menu({cancel}) {
+
+  const Navigate = useNavigate()
 
   const { user } = useAuthContext()
 
@@ -61,6 +65,10 @@ export default function Menu({cancel}) {
     }
   ]
 
+  const handleLogin = (()=>{
+    Navigate("/sign/login")
+  })
+
   return (
     <div className='menu'>
       <div className="menu_container">
@@ -102,7 +110,7 @@ export default function Menu({cancel}) {
             <div className="menu-login-container">
                 <div className="menu-login-content">
                     <div className="menu-login-email">
-                        <button>Log In With Email</button>
+                        <button onClick={handleLogin} >Log In With Email</button>
                     </div>
                     <div className="menu-login-middle">
                       <div className="line">

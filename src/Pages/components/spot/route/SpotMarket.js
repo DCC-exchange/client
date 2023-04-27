@@ -10,6 +10,7 @@ import Buy from '../trade/buy/Buy';
 import Sell from '../trade/sell/Sell';
 import { IoAddCircleOutline } from "react-icons/io5";
 import MarketPrice from '../trade/marketPrice/MarketPrice';
+import CoinRoute from '../coins/CoinRoute';
 
 export default function SpotMarket() {
 
@@ -35,6 +36,7 @@ export default function SpotMarket() {
 
   return (
     <div className="spot-market">
+        <CoinRoute />
         <div className="spot-market-container">
             <div className="coin-title">
               <div className="coin-title-container">
