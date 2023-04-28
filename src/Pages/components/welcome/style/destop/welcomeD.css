@@ -21,14 +21,14 @@
 }
 .welcome-page-container .welcome-page-content .text-field .header{
     font-weight: 700;
-    font-size: 70px;
+    font-size: 20px;
     line-height: 105px;
     letter-spacing: 0.1em;
     color: var(--primary-color);
 }
 .welcome-page-container .welcome-page-content .text-field .middle-text{
     font-weight: 500;
-    font-size: 38px;
+    font-size: 14px;
     line-height: 57px;
     letter-spacing: 0.1em;
     color: var(--secondary-color);
@@ -62,8 +62,8 @@
 }
 .welcome-page-container .welcome-page-content  .wallet-field .wallet-field-container .round-circle{
     position: absolute;
-    width: 557.66px;
-    height: 557.66px;
+    width: 150px;
+    height: 150px;
     background: linear-gradient(163.36deg, rgba(187, 75, 215, 0.1) 11.51%, rgba(163, 161, 161, 0) 77.53%);
     border-radius: 50%;
 }
