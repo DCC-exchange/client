@@ -1,14 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { MdOutlineContentPasteSearch} from "react-icons/md";
-import { useCryptoCoins } from '../../../../config/Coins'; 
 
-export default function UsdtM() {
+export default function UsdtM({Coins, isLoading, error}) {
 
-    const  { CryptoCoins, Coins, isLoading, error } = useCryptoCoins()
 
-    useEffect(()=>{
-      CryptoCoins()
-    },[])
 
     console.log(Coins)
 
