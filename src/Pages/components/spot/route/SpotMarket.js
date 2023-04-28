@@ -53,7 +53,7 @@ export default function SpotMarket() {
   },[])
 
 const defaultCoin =  Coins.filter((prop)=>{
-    return Coins.symbol.includes("eth")
+    return prop.symbol.includes("eth")
   })
 
   console.log(defaultCoin)
