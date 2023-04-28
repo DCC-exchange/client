@@ -1,5 +1,6 @@
 import React from 'react'
-import wallet from "../images/wallet purse.svg";
+import wallet from "../../images/wallet purse.svg";
+
 
 export default function WelcomeM({handleContinue}) {
 
