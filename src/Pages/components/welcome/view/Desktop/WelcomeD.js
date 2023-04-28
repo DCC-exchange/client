@@ -23,9 +23,11 @@ export default function WelcomeD({ handleContinue}) {
                     </div>
                 </div>
                 <div className="wallet-field">
-                    <div className="round-circle"></div>
-                    <div className="wallet-img">
-                        <img src={wallet} alt="" />
+                    <div className="wallet-field-container">
+                        <div className="round-circle"></div>
+                        <div className="wallet-img">
+                            <img src={wallet} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>

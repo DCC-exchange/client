@@ -11,5 +11,70 @@
     width: 100%;
 }
 .welcome-page-content{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.welcome-page-container .welcome-page-content .text-field{
+    width: 100%;
+}
+.welcome-page-container .welcome-page-content .text-field .header{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 105px;
+    letter-spacing: 0.1em;
+    color: var(--primary-color);
+}
+.welcome-page-container .welcome-page-content .text-field .middle-text{
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 57px;
+    letter-spacing: 0.1em;
     color: var(--secondary-color);
+}
+.welcome-page-container .welcome-page-content .text-field .welcome-btn{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: var(--primary-color);
+    color: var(--button-color);
+}
+.welcome-page-container .welcome-page-content .text-field .welcome-btn button{
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    background: var(--button-color);
+}
+.welcome-page-container .welcome-page-content  .wallet-field{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}
+.welcome-page-container .welcome-page-content  .wallet-field .wallet-field-container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+.welcome-page-container .welcome-page-content  .wallet-field .wallet-field-container .round-circle{
+    position: absolute;
+    width: 557.66px;
+    height: 557.66px;
+    background: linear-gradient(163.36deg, rgba(187, 75, 215, 0.1) 11.51%, rgba(163, 161, 161, 0) 77.53%);
+    border-radius: 50%;
+}
+.wallet-field .wallet-field-container .wallet-img{
+    position: absolute;
+    margin: 0;
+}
+.wallet-field .wallet-field-container .wallet-img img{
+    position: absolute;
+    margin: 0;
+    width: 460.62px;
+    height: 437.41px;
+    transform: matrix(0.97, -0.25, 0.28, 0.96, 0, 0);
 }
