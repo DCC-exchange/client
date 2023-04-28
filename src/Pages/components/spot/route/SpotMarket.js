@@ -52,11 +52,6 @@ export default function SpotMarket() {
     CryptoCoins()
   },[])
 
-const defaultCoin =  Coins.filter((prop)=>{
-    return prop
-  })
-
-  console.log(defaultCoin)
 
   return (
     <div className="spot-market">

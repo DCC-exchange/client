@@ -1,0 +1,15 @@
+.welcome-page{
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(300.65deg, #140118 61.42%, #140118 61.42%, #631969 160.66%);
+}
+.welcome-page-container{
+    padding: auto;
+    margin: auto;
+    width: 100%;
+}
+.welcome-page-content{
+    color: var(--primary-color);
+}

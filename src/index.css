@@ -125,3 +125,26 @@ input[type="number"] {
   top: -40px;
   border-radius: 50%;
 }
+
+:root{
+  --primary-color: #fff;
+  --secondary-color: red;
+}
+
+@media only screen and (max-width : 650px){
+  .mobile-view{
+    display: block;
+  }
+  .destop-view{
+      display: none;
+  }
+}
+
+@media only screen and (min-width : 650px){
+  .mobile-view{
+    display: none;
+  }
+  .destop-view{
+      display: block;
+  }
+}
