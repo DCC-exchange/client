@@ -12,14 +12,16 @@ export default function WelcomeD({ handleContinue}) {
         <div className="welcome-page-container">
             <div className="welcome-page-content">
                 <div className="text-field">
-                    <div className="header">
-                        <h2>Manage Your Wallet</h2>
-                    </div>
-                    <div className="middle-text">
-                        <h4>Manage your app with DCC Exchange. With our app it’s easy and secured. </h4>
-                    </div>
-                    <div className="welcome-btn">
-                        <button onClick={handleProceed}>Get Start</button>
+                    <div className="text-field-container">
+                        <div className="header">
+                            <h2>Manage Your Wallet</h2>
+                        </div>
+                        <div className="middle-text">
+                            <h4>Manage your app with DCC Exchange. With our app it’s easy and secured. </h4>
+                        </div>
+                        <div className="welcome-btn">
+                            <button onClick={handleProceed}>Get Start</button>
+                        </div>
                     </div>
                 </div>
                 <div className="wallet-field">
