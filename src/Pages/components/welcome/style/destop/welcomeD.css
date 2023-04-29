@@ -3,7 +3,9 @@
     width: 100%;
     margin: 0;
     height: 100vh;
-    background: linear-gradient(300.65deg, #140118 61.42%, #140118 61.42%, #631969 160.66%);
+    position: fixed;
+    z-index: 23;
+    background: linear-gradient(300.65deg,#140118 61.42%,#140118 0,#631969 160.66%);
 }
 .welcome-page-container{
     padding: auto;
@@ -31,59 +33,63 @@
 }
 .welcome-page-container .welcome-page-content .text-field .header{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 45px;
     line-height: 105px;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     color: var(--primary-color);
 }
 .welcome-page-container .welcome-page-content .text-field .middle-text{
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 57px;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     color: var(--secondary-color);
 }
 .welcome-page-container .welcome-page-content .text-field .welcome-btn{
     font-weight: 700;
-    font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.1em;
+    padding: 25px 0px;
+    letter-spacing: .1em;
     color: var(--primary-color);
 }
 .welcome-page-container .welcome-page-content .text-field .welcome-btn button{
     border: none;
     width: 100%;
     border-radius: 8px;
-    background: var(--button-color);padding: 6px;
+    background: var(--button-color);
+    padding: 8px;
+    color: #ffff;
+    font-size: 14px;
 }
 .welcome-page-container .welcome-page-content  .wallet-field{
     width: 100%;
     height: 100vh;
-    justify-content: center;
-    display:flex;
-    align-items: center;
+    position: relative;
 }
 .welcome-page-container .welcome-page-content  .wallet-field .wallet-field-container{
     padding: 0;
     margin: 0;
     width: 100%;
-    position: relative;
+    position: absolute;
+    top: 20%;
 }
 .welcome-page-container .welcome-page-content  .wallet-field .wallet-field-container .round-circle{
     position: absolute;
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(163.36deg, rgba(187, 75, 215, 0.1) 11.51%, rgba(163, 161, 161, 0) 77.53%);
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(163.36deg,rgba(187,75,215,.1) 11.51%,rgba(163,161,161,0) 77.53%);
+    top: 50%;
+    left: 25%;
     border-radius: 50%;
 }
 .wallet-field .wallet-field-container .wallet-img{
     position: absolute;
     margin: 0;
+    top: 40px;
+    left: 25%;
 }
 .wallet-field .wallet-field-container .wallet-img img{
-    position: absolute;
     margin: 0;
-    width: 460.62px;
-    height: 437.41px;
-    transform: matrix(0.97, -0.25, 0.28, 0.96, 0, 0);
+    width: 390.62px;
+    -webkit-transform: matrix(.97,-.25,.28,.96,0,0);
 }
