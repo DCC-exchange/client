@@ -35,12 +35,12 @@
 .logo-container .logo-content .logo-img img{
     width: 30px;
 }
-.logo-container .navigation-routes{
+.navbar-destop-container .navigation-routes{
     width: 45%;
     display: flex;
     gap: 1px;
 }
-.logo-container .navigation-routes .market-container{
+.navigation-routes .market-container{
     width: 100%;
     text-align: center;
 }
