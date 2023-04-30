@@ -12,7 +12,7 @@ const Candlestick = () => {
     const response = await axios.get(`https://api.coingecko.com/api/v3/coins/${id}/ohlc?days=1&vs_currency=usd`);
     const data = response.data;
     const cData = data.map((d) => {
-      return { time: d[0], open: d[1], high: d[2], low: d[3], close: d[4] }
+      return { time: d[0]/1000, open: d[1], high: d[2], low: d[3], close: d[4] }
     });
     const chartOptions = { height: 400, layout: { textColor: 'white', background: { type: 'solid', color: 'transparent' } } };
     const chart = createChart(newDiv, chartOptions);
@@ -25,7 +25,6 @@ const Candlestick = () => {
   useEffect(() => {
     const newNode = myRef.current;
     const newDiv = newNode.appendChild(document.createElement('div'));
-    console.log(newDiv);
     
     fetchOhlcData(newDiv);
   }, [id])
