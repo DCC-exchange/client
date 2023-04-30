@@ -2,7 +2,7 @@
     width: 100%;
     background: var(--backgoud-color-secondary);
     color: var(--primary-text-color);
-    height: 60px;
+    height: 56px;
     top: 0;
     left: 0;
     position: fixed;
@@ -10,7 +10,7 @@
     font-weight: 600;
 }
 .navbar-destop-container{
-    padding: 10px;
+    padding: 0;
     margin: 0;
     display: flex;
     width: 100%;
@@ -24,29 +24,37 @@
 .navbar-destop-container .logo-container .logo-content{
     width: 100%;
     display: flex;
-    gap: 7px;
+    grid-gap: 7px;
+    gap: 15px;
+    padding: 10px 20px;
     color: var(--primary-text-color);
-    font-size: 15px;
+    font-size: 18px;
+    letter-spacing: .3em;
 }
 .logo-container .logo-content .logo-img{
     padding: 0;
     margin: 0;
 }
 .logo-container .logo-content .logo-img img{
-    width: 30px;
+    width: 35px;
 }
 .navbar-destop-container .navigation-routes{
-    width: 45%;
+    width: 50%;
     display: flex;
+    grid-gap: 1px;
     gap: 1px;
 }
 .navigation-routes .market-container{
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navigation-routes .market-container .market-content{
     padding: 0;
     margin: 0;
+    font-size: 13px;
+    color: #fff;
 }
 .navigation-routes .spot-container{
     width: 100%;
@@ -56,15 +64,20 @@
 .navigation-routes .spot-container .spot-content{
     width: 100%;
     display: flex;
+    justify-content: center;
+    height: 60px;
 }
 .spot-container .spot-content .spot-text{
-    font-size: 12px;
+    font-size: 13px;
     color: var(--primary-text-color);
     font-weight: 600;
+    margin: 19px 0px;
 }
 .spot-container .spot-content .spot-arrow{
-    font: 14px;
-    color: var(--backgoud-color-secondary);
+    font-size: 30px;
+    display: flex;
+    margin: 10px 0px;
+    color: var(--secondary-text-color);
 }
 
 .navbar-destop-container .login-container{
@@ -85,7 +98,7 @@
 .login-container .login-content .login-text a{
     color: var(--primary-text-color);
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
 }
 .login-container .login-content .signup-button{
@@ -95,7 +108,7 @@
 .login-container .login-content .signup-button a{
     color: var(--primary-text-color);
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     background: var(--button-color );
     padding: 6px 25px;
