@@ -9,16 +9,16 @@ import "./style/navbar.css";
 import "./style/desktop/home.css"
 import "./style/desktop/navbar.css"
 
-export default function Home() {
+export default function HomeIndex() {
 
   return (
-    <>
+    <div className="landing-page">
       <div className="mobile-view">
           <HomeM />
       </div>
       <div className="destop-view">
          <HomeD />
       </div>
-    </>
+    </div>
   );
 }

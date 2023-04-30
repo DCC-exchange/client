@@ -6,7 +6,7 @@ export default function HomeD() {
     <div className="home-page">
         <Navbar />
         <div className="home-page-container">
-            
+            <h2>Destop Home</h2>
         </div>
     </div>
   )

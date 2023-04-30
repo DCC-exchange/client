@@ -24,12 +24,13 @@ import CoinsM from "./Pages/components/futures/route/CoinsM";
 
 // ==========================================================
 import { useAuthContext } from "./hooks/useAuthContext";
-import Home from "./Pages/components/home/Index";
+import HomeIndex from "./Pages/components/home/HomeIndex";
 import Hot from "./Pages/components/home/view/mobile/route/Hot";
 import Losers from "./Pages/components/home/view/mobile/route/Losers";
 import Gainers from "./Pages/components/home/view/mobile/route/Gainers";
 import Volume from "./Pages/components/home/view/mobile/route/Volume";
 import Favourite from "./Pages/components/spot/coins/Favourite";
+
 
 function App() {
 
@@ -51,7 +52,7 @@ function App() {
           {/* Welcome route */}
           <Route path="/welcome" element={<Welcome /> }></Route>
           {/* Home Route */}
-            <Route path="/" element={<Home />}>
+            <Route path="/" element={<HomeIndex />}>
                 <Route index element={<Hot />} />
                 <Route path="hot" element={<Hot />} />
                 <Route path="loser" element={<Losers />} />
