@@ -1,0 +1,14 @@
+.home-page{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: #140118;
+    height: 600px;
+}
+
+.home-page-container{
+    margin: 0;
+    padding: 0;
+    display: block;
+}

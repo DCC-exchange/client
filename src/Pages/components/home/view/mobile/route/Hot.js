@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style/index.css"
-import { useCryptoCoins } from '../../../config/Coins'
+import { useCryptoCoins } from '../../../../../config/Coins'
 import { useEffect } from 'react'
 
 export default function Hot() {

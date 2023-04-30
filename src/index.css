@@ -127,15 +127,17 @@ input[type="number"] {
 }
 
 :root{
-  --primary-color: #fff;
-  --secondary-color:  #7F6184;
+  --primary-text-color: #fff;
+  --secondary-text-color:  #7F6184;
   --background-color: linear-gradient(300.65deg, #140118 61.42%, #140118 61.42%, #631969 160.66%);
+  --backgoud-color-secondary :  #240A29;
   --button-color : linear-gradient(270.04deg, #31052F 7.4%, rgba(105, 29, 102, 0.708572) 61.38%, rgba(169, 116, 167, 0.53) 113.95%);
 }
 
 @media only screen and (max-width : 650px){
   .mobile-view{
     display: block;
+    width: 100%;
   }
   .destop-view{
       display: none;
