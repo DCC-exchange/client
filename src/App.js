@@ -100,9 +100,10 @@ function App() {
                 <Route path="spot" element={user ? <SpotWallet /> : <Navigate to="/sign/login" />  } />
                 <Route path="futures" element={ user ? <FuturesRec /> : <Navigate to="/sign/login" /> } />
             </Route>
-            
         </Routes>
-      <ButtomNav />
+        <div className="mobile-view">
+          <ButtomNav />
+        </div>
     </div>
   );
 }
