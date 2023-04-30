@@ -6,10 +6,97 @@
     top: 0;
     left: 0;
     position: fixed;
+    font-size: 12px;
+    font-weight: 600;
 }
 .navbar-destop-container{
-    padding: 0;
+    padding: 10px;
     margin: 0;
     display: flex;
     width: 100%;
+}
+.navbar-destop-container .logo-container{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-destop-container .logo-container .logo-content{
+    width: 100%;
+    display: flex;
+    gap: 7px;
+    color: var(--primary-text-color);
+    font-size: 15px;
+}
+.logo-container .logo-content .logo-img{
+    padding: 0;
+    margin: 0;
+}
+.logo-container .logo-content .logo-img img{
+    width: 30px;
+}
+.logo-container .navigation-routes{
+    width: 45%;
+    display: flex;
+    gap: 1px;
+}
+.logo-container .navigation-routes .market-container{
+    width: 100%;
+    text-align: center;
+}
+.navigation-routes .market-container .market-content{
+    padding: 0;
+    margin: 0;
+}
+.navigation-routes .spot-container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.navigation-routes .spot-container .spot-content{
+    width: 100%;
+    display: flex;
+}
+.spot-container .spot-content .spot-text{
+    font-size: 12px;
+    color: var(--primary-text-color);
+    font-weight: 600;
+}
+.spot-container .spot-content .spot-arrow{
+    font: 14px;
+    color: var(--backgoud-color-secondary);
+}
+
+.navbar-destop-container .login-container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.navbar-destop-container .login-container .login-content{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 14px;
+}
+.login-container .login-content .login-text{
+    padding: 0;
+    margin: 0;
+}
+.login-container .login-content .login-text a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+.login-container .login-content .signup-button{
+    padding: 0;
+    margin: 0;
+}
+.login-container .login-content .signup-button a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    background: var(--button-color );
+    padding: 6px 25px;
 }
