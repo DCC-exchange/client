@@ -31,7 +31,6 @@ import Gainers from "./Pages/components/home/view/mobile/route/Gainers";
 import Volume from "./Pages/components/home/view/mobile/route/Volume";
 import Favourite from "./Pages/components/spot/coins/Favourite";
 
-
 function App() {
 
   const navigation = useNavigate()
