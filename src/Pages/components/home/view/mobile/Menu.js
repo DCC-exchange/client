@@ -1,20 +1,20 @@
 import React from 'react'
-import "./style/menu.css";
-import userPhoto from "./images/user_photo.svg";
-import reward from "./images/Reward.png";
-import fundz from "./images/fundz.svg";
-import history from "./images/message.png";
-import referals from "./images/referrals.png";
-import masterSettings from "./images/master_settings.png";
-import trade from "./images/Trades.png";
-import security from "./images/security.png";
-import settings from "./images/setting.png";
-import help from "./images/Help.svg";
-import copy from "./images/Copy-icon.png"
+
+import userPhoto from "../../images/user_photo.svg";
+import reward from "../../images/Reward.png";
+import fundz from "../../images/fundz.svg";
+import history from "../../images/message.png";
+import referals from "../../images/referrals.png";
+import masterSettings from "../../images/master_settings.png";
+import trade from "../../images/Trades.png";
+import security from "../../images/security.png";
+import settings from "../../images/setting.png";
+import help from "../../images/Help.svg";
+import copy from "../../images/Copy-icon.png"
 
 import {  useNavigate } from "react-router-dom";
 
-import { useAuthContext } from '../../../hooks/useAuthContext';
+import { useAuthContext } from '../../../../../hooks/useAuthContext';
 
 export default function Menu({cancel}) {
 

@@ -1,0 +1,115 @@
+.navbar-destop{
+    width: 100%;
+    background: var(--backgoud-color-secondary);
+    color: var(--primary-text-color);
+    height: 56px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    font-size: 12px;
+    font-weight: 600;
+}
+.navbar-destop-container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+.navbar-destop-container .logo-container{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-destop-container .logo-container .logo-content{
+    width: 100%;
+    display: flex;
+    grid-gap: 7px;
+    gap: 15px;
+    padding: 10px 20px;
+    color: var(--primary-text-color);
+    font-size: 18px;
+    letter-spacing: .3em;
+}
+.logo-container .logo-content .logo-img{
+    padding: 0;
+    margin: 0;
+}
+.logo-container .logo-content .logo-img img{
+    width: 35px;
+}
+.navbar-destop-container .navigation-routes{
+    width: 50%;
+    display: flex;
+    grid-gap: 1px;
+    gap: 1px;
+}
+.navigation-routes .market-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation-routes .market-container .market-content{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    color: #fff;
+}
+.navigation-routes .spot-container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.navigation-routes .spot-container .spot-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+.spot-container .spot-content .spot-text{
+    font-size: 13px;
+    color: var(--primary-text-color);
+    font-weight: 600;
+    margin: 19px 0px;
+}
+.spot-container .spot-content .spot-arrow{
+    font-size: 30px;
+    display: flex;
+    margin: 10px 0px;
+    color: var(--secondary-text-color);
+}
+
+.navbar-destop-container .login-container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.navbar-destop-container .login-container .login-content{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 14px;
+}
+.login-container .login-content .login-text{
+    padding: 0;
+    margin: 0;
+}
+.login-container .login-content .login-text a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+.login-container .login-content .signup-button{
+    padding: 0;
+    margin: 0;
+}
+.login-container .login-content .signup-button a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    background: var(--button-color );
+    padding: 6px 25px;
+}

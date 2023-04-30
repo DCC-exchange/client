@@ -1,9 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import notify from "./images/notify dcc.svg";
-import contact from "./images/conatct dcc.svg";
-import Ellipse from "./images/Ellipse 31.svg";
-import "./style/navbar.css"
+import notify from "../../images/notify dcc.svg";
+import contact from "../../images/conatct dcc.svg";
+import Ellipse from "../../images/Ellipse 31.svg";
 import { CgMenuLeftAlt } from "react-icons/cg";
 
 export default function Navbar({hideMenu}) {

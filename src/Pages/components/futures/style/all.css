@@ -71,7 +71,10 @@
     display: flex;
     width: 100%;
     padding: 5px;
+    grid-gap: 10px;
     gap: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 .coin-drop-list-content .image-name-container .pair span{
     color: #999;
@@ -91,12 +94,21 @@
     margin: 0;
     display: flex;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: end;
+    grid-gap: 10px;
     gap: 10px;
+    font-size: 11px;
+    text-align: center;
 }
-
-.coin-drop-list-content .lastprice-container .percent{
-   color: red;
+.coin-drop-list-content .lastprice-content{
+    padding: 0;
+    margin: 0;
+}
+.coin-drop-list-content .lastprice-content .percent{
+    color: #0ec70e;
+}
+.coin-drop-list-content .lastprice-content .percentoooo{
+    color: #ff1717;
 }
 
 .coin-drop-list .no-data{

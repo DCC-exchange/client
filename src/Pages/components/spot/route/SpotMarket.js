@@ -1,4 +1,4 @@
-import React,{ useState} from 'react'
+import React,{ useState, useEffect} from 'react'
 import { BiTransfer } from "react-icons/bi";
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 import { BsBarChart} from "react-icons/bs";
@@ -12,6 +12,7 @@ import { IoAddCircleOutline } from "react-icons/io5";
 import MarketPrice from '../trade/marketPrice/MarketPrice';
 import CoinRoute from '../coins/CoinRoute';
 import Index from '../trade/position/Index';
+import { useCryptoCoins } from "../../../config/Coins"
 
 export default function SpotMarket() {
 
@@ -44,9 +45,17 @@ export default function SpotMarket() {
     }
   })
 
+
+  const  { CryptoCoins, Coins, isLoading, error } = useCryptoCoins()
+
+  useEffect(()=>{
+    CryptoCoins()
+  },[])
+
+
   return (
     <div className="spot-market">
-      { showCoinRoute && <CoinRoute handleShowCoinSlide={()=>handleShowCoinSlide(2)} /> }
+      { showCoinRoute && <CoinRoute Coins={Coins} isLoading={isLoading} error={error} handleShowCoinSlide={()=>handleShowCoinSlide(2)} /> }
         <div className="spot-market-container">
             <div className="coin-title">
               <div className="coin-title-container">

@@ -1,12 +1,7 @@
 import { Route, Routes, Navigate, useNavigate } from "react-router-dom";
 import React, {useEffect} from "react"
 import Welcome from "./Pages/components/welcome/Index";
-import Home from "./Pages/components/home/Index";
-import Favourite from "./Pages/components/home/pageNavigation/Favourite";
-import Hot from "./Pages/components/home/pageNavigation/Hot";
-import Gainers from "./Pages/components/home/pageNavigation/Gainers";
-import Losers from "./Pages/components/home/pageNavigation/Losers";
-import Volume from "./Pages/components/home/pageNavigation/Volume";
+
 import ButtomNav from "./component/ButtonNav";
 import Login from "./LoginEngine/login/Login";
 import LoginSystem from "./LoginEngine/LoginEngine";
@@ -29,6 +24,12 @@ import CoinsM from "./Pages/components/futures/route/CoinsM";
 
 // ==========================================================
 import { useAuthContext } from "./hooks/useAuthContext";
+import HomeIndex from "./Pages/components/home/HomeIndex";
+import Hot from "./Pages/components/home/view/mobile/route/Hot";
+import Losers from "./Pages/components/home/view/mobile/route/Losers";
+import Gainers from "./Pages/components/home/view/mobile/route/Gainers";
+import Volume from "./Pages/components/home/view/mobile/route/Volume";
+import Favourite from "./Pages/components/spot/coins/Favourite";
 
 function App() {
 
@@ -49,15 +50,14 @@ function App() {
         <Routes>
           {/* Welcome route */}
           <Route path="/welcome" element={<Welcome /> }></Route>
-
           {/* Home Route */}
-            <Route path="/" element={<Home />}>
-                <Route index element={<Hot /> }/>
-                <Route path="favourite" element={<Favourite />} />
+            <Route path="/" element={<HomeIndex />}>
+                <Route index element={<Hot />} />
                 <Route path="hot" element={<Hot />} />
-                <Route path="gainers" element={<Gainers />} />
-                <Route path="losers" element={<Losers />} />
+                <Route path="loser" element={<Losers />} />
+                <Route path="gainer" element={<Gainers />} />
                 <Route path="volume" element={<Volume />} />
+                <Route path="favourite" element={<Favourite />} />
             </Route>
 
             {/* Spot route */}
@@ -67,7 +67,7 @@ function App() {
                 <Route path="spot-market" element={<SpotMarket />} />
             </Route>
 
-                {/* Futures route */}
+            {/* Futures route */}
             <Route path="/futures" element={<Futures />}>
                 <Route index element={<UsdtM />} />
                 <Route path="coin-m" element={<CoinsM />} />
@@ -88,6 +88,7 @@ function App() {
                 <Route path="market-favourites" element={<MarketFavorite />} />
                 <Route path="market-features" element={<Future />} />
             </Route>
+
             {/* Market Chart */}
             <Route path="/marketChart" element={<MarketChart />} />
             
@@ -99,7 +100,9 @@ function App() {
                 <Route path="futures" element={ user ? <FuturesRec /> : <Navigate to="/sign/login" /> } />
             </Route>
         </Routes>
-      <ButtomNav />
+        <div className="mobile-view">
+          <ButtomNav />
+        </div>
     </div>
   );
 }

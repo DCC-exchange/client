@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
-export default function MarketPrice() {
-
+export default function SellMarket() {
+ 
     const [ TradeAmount, setTradeAmount ] = useState("")
 
     const [ percentActive1, setPercentActive1 ] = useState("percentage-boxEl")
@@ -11,26 +11,26 @@ export default function MarketPrice() {
 
     const SetPercentageActive = ((e)=>{
         if(e === 25){
-            setPercentActive1("percentage-box-buy")
+            setPercentActive1("percentage-box-sell")
             setPercentActive2('percentage-boxEl')
             setPercentActive3('percentage-boxEl')
             setPercentActive4('percentage-boxEl')
         }else if( e === 50){
-            setPercentActive1("percentage-box-buy")
-            setPercentActive2('percentage-box-buy')
+            setPercentActive1("percentage-box-sell")
+            setPercentActive2('percentage-box-sell')
             setPercentActive3('percentage-boxEl')
             setPercentActive4('percentage-boxEl')
         }
         else if( e === 75){
-            setPercentActive1("percentage-box-buy")
-            setPercentActive2('percentage-box-buy')
-            setPercentActive3('percentage-box-buy')
+            setPercentActive1("percentage-box-sell")
+            setPercentActive2('percentage-box-sell')
+            setPercentActive3('percentage-box-sell')
             setPercentActive4('percentage-boxEl')
         }else{
-            setPercentActive1("percentage-box-buy")
-            setPercentActive2('percentage-box-buy')
-            setPercentActive3('percentage-box-buy')
-            setPercentActive4('percentage-box-buy')
+            setPercentActive1("percentage-box-sell")
+            setPercentActive2('percentage-box-sell')
+            setPercentActive3('percentage-box-sell')
+            setPercentActive4('percentage-box-sell')
         }
     })
 
@@ -122,7 +122,7 @@ export default function MarketPrice() {
         </div>
     </div>
     <div className="submit-btn-container">
-        <div className="submit-btn-buy">
+        <div className="submit-btn-sell">
             <button type='submit'>Buy(ETH)</button>
         </div>
     </div>

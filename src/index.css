@@ -7,10 +7,17 @@
   font-family: "Poppins", "Pirata One";
 }
 
+:root{
+  --primary-text-color: #fff;
+  --secondary-text-color:  #7F6184;
+  --background-color: linear-gradient(300.65deg, #140118 61.42%, #140118 61.42%, #631969 160.66%);
+  --backgoud-color-secondary :  #240A29;
+  --button-color : linear-gradient(270.04deg, #31052F 7.4%, rgba(105, 29, 102, 0.708572) 61.38%, rgba(169, 116, 167, 0.53) 113.95%);
+}
 body {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(196.08deg, #86228e 0.63%, #240426 76.25%);
+  background: var(--backgoud-color-secondary );
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -31,7 +38,6 @@ input[type="number"] {
 
 .App::after {
   display: block;
-  content: "";
   height: 60px;
 }
 
@@ -124,4 +130,24 @@ input[type="number"] {
   right: -40px;
   top: -40px;
   border-radius: 50%;
+}
+
+
+@media only screen and (max-width : 650px){
+  .mobile-view{
+    display: block;
+    width: 100%;
+  }
+  .destop-view{
+      display: none;
+  }
+}
+
+@media only screen and (min-width : 650px){
+  .mobile-view{
+    display: none;
+  }
+  .destop-view{
+      display: block;
+  }
 }

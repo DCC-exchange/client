@@ -4,13 +4,15 @@
     padding: 0;
     margin: 0;
 }
+
+
 .position-switch-container{
     width: 100%;
     display: flex;
     color: #fff;
     font-size: 10.6px;
-    border-bottom: 1px solid rgba(0,0,0,.116);
-    padding: 18px 0px 0px 0px;
+    border-bottom: 1px solid rgb(251 249 249 / 20%);
+    padding: 18px 0 0;
 }
 .position-switch-content{
     width: 100%;
