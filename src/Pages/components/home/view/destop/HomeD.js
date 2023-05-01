@@ -8,7 +8,7 @@ export default function HomeD() {
         <div className="design-circle"></div>
         <Navbar />
         <div className="home-page-container">
-          <div className="home-text-container">
+            <div className="home-text-container">
               <div className="home-text-content">
                   <div className="heading-text">
                       <div className="heading-text-container">
@@ -36,7 +36,40 @@ export default function HomeD() {
                       <img src={homeImg} alt="" />
                   </div>
               </div>
-          </div>
+            </div>
+
+            {/* ======================== Swiping coins ================================== */}
+
+            <div className="coin-price-container">
+                <div className="coin-price-content">
+                    <div className="coin-price-details">
+                        <h3>ETH/USDT <span>-2.8%</span></h3>
+                        <h2>2.3628</h2>
+                        <p>24H Volume 265,234</p>
+                    </div>
+                </div>
+                <div className="coin-price-content">
+                    <div className="coin-price-details">
+                        <h3>ETH/USDT <span>-2.8%</span></h3>
+                        <h2>2.3628</h2>
+                        <p>24H Volume 265,234</p>
+                    </div>
+                </div>
+                <div className="coin-price-content">
+                    <div className="coin-price-details">
+                        <h3>ETH/USDT <span>-2.8%</span></h3>
+                        <h2>2.3628</h2>
+                        <p>24H Volume 265,234</p>
+                    </div>
+                </div>
+                <div className="coin-price-content">
+                    <div className="coin-price-details">
+                        <h3>ETH/USDT <span>-2.8%</span></h3>
+                        <h2>2.3628</h2>
+                        <p>24H Volume 265,234</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   )

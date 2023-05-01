@@ -4,7 +4,6 @@
     margin: 0;
     width: 100%;
     background: #140118;
-    height: 600px;
 }
 .home-page .design-circle{
     position: absolute;
@@ -21,6 +20,7 @@
     padding: 0;
     width: 100%;
     padding-top: 56px;
+    padding-bottom: 70px;
 }
 
 .home-text-container{
@@ -108,4 +108,48 @@ color: var(--secondary-text-color);
 }
 .home-img-container img{
     width: 820px;
+}
+
+/* ================ swiper container ========================= */
+
+.coin-price-container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.coin-price-content{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+.coin-price-details{
+    width: 100%;
+    color: var(--primary-text-color);
+}
+.coin-price-details h3{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+}
+.coin-price-details span{
+    color: var(--buy-text-color);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    font-size: 12px;
+}
+.coin-price-details h2{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+}
+.coin-price-details p{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    color: var(--secondary-text-color);
 }
