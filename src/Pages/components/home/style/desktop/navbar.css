@@ -51,7 +51,7 @@
     cursor: pointer;
 }
 .navigation-routes .market-container:hover{
-    background: var(--backgoud-color-secondary);
+    background: var(--button-color);
     color: var(--primary-text-color);
 }
 
@@ -72,9 +72,8 @@
     height: 56px;
 }
 .navigation-routes .spot-container:hover{
-    /* background: var(--backgoud-color-secondary);
-    color: var(--primary-text-color); */
-    background: red;
+    background: var(--button-color);
+    color: var(--primary-text-color);
 }
 .navigation-routes .spot-container .spot-content{
     width: 100%;
@@ -131,4 +130,7 @@
     background: var(--button-color);
     padding: 7px 25px;
     border-radius: 6px;
+}
+.login-container .login-content .signup-button a:hover{
+    background: var(--background-color);
 }
