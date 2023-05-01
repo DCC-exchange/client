@@ -54,6 +54,7 @@
     background: var(--backgoud-color-secondary);
     color: var(--primary-text-color);
 }
+
 .navigation-routes .market-container .market-content{
     padding: 0;
     margin: 18px 0px;
@@ -69,6 +70,10 @@
     margin: 0;
     cursor: pointer;
     height: 56px;
+}
+.navigation-routes .spot-container:hover{
+    background: var(--backgoud-color-secondary);
+    color: var(--primary-text-color);
 }
 .navigation-routes .spot-container .spot-content{
     width: 100%;
