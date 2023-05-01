@@ -12,7 +12,7 @@ export default function HomeD() {
               <div className="home-text-content">
                   <div className="heading-text">
                       <div className="heading-text-container">
-                          <h1><span>D</span>DCC <span>Y</span>our <span>Ex</span>change</h1>
+                          <h1><span>D</span>CC <br /> <span>Y</span>our <span>Ex</span>change</h1>
                       </div>
                   </div>
                   <div className="detailed-text">

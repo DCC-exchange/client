@@ -28,44 +28,50 @@
     display: flex;
 }
 .home-text-content{
-    width: 100%;
+    width: 60%;
     color: var(--primary-text-color);
-    padding: 25px;
-    margin: 10px;
+    padding: 30px 75px;
+    margin: 20px 30px;
 }
 .home-text-content .heading-text{
-    font-size: 45px;
+    font-size: 38px;
     font-weight: 800;
 }
 .heading-text .heading-text-container{
-    letter-spacing: .2em;
+    letter-spacing: .3em;
 }
 .heading-text .heading-text-container span{
-    color: 867878;
+    color: #867878;
 }
 .home-text-content .detailed-text{
     display: block;
     padding: 0;
+    width: 90%;
     margin: 0;
 }
 .detailed-text-container{
     font-weight: 300;
-    letter-spacing: .2em;
+    letter-spacing: .3em;
+    font-size: 27px;
+    padding: 20px 0px;
+    font-weight: 300;
 }
 .home-email-search{
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 70%;
 }
 .home-email-search .home-email-search-container{
     background-color: var(--white-bg);
     display: flex;
     border-radius: 30px;
     width: 100%;
-    padding: 8px;
+    padding: 5px;
 }
 .home-email-search-container .email-container{
     width: 100%;
+    padding: 0px 20px;
+    font-size: 20px;
 }
 .home-email-search-container .email-container input{
     background: none;
@@ -73,6 +79,7 @@
     border: none;
     color: var(--backgoud-color-secondary);
     cursor: pointer;
+    font-size: 16px;
 }
 .home-email-search-container .email-container input::placeholder{
 color: var(--secondary-text-color);
@@ -84,21 +91,21 @@ color: var(--secondary-text-color);
     width: 100%;
     border: none;
     cursor: pointer;
-    padding: 6.5px;
-    background: var( --button-color);
+    padding: 8px;
+    background: var(--button-color);
     color: var(--primary-text-color);
     border-radius: 30px;
 }
-
 .home-img-content{
-    width: 40%;
+    position: absolute;
     padding: 0;
+    right: 0;
     margin: 0;
 }
 .home-img-content .home-img-container{
-    padding: 10px;
+    padding: 30px;
     margin: 10px;
 }
 .home-img-container img{
-    width: 120px;
+    width: 820px;
 }
