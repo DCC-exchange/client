@@ -51,7 +51,7 @@ export default function HomeD() {
             {/* ======================== Swiping coins ================================== */}
 
             <div className="coin-price-container">
-                <Swiper  slidesPerView={1}
+                <Swiper  slidesPerView={4}
                     spaceBetween={30}
                     loop={true}
                     speed={1000}
@@ -69,21 +69,9 @@ export default function HomeD() {
                             <p>24H Volume 265,234</p>
                         </div>
                     </div>
-                    <div className="coin-price-content">
-                        <div className="coin-price-details">
-                            <h3>ETH/USDT <span>-2.8%</span></h3>
-                            <h2>2.3628</h2>
-                            <p>24H Volume 265,234</p>
-                        </div>
-                    </div>
-                    <div className="coin-price-content">
-                        <div className="coin-price-details">
-                            <h3>ETH/USDT <span>-2.8%</span></h3>
-                            <h2>2.3628</h2>
-                            <p>24H Volume 265,234</p>
-                        </div>
-                    </div>
-                    <div className="coin-price-content">
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="coin-price-content">
                         <div className="coin-price-details">
                             <h3>ETH/USDT <span>-2.8%</span></h3>
                             <h2>2.3628</h2>
@@ -99,21 +87,9 @@ export default function HomeD() {
                             <p>24H Volume 265,234</p>
                         </div>
                     </div>
-                    <div className="coin-price-content">
-                        <div className="coin-price-details">
-                            <h3>ETH/USDT <span>-2.8%</span></h3>
-                            <h2>2.3628</h2>
-                            <p>24H Volume 265,234</p>
-                        </div>
-                    </div>
-                    <div className="coin-price-content">
-                        <div className="coin-price-details">
-                            <h3>ETH/USDT <span>-2.8%</span></h3>
-                            <h2>2.3628</h2>
-                            <p>24H Volume 265,234</p>
-                        </div>
-                    </div>
-                    <div className="coin-price-content">
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="coin-price-content">
                         <div className="coin-price-details">
                             <h3>ETH/USDT <span>-2.8%</span></h3>
                             <h2>2.3628</h2>
@@ -129,6 +105,36 @@ export default function HomeD() {
                             <p>24H Volume 265,234</p>
                         </div>
                     </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                          <SwiperSlide>
+                        <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                    
+                    <SwiperSlide>
                     <div className="coin-price-content">
                         <div className="coin-price-details">
                             <h3>ETH/USDT <span>-2.8%</span></h3>
@@ -136,14 +142,9 @@ export default function HomeD() {
                             <p>24H Volume 265,234</p>
                         </div>
                     </div>
-                    <div className="coin-price-content">
-                        <div className="coin-price-details">
-                            <h3>ETH/USDT <span>-2.8%</span></h3>
-                            <h2>2.3628</h2>
-                            <p>24H Volume 265,234</p>
-                        </div>
-                    </div>
-                    <div className="coin-price-content">
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="coin-price-content">
                         <div className="coin-price-details">
                             <h3>ETH/USDT <span>-2.8%</span></h3>
                             <h2>2.3628</h2>
