@@ -2,6 +2,16 @@ import React from 'react'
 import Navbar from './component/Navbar'
 import homeImg from "./image/homeImg.png"
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+
+import "swiper/swiper.min.css";
+
+import "swiper/swiper-bundle.css";
+import SwiperCore, { Autoplay } from "swiper";
+
+
+SwiperCore.use([Autoplay]);
 export default function HomeD() {
   return (
     <div className="home-page">
@@ -41,34 +51,107 @@ export default function HomeD() {
             {/* ======================== Swiping coins ================================== */}
 
             <div className="coin-price-container">
-                <div className="coin-price-content">
-                    <div className="coin-price-details">
-                        <h3>ETH/USDT <span>-2.8%</span></h3>
-                        <h2>2.3628</h2>
-                        <p>24H Volume 265,234</p>
+                <Swiper  slidesPerView={1}
+                    spaceBetween={30}
+                    loop={true}
+                    speed={1000}
+                    direction='vertical'
+                    autoplay={{
+                        delay: 1000,
+                        disableOnInteraction: false, 
+                    }}
+                        className="mySwiper" >
+                    <SwiperSlide>
+                        <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
                     </div>
-                </div>
-                <div className="coin-price-content">
-                    <div className="coin-price-details">
-                        <h3>ETH/USDT <span>-2.8%</span></h3>
-                        <h2>2.3628</h2>
-                        <p>24H Volume 265,234</p>
+                    <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
                     </div>
-                </div>
-                <div className="coin-price-content">
-                    <div className="coin-price-details">
-                        <h3>ETH/USDT <span>-2.8%</span></h3>
-                        <h2>2.3628</h2>
-                        <p>24H Volume 265,234</p>
+                    <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
                     </div>
-                </div>
-                <div className="coin-price-content">
-                    <div className="coin-price-details">
-                        <h3>ETH/USDT <span>-2.8%</span></h3>
-                        <h2>2.3628</h2>
-                        <p>24H Volume 265,234</p>
+                    <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
                     </div>
-                </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
+                    </div>
+                    <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
+                    </div>
+                    <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
+                    </div>
+                    <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
+                    </div>
+                    <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
+                    </div>
+                    <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
+                    </div>
+                    <div className="coin-price-content">
+                        <div className="coin-price-details">
+                            <h3>ETH/USDT <span>-2.8%</span></h3>
+                            <h2>2.3628</h2>
+                            <p>24H Volume 265,234</p>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                </Swiper>
             </div>
         </div>
     </div>
