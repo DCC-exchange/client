@@ -156,3 +156,31 @@ color: var(--secondary-text-color);
     letter-spacing: .2em;
     color: var(--secondary-text-color);
 }
+.home-page .home-market{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: var(--white-bg);
+}
+.home-market-container{
+    padding: 10px;
+    margin: 10px;
+}
+.home-market-container .sliding-images{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.home-market-container .sliding-container{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+}
+.home-market-container .sliding-content{
+    width: 260px;
+    height: 160px;
+}
+.home-market-container .sliding-content img{
+    width: 100%;
+}

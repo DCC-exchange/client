@@ -54,11 +54,6 @@ export default function HomeM() {
         >
           <SwiperSlide>
             <div className="home-display-cover">
-               <img src={merry} alt="merry" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="home-display-cover">
               <img src={bitcoin} alt="bitcoin" />
             </div>
           </SwiperSlide>

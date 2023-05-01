@@ -1,6 +1,11 @@
 import React from 'react'
 import Navbar from './component/Navbar'
 import homeImg from "./image/homeImg.png"
+import merry from "../../images/merry dcc.svg";
+import laptop from "../../images/laptop dcc.svg";
+import bitcoin from "../../images/bitcoin dcc.svg";
+import trade from "../../images/trade exchange.svg";
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -126,6 +131,58 @@ export default function HomeD() {
                         </div>
                     </SwiperSlide>
                 </Swiper>
+            </div>
+
+            <div className="home-market">
+                <div className="home-market-container">
+                    <div className="sliding-images">
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        loop={true}
+                        speed={1000}
+                        autoplay={{
+                            delay: 1000,
+                            disableOnInteraction: false,
+                        }}
+                        className="mySwiper"
+                        >
+                        <SwiperSlide>
+                            <div className="sliding-container">
+                                <div className="sliding-content">
+                                    <img src={trade} alt="" />
+                                </div>
+                                <div className="sliding-content">
+                                    <img src={bitcoin} alt="" />
+                                </div>
+                                <div className="sliding-content">
+                                    <img src={merry} alt="" />
+                                </div>
+                                <div className="sliding-content">
+                                    <img src={laptop} alt="" />
+                                </div>
+                            </div>
+                        </SwiperSlide>  
+                        <SwiperSlide>
+                            <div className="sliding-container">
+                                <div className="sliding-content">
+                                    <img src={trade} alt="" />
+                                </div>
+                                <div className="sliding-content">
+                                    <img src={bitcoin} alt="" />
+                                </div>
+                                <div className="sliding-content">
+                                    <img src={merry} alt="" />
+                                </div>
+                                <div className="sliding-content">
+                                    <img src={laptop} alt="" />
+                                </div>
+                            </div>
+                        </SwiperSlide>  
+                        </Swiper>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
