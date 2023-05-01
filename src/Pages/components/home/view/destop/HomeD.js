@@ -54,11 +54,10 @@ export default function HomeD() {
                 <Swiper 
                     slidesPerView={1}
                     spaceBetween={0}
-                    direction={"vertical"}
-                    speed={2000}
+                    speed={2500}
                     loop={true}
                     autoplay={{
-                        delay: 1000,
+                        delay: 1500,
                         disableOnInteraction: false, 
                     }}
                         className="mySwiper" >
