@@ -54,6 +54,7 @@ export default function HomeD() {
                 <Swiper 
                     slidesPerView={1}
                     spaceBetween={0}
+                    direction={"vertical"}
                     speed={2000}
                     loop={true}
                     autoplay={{

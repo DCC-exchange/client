@@ -120,6 +120,7 @@ color: var(--secondary-text-color);
 .coin-price-container .coin-price{
     width: 100%;
     padding: 0;
+    display: flex;
 }
 .coin-price-content{
     display: flex;
