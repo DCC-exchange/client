@@ -9,15 +9,96 @@
 .home-page .design-circle{
     position: absolute;
     background: linear-gradient(163.36deg, rgba(187, 75, 215, 0.1) 11.51%, rgba(163, 161, 161, 0) 77.53%);
-    width: 440px;
-    height: 440px;
+    width: 380px;
+    height: 380px;
     left: -111px;
     top: -47px;
+    border-radius: 50%;
 }
 
 .home-page-container{
     margin: 0;
     padding: 0;
+    width: 100%;
+    padding-top: 56px;
+}
+
+.home-text-container{
+    width: 100%;
+    display: flex;
+}
+.home-text-content{
+    width: 100%;
+    color: var(--primary-text-color);
+    padding: 25px;
+    margin: 10px;
+}
+.home-text-content .heading-text{
+    font-size: 45px;
+    font-weight: 800;
+}
+.heading-text .heading-text-container{
+    letter-spacing: .2em;
+}
+.heading-text .heading-text-container span{
+    color: 867878;
+}
+.home-text-content .detailed-text{
     display: block;
-    padding-top: 60px;
+    padding: 0;
+    margin: 0;
+}
+.detailed-text-container{
+    font-weight: 300;
+    letter-spacing: .2em;
+}
+.home-email-search{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.home-email-search .home-email-search-container{
+    background-color: var(--white-bg);
+    display: flex;
+    border-radius: 30px;
+    width: 100%;
+    padding: 8px;
+}
+.home-email-search-container .email-container{
+    width: 100%;
+}
+.home-email-search-container .email-container input{
+    background: none;
+    outline: none;
+    border: none;
+    color: var(--backgoud-color-secondary);
+    cursor: pointer;
+}
+.home-email-search-container .email-container input::placeholder{
+color: var(--secondary-text-color);
+}
+.home-email-search-container .button-container{
+    width: 40%;
+}
+.home-email-search-container .button-container button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 6.5px;
+    background: var( --button-color);
+    color: var(--primary-text-color);
+    border-radius: 30px;
+}
+
+.home-img-content{
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+.home-img-content .home-img-container{
+    padding: 10px;
+    margin: 10px;
+}
+.home-img-container img{
+    width: 120px;
 }
