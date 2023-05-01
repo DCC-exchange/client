@@ -72,8 +72,9 @@
     height: 56px;
 }
 .navigation-routes .spot-container:hover{
-    background: var(--backgoud-color-secondary);
-    color: var(--primary-text-color);
+    /* background: var(--backgoud-color-secondary);
+    color: var(--primary-text-color); */
+    background: red;
 }
 .navigation-routes .spot-container .spot-content{
     width: 100%;
