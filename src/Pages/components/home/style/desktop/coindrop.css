@@ -6,11 +6,12 @@
 .homeCoindrop .homeCoindrop-container{
     display: flex;
     width: 100%;
+    grid-gap: 15px;
     gap: 15px;
-    border: 1px solid rgba(134, 120, 120, 0.32);
+    border-bottom: 1px solid rgba(134,120,120,.32);
     border-radius: 3px;
     cursor: pointer;
-    padding: 10px;
+    padding: 0px;
 }
 .homeCoindrop .homeCoindrop-container:hover{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.192);
@@ -30,7 +31,10 @@
     color: #000000;
 }
 .coin-pair .coin-pair-container img{
-    width: 45px;
+    width: 40px;
+}
+.coin-pair .coin-pair-container .pair{
+    margin: 10px;
 }
 .coin-pair .coin-pair-container .pair span{
     letter-spacing: 0.1em;
@@ -43,14 +47,17 @@
     margin: 5px;
 }
 .coin-container .coin-content{
-    letter-spacing: 0.1em;
-    color: #000000;
+    letter-spacing: .1em;
+    color: #000;
     font-weight: 600;
+    margin: 10px;
 }
 .homeCoindrop-container .coin-percent{
-    width: 100%;
-    padding: 0;
-    margin: 5px;
+    letter-spacing: .1em;
+    color: var(--sell-text-btn);
+    font-weight: 500;
+    font-size: 12px;
+    margin: 10px;
 }
 .homeCoindrop-container .coin-percent .coin-percent-container{
     letter-spacing: 0.1em;
@@ -61,11 +68,13 @@
 .homeCoindrop-container .trade-section{
     width: 100%;
     padding: 0;
-    margin: 10px;
+    margin: 5px;
 }
 .trade-btn-container{
     display: flex;
+    grid-gap: 10px;
     gap: 10px;
+    margin: 10px;
 }
 .trade-btn-container .trade-btn-content{
     padding: 0;
@@ -84,4 +93,5 @@
 }
 .trade-btn-container .trade-btn-content button:hover{
     background: var(--button-color);
+    color: #ffff;
 }
