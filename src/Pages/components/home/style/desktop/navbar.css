@@ -52,7 +52,7 @@
     cursor: pointer;
 }
 .navigation-routes .market-container:hover{
-    background:  #4f0d5ca6;
+    background: #321537;
     color: var(--secondary-text-color);
 }
 
@@ -66,6 +66,7 @@
     letter-spacing: .1em;
 }
 .navigation-routes .spot-container{
+    position: relative;
     width: 100%;
     padding: 0px 5px;
     margin: 0;
@@ -134,4 +135,42 @@
 }
 .login-container .login-content .signup-button a:hover{
     background: #7F6184;
+}
+
+/* ======================== Navbar Spot dropDown =================== */
+
+.navbar-spot{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 56px;
+    background: #321537;
+    left: 0;
+}
+.navbar-spot-container{
+    padding: 10px;
+    margin: 0;
+}
+.navbar-spot-container .navbar-spot-content{
+    margin: 4px;
+    padding: 5px;
+}
+.navbar-spot-container .navbar-spot-content .heading{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: var(--primary-text-color);
+}
+.navbar-spot-container .navbar-spot-content .detailed{
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    color: #8C8B8E;
+}
+.navbar-spot-container .navbar-spot-content{
+    background: #45234A;
+    border-radius: 4px;
 }

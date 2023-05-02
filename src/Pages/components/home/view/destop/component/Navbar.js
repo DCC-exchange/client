@@ -2,8 +2,21 @@ import React from 'react'
 import logo from "../../../images/dcc logo.svg"
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
+import Spot from './spot/Spot';
 
 export default function Navbar() {
+
+  // const [ spotDrop, setSpotDrop ] = useState(false)
+  // const [ derivativeDrop, setDerivativeDrop ] = useState(false)
+
+  // const handleDropDown = ((e)=>{
+  //   if(e === 1){
+  //     setSpotDrop(true)
+  //   }else{
+  //     setDerivativeDrop(false)
+  //   }
+  // })
+
   return (
     <div className="navbar-destop">
         <div className="navbar-destop-container">
@@ -32,6 +45,7 @@ export default function Navbar() {
                       <h4><RiArrowDropDownLine /></h4>
                   </div>
               </div>
+                <Spot />
             </div>
             <div className="spot-container">
               <div className="spot-content">
