@@ -6,9 +6,7 @@ import laptop from "../../images/laptop dcc.svg";
 import bitcoin from "../../images/bitcoin dcc.svg";
 import trade from "../../images/trade exchange.svg";
 
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
 
 import "swiper/swiper.min.css";
 
@@ -17,7 +15,6 @@ import SwiperCore, { Autoplay } from "swiper";
 import Spot from './routes/Spot';
 import Usdt from './routes/Usdt';
 import Coin from './routes/Coin';
-
 
 SwiperCore.use([Autoplay]);
 export default function HomeD() {
@@ -210,9 +207,7 @@ export default function HomeD() {
                         </SwiperSlide>  
                         </Swiper>
                     </div>
-
-                    {/* ===================== market routes */}
-
+                    {/* ===================== market routes ========================== */}
                     <div className="market-home-route">
                         <div className="market-home-route-conatiner">
                             <div className="market-route-contents">
@@ -227,7 +222,31 @@ export default function HomeD() {
                                 </div>
                             </div>
 
-                            {defaultRoute}
+                            <div className="home-coin-dropdown">
+                                <div className="home-coin-dropdown-container">
+                                    <div className="home-coin-heading">
+                                        <div className="home-coin-heading-container">
+                                            <div className="pair-container">
+                                                <div className="pair-content">
+                                                    <h4>Pair</h4>
+                                                </div>
+                                            </div>
+                                            <div className="price-container">
+                                                <div className="price-content">
+                                                    <h4>Price</h4>
+                                                </div>
+                                            </div>
+                                            <div className="price-container">
+                                                <div className="price-content">
+                                                    <h4>24H Change%</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {defaultRoute}
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

@@ -8,6 +8,7 @@
     background: #7c1583 ;
     top: 0;
     left: 0;
+    z-index: 4860;
 }
 .navbar-container{
   display: flex;
