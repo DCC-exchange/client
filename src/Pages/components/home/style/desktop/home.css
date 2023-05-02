@@ -164,8 +164,8 @@ color: var(--secondary-text-color);
     height: 100vh;
 }
 .home-market-container{
-    padding: 10px;
-    margin: 10px;
+    padding: 25px;
+    margin: 25px;
 }
 .home-market-container .sliding-images{
     padding: 0;
@@ -194,7 +194,7 @@ color: var(--secondary-text-color);
     margin: 0;
 }
 .market-home-route-conatiner{
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
 }
 .market-route-contents{

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './component/Navbar'
 import homeImg from "./image/homeImg.png"
 import merry from "../../images/merry dcc.svg";
@@ -14,10 +14,39 @@ import "swiper/swiper.min.css";
 
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Autoplay } from "swiper";
+import Spot from './routes/Spot';
+import Usdt from './routes/Usdt';
+import Coin from './routes/Coin';
 
 
 SwiperCore.use([Autoplay]);
 export default function HomeD() {
+
+    const [ spotActive, setSpotActive ] = useState(true)
+    const [ usdtActive, setUsdtActive ] = useState(false)
+    const [ coinActive, setCoinActive ] = useState(false)
+
+    const [ defaultRoute, setDefaultRoute ] = useState(<Spot />)
+
+    const handleSelectRoute = ((e)=>{
+        if(e === 1){
+            setSpotActive(true)
+            setUsdtActive(false)
+            setCoinActive(false)
+            setDefaultRoute(<Spot />)
+        }else if (e === 2){
+            setSpotActive(false)
+            setUsdtActive(true)
+            setCoinActive(false)
+            setDefaultRoute(<Usdt />)
+        }else{
+            setSpotActive(false)
+            setUsdtActive(false)
+            setCoinActive(true)
+            setDefaultRoute(<Coin />)
+        }
+    })
+
   return (
     <div className="home-page">
         <div className="design-circle"></div>
@@ -140,9 +169,9 @@ export default function HomeD() {
                         slidesPerView={1}
                         spaceBetween={30}
                         loop={true}
-                        speed={1000}
+                        speed={2000}
                         autoplay={{
-                            delay: 1000,
+                            delay: 3000,
                             disableOnInteraction: false,
                         }}
                         className="mySwiper"
@@ -187,16 +216,18 @@ export default function HomeD() {
                     <div className="market-home-route">
                         <div className="market-home-route-conatiner">
                             <div className="market-route-contents">
-                                <div className="active">
+                                <div onClick={()=>handleSelectRoute(1)} className={ spotActive ? "active" : "market-route-details" }>
                                     <h4>SPOT</h4>
                                 </div>
-                                <div className="market-route-details">
+                                <div onClick={()=>handleSelectRoute(2)} className={ usdtActive ? "active" : "market-route-details" }>
                                     <h4>USDT-M</h4>
                                 </div>
-                                <div className="market-route-details">
+                                <div onClick={()=>handleSelectRoute(3)} className={ coinActive ? "active" : "market-route-details"}>
                                     <h4>COIN-M</h4>
                                 </div>
                             </div>
+
+                            {defaultRoute}
                         </div>
                     </div>
                 </div>
