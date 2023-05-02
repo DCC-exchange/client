@@ -161,6 +161,7 @@ color: var(--secondary-text-color);
     padding: 0;
     margin: 0;
     background: var(--white-bg);
+    height: 100vh;
 }
 .home-market-container{
     padding: 10px;
@@ -172,15 +173,43 @@ color: var(--secondary-text-color);
     width: 100%;
 }
 .home-market-container .sliding-container{
-    padding: 10px;
-    margin: 10px;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 .home-market-container .sliding-content{
-    width: 260px;
-    height: 160px;
+    padding: 0;
+    margin: 0;
+    display: block;
 }
 .home-market-container .sliding-content img{
     width: 100%;
+}
+
+
+/* ======================= Home market route ======================== */
+
+.market-home-route{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.market-home-route-conatiner{
+    padding: 10px;
+    margin: 10px;
+}
+.market-route-contents{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--backgoud-color-secondary);
+}
+.market-route-contents .market-route-details{
+    padding: 7px 20px;
+}
+.market-route-contents .active{
+    padding: 7px 20px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
 }

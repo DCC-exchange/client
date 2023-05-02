@@ -180,7 +180,24 @@ export default function HomeD() {
                             </div>
                         </SwiperSlide>  
                         </Swiper>
+                    </div>
 
+                    {/* ===================== market routes */}
+
+                    <div className="market-home-route">
+                        <div className="market-home-route-conatiner">
+                            <div className="market-route-contents">
+                                <div className="active">
+                                    <h4>SPOT</h4>
+                                </div>
+                                <div className="market-route-details">
+                                    <h4>USDT-M</h4>
+                                </div>
+                                <div className="market-route-details">
+                                    <h4>COIN-M</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
