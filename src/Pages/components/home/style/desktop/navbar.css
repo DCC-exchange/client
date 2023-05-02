@@ -8,6 +8,7 @@
     position: fixed;
     font-size: 12px;
     font-weight: 600;
+    z-index: 76;
 }
 .navbar-destop-container{
     padding: 0;
