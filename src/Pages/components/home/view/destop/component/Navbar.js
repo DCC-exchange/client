@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import logo from "../../../images/dcc logo.svg"
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
@@ -6,16 +6,16 @@ import Spot from './spot/Spot';
 
 export default function Navbar() {
 
-  const [ spotDrop, setSpotDrop ] = useState(false)
+  // const [ spotDrop, setSpotDrop ] = useState(false)
   // const [ derivativeDrop, setDerivativeDrop ] = useState(false)
 
-  const handleShowSpot = ((e)=>{
-    if(e === 1){
-      setSpotDrop(true)
-    }else{
-      setSpotDrop(false)
-    }
-  })
+  // const handleShowSpot = ((e)=>{
+  //   if(e === 1){
+  //     setSpotDrop(true)
+  //   }else{
+  //     setSpotDrop(false)
+  //   }
+  // })
 
   return (
     <div className="navbar-destop">
@@ -36,7 +36,7 @@ export default function Navbar() {
                   <h4>Market</h4>
               </div>
             </div>
-            <div onMouseEnter={()=>handleShowSpot(1)} onMouseLeave={handleShowSpot(2)} className="spot-container">
+            <div  className="spot-container">
               <div className="spot-content">
                   <div className="spot-text">
                     <h4>Spot</h4>
@@ -45,7 +45,7 @@ export default function Navbar() {
                       <h4><RiArrowDropDownLine /></h4>
                   </div>
               </div>
-              { spotDrop &&  <Spot /> }
+               <Spot /> 
                
             </div>
             <div className="spot-container">
