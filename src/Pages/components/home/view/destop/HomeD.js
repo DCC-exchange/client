@@ -241,6 +241,12 @@ export default function HomeD() {
                                                     <h4>24H Change%</h4>
                                                 </div>
                                             </div>
+                                            <div className="price-container">
+                                                <div className="price-content">
+                                                  
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                     {defaultRoute}
