@@ -1,21 +1,23 @@
 import React from 'react'
+import { useState } from 'react';
 import logo from "../../../images/dcc logo.svg"
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
+import Derivative from './derivative/Derivative';
 import Spot from './spot/Spot';
 
 export default function Navbar() {
 
-  // const [ spotDrop, setSpotDrop ] = useState(false)
+  const [ spotDrop, setSpotDrop ] = useState(false)
   // const [ derivativeDrop, setDerivativeDrop ] = useState(false)
 
-  // const handleShowSpot = ((e)=>{
-  //   if(e === 1){
-  //     setSpotDrop(true)
-  //   }else{
-  //     setSpotDrop(false)
-  //   }
-  // })
+  const handleShowSpot = ((e)=>{
+    if(spotDrop){
+      setSpotDrop(true)
+    }else{
+      setSpotDrop(false)
+    }
+  })
 
   return (
     <div className="navbar-destop">
@@ -36,7 +38,7 @@ export default function Navbar() {
                   <h4>Market</h4>
               </div>
             </div>
-            <div  className="spot-container">
+            <div onClick={()=>handleShowSpot(1)} className="spot-container">
               <div className="spot-content">
                   <div className="spot-text">
                     <h4>Spot</h4>
@@ -44,19 +46,19 @@ export default function Navbar() {
                   <div className="spot-arrow">
                       <h4><RiArrowDropDownLine /></h4>
                   </div>
-              </div>
-               <Spot /> 
-               
+              </div>     
+              { spotDrop && <Spot /> }         
             </div>
             <div className="spot-container">
-              <div className="spot-content">
-                  <div className="spot-text">
-                    <h4>Derivatives</h4>
-                  </div>
-                  <div className="spot-arrow">
-                      <h4><RiArrowDropDownLine /></h4>
-                  </div>
-              </div>
+                <div className="spot-content">
+                    <div className="spot-text">
+                      <h4>Derivatives</h4>
+                    </div>
+                    <div className="spot-arrow">
+                        <h4><RiArrowDropDownLine /></h4>
+                    </div>
+                </div>
+                <Derivative />
             </div>
   
             <div className="market-container">
