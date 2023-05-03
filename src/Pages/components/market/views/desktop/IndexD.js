@@ -3,31 +3,35 @@ import React from 'react'
 export default function IndexD() {
   const coinCard = [{
     id:1,
-    image: `<img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579" alt="" />`,
+    image:"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
     pairs: "BTC/USDT",
     price: "23,3748.00",
     percent: '-2.53%',
-    usdPrice: "34,268.00"
+    usdPrice: "34,268.00",
+    volume: "234,378.00"
   },
   {
     id:2,
-    image: `<img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579" alt="" />`,
+    image:"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
     pairs: "BTC/USDT",
     price: "23,3748.00",
     percent: '-2.53%',
-    usdPrice: "34,268.00"
+    usdPrice: "34,268.00",
+    volume: "234,378.00"
   },
   {
     id:3,
-    image: `<img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579" alt="" />`,
+    image:"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
     pairs: "BTC/USDT",
     price: "23,3748.00",
     percent: '-2.53%',
-    usdPrice: "34,268.00"
+    usdPrice: "34,268.00",
+    volume: "234,378.00"
+
   },
   {
     id:4,
-    image: `<img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579" alt="" />`,
+    image:"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
     pairs: "BTC/USDT",
     price: "23,3748.00",
     percent: '-2.53',
@@ -51,7 +55,7 @@ export default function IndexD() {
                             <h2>{detail.price} <span>= USD{detail.usdPrice}</span></h2>
                           </div>
                             <div className="volume">
-                                <h4><span>{detail.percent}%</span>Volume {detail.volume}</h4>
+                                <h4><span>{detail.percent}% </span> Volume {detail.volume}</h4>
                             </div>  
                         </div>
                     </div>
