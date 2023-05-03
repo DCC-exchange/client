@@ -3,7 +3,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { BiChart } from "react-icons/bi";
 import { HiChartBar } from "react-icons/hi";
 import { CiWallet } from "react-icons/ci";
-import spotImg from './image/logodcc.svg'
+import spotImg from '../../image/logodcc.svg'
 import "../../style/buttomNav.css";
 import React from "react";
 
