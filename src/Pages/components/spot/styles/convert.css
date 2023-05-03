@@ -71,7 +71,7 @@
 .convert-page-container .spend-coin-container  .available{
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .convert-page-container .spend-input{
     width: 100%;
