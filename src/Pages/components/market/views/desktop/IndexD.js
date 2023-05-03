@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
+import { IoSearch } from "react-icons/io5";
 
 export default function IndexD() {
   const coinCard = [{
@@ -28,7 +29,6 @@ export default function IndexD() {
     percent: '-2.53%',
     usdPrice: "34,268.00",
     volume: "234,378.00"
-
   },
   {
     id:4,
@@ -76,28 +76,29 @@ export default function IndexD() {
             <div className="market-dashboard">
               <div className="market-dashboard-container">
                   <div className="market-dashboard-route">
-                        <div className="market-dashboute-route-content">
-                            <div className="favourite-route">
-                                <h4>Favourite</h4>
+                      <div className="market-dashboute-route-content">
+                          <div className="favourite-route">
+                              <h4>Favourite</h4>
+                          </div>
+                          <div className="favourite-route">
+                            <h4>Spot</h4>
+                          </div>
+                          <div className="favourite-route">
+                              <h4>Perpetual</h4>
+                          </div>
+                          <div className="search">
+                            <div className="search-container">
+                                <div className="search-icon" >
+                                  <h3><IoSearch /></h3>
+                                </div>
+                                <div className="input">
+                                  <input type="text" placeholder='Search' />
+                                </div>
                             </div>
-                            <div className="spot-route">
-                              <h4>Spot</h4>
-                            </div>
-                            <div className="perpetual">
-                                <h4>Perpetual</h4>
-                            </div>
-                            <div className="search">
-                              <div className="search-container">
-                                  <div className="search-icon" >
-                                     <h3 onClick={handleStarred}> { starred ? <AiFillStar /> : <AiOutlineStar /> } </h3>
-                                  </div>
-                                    <div className="input">
-                                      <input type="text" placeholder='Search' />
-                                    </div>
-                              </div>
-                            </div>
-                        </div>
+                          </div>
+                      </div>
                   </div>
+                  <h3 onClick={handleStarred}> { starred ? <AiFillStar /> : <AiOutlineStar /> } </h3>
               </div>
             </div>
         </div>
