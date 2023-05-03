@@ -7,15 +7,15 @@
 }
 .market-desktop-container{
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .market-desktop-container .market-coin-cards{
-    width: 100%;
     display: flex;
+    grid-gap: 25px;
     gap: 25px;
-    padding: 10px;
-    margin: 20px;
+    padding: 25px;
+    margin: 25px;
 }
 .market-desktop-container .market-card-container{
     width: 100%;

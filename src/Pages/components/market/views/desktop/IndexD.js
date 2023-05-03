@@ -62,6 +62,33 @@ export default function IndexD() {
                 </div>
               )) }
             </div>
+            <div className="market-dashboard">
+              <div className="market-dashboard-container">
+                  <div className="market-dashboard-route">
+                        <div className="market-dashboute-route-content">
+                            <div className="favourite-route">
+                                <h4>Favourite</h4>
+                            </div>
+                            <div className="spot-route">
+                              <h4>Spot</h4>
+                            </div>
+                            <div className="perpetual">
+                                <h4>Perpetual</h4>
+                            </div>
+                            <div className="search">
+                              <div className="search-container">
+                                  <div className="search-icon">
+
+                                  </div>
+                                    <div className="input">
+                                      <input type="text" placeholder='Search' />
+                                    </div>
+                              </div>
+                            </div>
+                        </div>
+                  </div>
+              </div>
+            </div>
         </div>
     </div>
   )
