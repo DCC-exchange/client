@@ -44,15 +44,25 @@ export default function IndexD() {
   }]
 
     const [ defaultRoute, setDefaultRoute ] = useState(<Spot />)
-
-
+    const [ spotActive, setSpotActive ] = useState(true)
+    const [ favActive, setFavActive ] = useState(false)
+    const [ PerpetualActive, setPerpetualActive ] = useState(false)
 
   const handleRouteControl = ((e)=>{
       if(e === 1){
+        setFavActive(true)
+        setPerpetualActive(false)
+        setSpotActive(false)
         setDefaultRoute(<Favourite />)
       }else if(e === 2){
         setDefaultRoute(<Spot />)
+        setFavActive(false)
+        setPerpetualActive(false)
+        setSpotActive(true)
       }else{
+        setFavActive(false)
+        setPerpetualActive(true)
+        setSpotActive(false)
         setDefaultRoute(<Perpetual />)
       }
   })
@@ -84,13 +94,13 @@ export default function IndexD() {
               <div className="market-dashboard-container">
                   <div className="market-dashboard-route">
                       <div className="market-dashboute-route-content">
-                          <div onClick={()=>handleRouteControl(1)} className="favourite-route">
+                          <div onClick={()=>handleRouteControl(1)} className={favActive ? "active" :"favourite-route" }>
                               <h4>Favourite</h4>
                           </div>
-                          <div onClick={()=>handleRouteControl(2)} className="favourite-route">
+                          <div onClick={()=>handleRouteControl(2)} className={spotActive ? "active" :"favourite-route" }>
                             <h4>Spot</h4>
                           </div>
-                          <div onClick={()=>handleRouteControl(3)} className="active">
+                          <div onClick={()=>handleRouteControl(3)} className={PerpetualActive ? "active" :"favourite-route" }>
                               <h4>Perpetual</h4>
                           </div>
                           <div className="search">
