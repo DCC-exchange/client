@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
-import { AiOutlineStar, AiFillStar } from "react-icons/ai";
+
 import { IoSearch } from "react-icons/io5";
+import Spot from './routes/Spot';
+import Favourite from './routes/Favourite';
+import Perpetual from './routes/Perpetual';
 
 export default function IndexD() {
   const coinCard = [{
@@ -40,14 +43,18 @@ export default function IndexD() {
     volume: "234,378.00"
   }]
 
-  const [ starred, setStarred ] = useState(false)
+    const [ defaultRoute, setDefaultRoute ] = useState(<Spot />)
 
-  const handleStarred = (()=>{
-    if(starred){
-      setStarred(false)
-    }else{
-      setStarred(true)
-    }
+
+
+  const handleRouteControl = ((e)=>{
+      if(e === 1){
+        setDefaultRoute(<Favourite />)
+      }else if(e === 2){
+        setDefaultRoute(<Spot />)
+      }else{
+        setDefaultRoute(<Perpetual />)
+      }
   })
 
   return (
@@ -77,13 +84,13 @@ export default function IndexD() {
               <div className="market-dashboard-container">
                   <div className="market-dashboard-route">
                       <div className="market-dashboute-route-content">
-                          <div className="favourite-route">
+                          <div onClick={()=>handleRouteControl(1)} className="favourite-route">
                               <h4>Favourite</h4>
                           </div>
-                          <div className="favourite-route">
+                          <div onClick={()=>handleRouteControl(2)} className="favourite-route">
                             <h4>Spot</h4>
                           </div>
-                          <div className="favourite-route">
+                          <div onClick={()=>handleRouteControl(3)} className="active">
                               <h4>Perpetual</h4>
                           </div>
                           <div className="search">
@@ -98,7 +105,8 @@ export default function IndexD() {
                           </div>
                       </div>
                   </div>
-                  <h3 onClick={handleStarred}> { starred ? <AiFillStar /> : <AiOutlineStar /> } </h3>
+                  
+                  {defaultRoute}
               </div>
             </div>
         </div>
