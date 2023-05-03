@@ -11,7 +11,7 @@ export default function Navbar() {
   const [ spotDrop, setSpotDrop ] = useState(false)
   // const [ derivativeDrop, setDerivativeDrop ] = useState(false)
 
-  const handleShowSpot = ((e)=>{
+  const handleShowSpot = (()=>{
     if(spotDrop){
       setSpotDrop(true)
     }else{
@@ -38,7 +38,7 @@ export default function Navbar() {
                   <h4>Market</h4>
               </div>
             </div>
-            <div onClick={()=>handleShowSpot(1)} className="spot-container">
+            <div onClick={handleShowSpot} className="spot-container">
               <div className="spot-content">
                   <div className="spot-text">
                     <h4>Spot</h4>

@@ -184,7 +184,6 @@
     width: 746px;
     position: absolute;
     top: 56px;
-    background: #47264D;
     left: 0;
     height: 480px;
 }
@@ -195,12 +194,13 @@
 }
 .nav-derivative-container .nav-coinSelect{
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     margin: 0;
+    background: #321537;
 }
 .nav-derivative-container .nav-coinSelect .nav-coinSelect-content{
     margin: 6px;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
 }
 .nav-coinSelect-content .heading{
@@ -225,12 +225,13 @@
 
 .nav-derivative-container  .nav-coinDisplay{
     width: 100%;
-    padding: 10px;
+    padding: 0;
     margin: 0;
+    background: #47264D;
 }
 .nav-derivative-container  .nav-coinDisplay-container{
     margin: 6px;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     gap: 10px;
     cursor: pointer;
