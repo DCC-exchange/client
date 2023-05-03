@@ -230,21 +230,22 @@
     background: #47264D;
 }
 .nav-derivative-container  .nav-coinDisplay-container{
-    margin: 6px;
-    padding: 15px;
+    margin: 10px;
+    padding: 10px;
     display: flex;
     gap: 10px;
     cursor: pointer;
 }
 .nav-derivative-container  .nav-coinDisplay-container:hover{
     background: #5F4564;
+    border-radius: 5px;
 }
 .nav-coinDisplay-container .image-section{
     padding: 0;
     margin: 2px;
 }
 .nav-coinDisplay-container .image-section img{
-    width: 39px;
+    width: 34px;
 }
 .nav-coinDisplay-container .text-section{
     padding: 0;

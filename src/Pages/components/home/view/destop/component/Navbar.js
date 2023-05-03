@@ -9,12 +9,24 @@ import Spot from './spot/Spot';
 export default function Navbar() {
 
   const [ spotDrop, setSpotDrop ] = useState(false)
-  // const [ derivativeDrop, setDerivativeDrop ] = useState(false)
+  const [ derivativeDrop, setDerivativeDrop ] = useState(false)
 
   const handleShowSpot = (()=>{
     if(spotDrop){
-      setSpotDrop(true)
+      setSpotDrop(false)
+      setDerivativeDrop(false)
     }else{
+      setSpotDrop(true)
+      setDerivativeDrop(false)
+    }
+  })
+
+  const handleDerivative = (()=>{
+    if(derivativeDrop){
+      setDerivativeDrop(false)
+      setSpotDrop(false)
+    }else{
+      setDerivativeDrop(true)
       setSpotDrop(false)
     }
   })
@@ -49,7 +61,7 @@ export default function Navbar() {
               </div>     
               { spotDrop && <Spot /> }         
             </div>
-            <div className="spot-container">
+            <div onClick={handleDerivative} className="spot-container">
                 <div className="spot-content">
                     <div className="spot-text">
                       <h4>Derivatives</h4>
@@ -58,7 +70,8 @@ export default function Navbar() {
                         <h4><RiArrowDropDownLine /></h4>
                     </div>
                 </div>
-                <Derivative />
+                { derivativeDrop && <Derivative /> }
+                
             </div>
   
             <div className="market-container">
@@ -72,7 +85,6 @@ export default function Navbar() {
               </div>
             </div>
         </div>   
-
             <div className="login-container">
                 <div className="login-content">
                     <div className="login-text">
