@@ -28,10 +28,10 @@ export default function Spot() {
             <div className="navigation-route">
                 <div className="navigation-route-container">
                     <div className="navigation-route-contents">
-                        <h4 onClick={()=>handleNavigation(1)} className={ usdtActive ? "active" : 'normal' } >USDT</h4>
+                        <button onClick={()=>handleNavigation(1)} className={ usdtActive ? "active" : 'normal' } >USDT</button>
                     </div>
                     <div className="navigation-route-contents">
-                        <h4 onClick={()=>handleNavigation(2)} className={ usdActive ? "active" : 'normal' } >USDs</h4>
+                        <button onClick={()=>handleNavigation(2)} className={ usdActive ? "active" : 'normal' } >USDs</button>
                     </div>
                 </div>
             </div>
