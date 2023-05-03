@@ -8,8 +8,6 @@ import "./style/navbar.css";
  
 // Destop Style
 import "./style/desktop/home.css"
-import "./style/desktop/navbar.css"
-import "./style/desktop/coindrop.css"
 
 export default function HomeIndex() {
   return (

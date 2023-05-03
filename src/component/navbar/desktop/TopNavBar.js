@@ -1,12 +1,18 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import logo from "../../../images/dcc logo.svg"
+import logo from "../../image/logodcc.svg"
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 import Derivative from './derivative/Derivative';
 import Spot from './spot/Spot';
 
-export default function Navbar() {
+import "../../style/navbar.css"
+import "../../style/coindrop.css"
+
+export default function TopNavBar() {
+
+  const Navigate = useNavigate()
 
   const [ spotDrop, setSpotDrop ] = useState(false)
   const [ derivativeDrop, setDerivativeDrop ] = useState(false)
@@ -31,11 +37,19 @@ export default function Navbar() {
     }
   })
 
+  const handleHome = (()=>{
+    Navigate("/")
+  })
+
+  const handleMarketnavigate = (()=>{
+      Navigate("/market/spot")
+  })
+
   return (
     <div className="navbar-destop">
         <div className="navbar-destop-container">
             <div className="logo-container">
-                <div className="logo-content">
+                <div onClick={handleHome} className="logo-content">
                     <div className="logo-img">
                       <img src={logo} alt="" />
                     </div>
@@ -45,7 +59,7 @@ export default function Navbar() {
                 </div>
             </div>
           <div className="navigation-routes">
-            <div className="market-container">
+            <div onClick={handleMarketnavigate} className="market-container">
               <div className="market-content">
                   <h4>Market</h4>
               </div>
@@ -71,7 +85,6 @@ export default function Navbar() {
                     </div>
                 </div>
                 { derivativeDrop && <Derivative /> }
-                
             </div>
   
             <div className="market-container">

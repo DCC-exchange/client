@@ -1,8 +1,6 @@
 import { Route, Routes, Navigate, useNavigate } from "react-router-dom";
 import React, {useEffect} from "react"
 import Welcome from "./Pages/components/welcome/Index";
-
-import ButtomNav from "./component/ButtonNav";
 import Login from "./LoginEngine/login/Login";
 import LoginSystem from "./LoginEngine/LoginEngine";
 import Signup from "./LoginEngine/signup/Signup";
@@ -30,6 +28,7 @@ import Losers from "./Pages/components/home/view/mobile/route/Losers";
 import Gainers from "./Pages/components/home/view/mobile/route/Gainers";
 import Volume from "./Pages/components/home/view/mobile/route/Volume";
 import Favourite from "./Pages/components/spot/coins/Favourite";
+import NavBar from "./component/navbar/NavBar";
 
 function App() {
 
@@ -47,6 +46,11 @@ function App() {
 
   return (
     <div className="App">
+
+        {/*============== Navbar route ================= */}
+          <NavBar />
+
+        {/*======================== Navigate=ion routes ============================ */}
         <Routes>
           {/* Welcome route */}
           <Route path="/welcome" element={<Welcome /> }></Route>
@@ -100,9 +104,7 @@ function App() {
                 <Route path="futures" element={ user ? <FuturesRec /> : <Navigate to="/sign/login" /> } />
             </Route>
         </Routes>
-        <div className="mobile-view">
-          <ButtomNav />
-        </div>
+
     </div>
   );
 }

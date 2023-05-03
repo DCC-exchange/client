@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Navbar from './component/Navbar'
 import homeImg from "./image/homeImg.png"
 import merry from "../../images/merry dcc.svg";
 import laptop from "../../images/laptop dcc.svg";
@@ -47,7 +46,6 @@ export default function HomeD() {
   return (
     <div className="home-page">
         <div className="design-circle"></div>
-        <Navbar />
         <div className="home-page-container">
             <div className="home-text-container">
               <div className="home-text-content">
@@ -246,7 +244,6 @@ export default function HomeD() {
                                                   
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                     {defaultRoute}
