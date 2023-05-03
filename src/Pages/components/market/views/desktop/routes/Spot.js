@@ -1,20 +1,68 @@
 import React, { useState } from 'react'
-import { AiOutlineStar, AiFillStar } from "react-icons/ai";
+import Usdt from './spotRoute/Usdt'
+import Usd from './spotRoute/Usd'
 
 export default function Spot() {
 
-    const [ starred, setStarred ] = useState(false)
+    const [ usdtActive, setUsdtactive ] = useState(true)
+    const [ usdActive, setUsdActive ] = useState(false)
 
-    const handleStarred = (()=>{
-      if(starred){
-        setStarred(false)
-      }else{
-        setStarred(true)
-      }
+    const [ defaultRoute, setDefault  ] = useState(<Usdt />)
+
+
+    const handleNavigation = ((e)=>{
+        if(e === 1){
+            setDefault(<Usdt />)
+            setUsdtactive(true)
+            setUsdActive(false)
+        }else{
+            setDefault(<Usd />)
+            setUsdtactive(false)
+            setUsdActive(true)
+        }
     })
+
   return (
-    <div>
-        <h3 onClick={handleStarred}> { starred ? <AiFillStar /> : <AiOutlineStar /> } </h3>
-        Spot</div>
+    <div className='market-spot-route'>
+        <div className="market-spot-route-container">
+            <div className="navigation-route">
+                <div className="navigation-route-container">
+                    <div className="navigation-route-contents">
+                        <h4 onClick={()=>handleNavigation(1)} className={ usdtActive ? "active" : 'normal' } >USDT</h4>
+                    </div>
+                    <div className="navigation-route-contents">
+                        <h4 onClick={()=>handleNavigation(2)} className={ usdActive ? "active" : 'normal' } >USDs</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div className="market-dropdown-heading">
+                <div className="market-dropdown-heading-container">
+                    <div className="market-dropdown-heading-content">
+                        <h4>Pair</h4>
+                    </div>
+                    <div className="market-dropdown-heading-content">
+                        <h4>Price</h4>
+                    </div>
+                    <div className="market-dropdown-heading-content">
+                        <h4>24H change%</h4>
+                    </div>
+                    <div className="market-dropdown-heading-content">
+                        <h4>24H High</h4>
+                    </div>
+                    <div className="market-dropdown-heading-content">
+                        <h4>24H Low</h4>
+                    </div>
+                    <div className="market-dropdown-heading-content">
+                        <h4>24H  Volume (USDT)</h4>
+                    </div>
+                    <div className="market-dropdown-heading-content">
+                        <h4>Trade</h4>
+                    </div>
+                </div>
+            </div>
+            { defaultRoute }
+        </div>
+    </div>
   )
 }

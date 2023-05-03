@@ -155,3 +155,39 @@
     margin: 9px;
     border: none;
 }
+
+
+/* ==================== Market coin ====================== */
+.market-spot-route{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    color: var(--primary-text-color);
+}
+.market-spot-route-container{
+    padding: 10px;
+    margin: 0;
+}
+.market-spot-route-container .navigation-route{
+    width: 100%;
+    padding: auto;
+    margin: auto;
+}
+.navigation-route .navigation-route-container{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.navigation-route-contents{
+    width: 10%;
+    height: 50px;
+}
+.navigation-route-contents h4{
+    width: 10%;
+    background: #EBE7E7;
+    padding: 7px 23px;
+    height: 50px;
+    color: #ffff;
+}
