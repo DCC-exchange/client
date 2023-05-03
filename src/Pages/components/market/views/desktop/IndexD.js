@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 
 export default function IndexD() {
   const coinCard = [{
@@ -39,6 +40,16 @@ export default function IndexD() {
     volume: "234,378.00"
   }]
 
+  const [ starred, setStarred ] = useState(false)
+
+  const handleStarred = (()=>{
+    if(starred){
+      setStarred(false)
+    }else{
+      setStarred(true)
+    }
+  })
+
   return (
     <div className="market-desktop">
         <div className="market-desktop-container">
@@ -77,8 +88,8 @@ export default function IndexD() {
                             </div>
                             <div className="search">
                               <div className="search-container">
-                                  <div className="search-icon">
-
+                                  <div className="search-icon" >
+                                     <h3 onClick={handleStarred}> { starred ? <AiFillStar /> : <AiOutlineStar /> } </h3>
                                   </div>
                                     <div className="input">
                                       <input type="text" placeholder='Search' />
