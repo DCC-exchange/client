@@ -222,3 +222,96 @@
     /* identical to box height */
     letter-spacing: 0.1em;
 }
+
+
+
+
+
+
+
+
+
+
+/* =========================== map coins ============================== */
+
+.desktop-market-coins{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.desktop-market-coins-container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    cursor: pointer;
+}
+.desktop-market-coins-container:hover{
+    background: #ebe7e7;
+}
+.desktop-market-coins-container .logo-pairs{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+.desktop-market-coins-container .logo-pairs .star{
+    color: var(--secondary-text-color);
+    cursor: pointer;
+}
+.desktop-market-coins-container .logo-pairs .logo{
+    padding: 4px;
+    margin: 1px;
+}
+.desktop-market-coins-container .logo-pairs .logo img{
+    width: 27px;
+}
+.desktop-market-coins-container .logo-pairs .pair{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+.desktop-market-coins-container .logo-pairs span{
+    color: #8C8B8E;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 18px;
+}
+.desktop-market-coins-container .price{
+    width: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+.desktop-market-coins-container .change-percent{
+    width: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #01D016;
+}
+.desktop-market-coins-container .change-percent{
+    width: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+.desktop-market-coins-container .trade{
+    width: 100%;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: #8B7115;
+}
+.desktop-market-coins-container .trade h4{
+    cursor: pointer;
+}
