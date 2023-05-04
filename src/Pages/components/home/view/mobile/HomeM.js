@@ -35,43 +35,56 @@ export default function HomeM() {
     })
   return (
     <div className="homePage">
-    <Navbar hideMenu={hideMenu} />
+      <Navbar hideMenu={hideMenu} />
     { openMenu && <Menu cancel={hideMenu} /> }
-  <div className="home-display">
-      <div className="home-page">
-        <div className="home-page-container">
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={30}
-          loop={true}
-          speed={1000}
-          autoplay={{
-            delay: 1000,
-            disableOnInteraction: false,
-          }}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <div className="home-display-cover">
-              <img src={bitcoin} alt="bitcoin" />
+      <div className="homePage-container">
+
+          <div className="home-login-display">
+            <div className="home-login-display-container">
+                <div className="text">
+                  <h4>Welcome Gifts worth $2000!!!</h4>
+                </div>
+                <div className="regi-btn">
+                    <button>Register/Login</button>
+                </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="home-display-cover">
-            <img src={laptop} alt="laptop" />
+          </div>  
+
+    <div className="home-sliding-images">
+      <div className="home-sliding-images-container">
+          <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              loop={true}
+              speed={1000}
+              autoplay={{
+                delay: 1000,
+                disableOnInteraction: false,
+              }}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <div className="home-display-cover">
+                  <img src={bitcoin} alt="bitcoin" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+              <div className="home-display-cover">
+                <img src={laptop} alt="laptop" />
+              </div>
+              </SwiperSlide>
+              <SwiperSlide>
+              <div className="home-display-cover">
+                <img src={merry} alt="merry" />
+              </div>
+              </SwiperSlide>
+              <SwiperSlide>
+              <div className="home-display-cover">
+                <img src={trade} alt="trade" />
+              </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="home-display-cover">
-            <img src={merry} alt="merry" />
-          </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="home-display-cover">
-            <img src={trade} alt="trade" />
-          </div>
-          </SwiperSlide>
-        </Swiper>
       </div>
 
       <div className="annountment">
@@ -163,6 +176,5 @@ export default function HomeM() {
       <Outlet />
     </div>
   </div>
-</div>
   )
 }
