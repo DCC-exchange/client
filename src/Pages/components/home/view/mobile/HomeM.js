@@ -22,7 +22,6 @@ import Navbar from "./Navbar";
 
 SwiperCore.use([Autoplay]);
 
-
 export default function HomeM() {
 
     const [openMenu, setOpenMenu] = useState(false);
@@ -73,7 +72,6 @@ export default function HomeM() {
           </div>
           </SwiperSlide>
         </Swiper>
-    
       </div>
 
       <div className="annountment">

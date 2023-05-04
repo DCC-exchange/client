@@ -5,13 +5,52 @@
     z-index: 5267;
     width: 100%;
     height: 56px;
-    background: #7c1583 ;
+    background: #140118;
     top: 0;
     left: 0;
-    z-index: 4860;
 }
 .navbar-container{
   display: flex;
   padding: 15px;
-  justify-content: space-between;
+}
+.navbar-container .profile-navbar{
+  width: 10%;
+}
+.navbar-container .profile-navbar .profile-navbar-container{
+  padding: 0;
+  display: block;
+}
+.navbar-container .search-navbar{
+    width: 80%;
+    padding: 0;
+    margin: 0;
+}
+.navbar-container .search-navbar .search-navbar-container{
+    display: flex;
+    background: #240A29;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.search-navbar .search-navbar-container .icon{
+  font-size: 14px;
+  color: var( --secondary-text-color);
+  padding: 6px;
+}
+.search-navbar .search-navbar-container .input{
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+/* identical to box height */
+  letter-spacing: 0.3em;
+  color: var( --secondary-text-color);
+  padding: 6px;
+}
+.navbar-container .contact-navbar{
+  width: 10%;
+}
+.navbar-container .contact-navbar .contact-navbar-container{
+  padding: 0;
+  display: block;
+  font-size: 14px;
+  color: var(--secondary-text-color);
 }

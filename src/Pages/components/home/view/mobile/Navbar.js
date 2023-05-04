@@ -1,39 +1,34 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import notify from "../../images/notify dcc.svg";
 import contact from "../../images/conatct dcc.svg";
 import Ellipse from "../../images/Ellipse 31.svg";
-import { CgMenuLeftAlt } from "react-icons/cg";
+import { CgSearch } from "react-icons/cg";
+import { TfiHeadphoneAlt } from "react-icons/tfi";
 
 export default function Navbar({hideMenu}) {
 
-  let notification = [4, 4, 3, 4, 5, 5, 5, 3, 3, 3, 3, 3, 3, 3];
-  
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <div className="home-top-flex1">
-      <div onClick={hideMenu}
-        className="menu-home-icon">
-        <CgMenuLeftAlt />
-      </div>
-    </div>
-    <div className="home-top-flex2">
-      <div className="profile-nav">
-        <img src={Ellipse} alt="Ellipse" width={"30px"} />
-      </div>
-      <NavLink to='/sign/login'>
-        <img src={contact} alt="contact" />
-      </NavLink>
-      <NavLink to="/sign/login">
-        <div className="notification-count">
-          <img src={notify} alt="Profile logo" />
-          <div className="notification-count-num">
-            <h3>{notification.length}</h3>
+        <div className="profile-navbar">
+          <div onClick={hideMenu} className="profile-navbar-container">
+              <img src={Ellipse} alt="Ellipse" width={"30px"} />
           </div>
         </div>
-      </NavLink>
-    </div>
+        <div className="search-navbar">
+          <div className="search-navbar-container">
+            <div className="icon">
+                <h4><CgSearch /></h4>
+            </div>
+            <div className="input">
+                <h4>Search</h4>
+            </div>
+          </div>
+        </div>
+        <div className="contact-navbar">
+          <div className="contact-navbar-container">
+              <h4><TfiHeadphoneAlt /></h4>
+          </div>
+        </div>
     </div>
   </div>
   )
