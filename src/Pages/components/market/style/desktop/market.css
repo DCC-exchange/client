@@ -102,7 +102,7 @@
     padding: 0;
     width: 100%;
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
 }
 .market-dashboute-route-content .favourite-route{
@@ -165,7 +165,7 @@
     background: var(--primary-text-color);
 }
 .destop-market-spot-route .market-spot-route-contain{
-    padding: 10px;
+    padding: 0px;
     margin: 0;
 }
 .destop-market-spot-route .market-spot-route-container .navigation-route{
@@ -180,22 +180,22 @@
 }
 .destop-market-spot-route .navigation-route-contents{
     width: 7%;
-    margin: 20px;
+    margin: 10px;
 }
 .navigation-route-contents .normal{
     background: #ebe7e7;
-    padding: 7px 23px;
+    padding: 6px 19px;
     color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 5px;
 }
 .navigation-route-contents .normal:hover{
-    background: #dbd8d8;
+    background: var(--button-color);
 }
 .navigation-route-contents .active{
     background: var(--button-color);
-    padding: 7px 23px;
+    padding: 6px 19px;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -207,8 +207,8 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    border-top: 1px solid rgba(134, 120, 120, 0.32);
-    border-bottom: 1px solid rgba(134, 120, 120, 0.32);
+    background: #ebe7e7;
+    border-top: 1px solid rgb(134 120 120 / 21%);
 }
 .market-dropdown-heading-container{
     display: flex;
@@ -217,7 +217,7 @@
 .market-dropdown-heading-content{
     width: 100%;
     color: #867878;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 18px;
     /* identical to box height */
     letter-spacing: 0.1em;

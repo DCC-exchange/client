@@ -24,7 +24,7 @@ export default function Spot() {
 
   return (
     <div className='destop-market-spot-route'>
-        <div className="market-spot-route-container">
+        <div className="market-spot-route-contain">
             <div className="navigation-route">
                 <div className="navigation-route-container">
                     <div className="navigation-route-contents">
