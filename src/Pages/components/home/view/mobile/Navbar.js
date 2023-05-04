@@ -10,7 +10,7 @@ export default function Navbar({hideMenu}) {
       <div className="navbar-container">
         <div className="profile-navbar">
           <div onClick={hideMenu} className="profile-navbar-container">
-              <img src={Ellipse} alt="Ellipse" width={"30px"} />
+              <img src={Ellipse} alt="Ellipse" width={"25px"} />
           </div>
         </div>
         <div className="search-navbar">
