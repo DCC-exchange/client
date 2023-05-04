@@ -23,7 +23,7 @@ export default function Spot() {
     })
 
   return (
-    <div className='market-spot-route'>
+    <div className='destop-market-spot-route'>
         <div className="market-spot-route-container">
             <div className="navigation-route">
                 <div className="navigation-route-container">

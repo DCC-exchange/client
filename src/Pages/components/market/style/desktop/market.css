@@ -6,8 +6,8 @@
     height: 100vh;
 }
 .market-desktop-container{
-    padding: 20px;
-    margin: 20px;
+    padding: 35px 40px;
+    margin: 35px 40px;
 }
 
 .market-desktop-container .market-coin-cards{
@@ -102,6 +102,7 @@
     padding: 0;
     width: 100%;
     margin: 0;
+    font-size: 14px;
     display: flex;
 }
 .market-dashboute-route-content .favourite-route{
@@ -141,7 +142,7 @@
 .search .search-container .search-icon{
     color: #8c8b8e;
     font-size: 13px;
-    margin: 9px;
+    margin: 5px;
 }
 .search .search-container .input{
     padding: 0;
@@ -150,44 +151,41 @@
 .search .search-container .input input{
     outline: none;
     background: none;
-    border: none;
     color: #000;
-    margin: 9px;
+    margin: 5px;
     border: none;
 }
 
 
 /* ==================== Market coin ====================== */
-.market-spot-route{
+.destop-market-spot-route{
     padding: 0;
     margin: 0;
     width: 100%;
     background: var(--primary-text-color);
 }
-.market-spot-route-container{
+.destop-market-spot-route .market-spot-route-container{
     padding: 10px;
     margin: 0;
 }
-.market-spot-route-container .navigation-route{
+.destop-market-spot-route .market-spot-route-container .navigation-route{
     width: 100%;
     padding: 0;
     margin: 0;
 }
-.navigation-route .navigation-route-container{
+.destop-market-spot-route .navigation-route .navigation-route-container{
     display: flex;
     width: 100%;
-    gap: 20px;
+    gap: 0;
 }
-.navigation-route-contents{
-    width: 10%;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
+.destop-market-spot-route .navigation-route-contents{
+    width: 7%;
+    margin: 20px;
 }
 .navigation-route-contents .normal{
-    background: #EBE7E7;
+    background: #ebe7e7;
     padding: 7px 23px;
-    color: #ffff;
+    color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -198,7 +196,7 @@
 .navigation-route-contents .active{
     background: var(--button-color);
     padding: 7px 23px;
-    color: #ffff;
+    color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -214,7 +212,7 @@
 }
 .market-dropdown-heading-container{
     display: flex;
-    padding: 7px;
+    padding: 15px;
 }
 .market-dropdown-heading-content{
     width: 100%;
