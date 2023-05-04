@@ -253,19 +253,20 @@
 .desktop-market-coins-container .logo-pairs{
     display: flex;
     width: 100%;
-    gap: 10px;
+    gap: 5px;
     padding: 10px;
 }
 .desktop-market-coins-container .logo-pairs .star{
     color: var(--secondary-text-color);
     cursor: pointer;
+    padding: 0px 5px;
 }
 .desktop-market-coins-container .logo-pairs .logo{
-    padding: 4px;
-    margin: 1px;
+    padding: 0;
+    margin: 0;
 }
 .desktop-market-coins-container .logo-pairs .logo img{
-    width: 27px;
+    width: 20px;
 }
 .desktop-market-coins-container .logo-pairs .pair{
     font-weight: 700;
@@ -296,7 +297,7 @@
     letter-spacing: 0.1em;
     color: #01D016;
 }
-.desktop-market-coins-container .change-percent{
+.desktop-market-coins-container .high{
     width: 100%;
     font-weight: 500;
     font-size: 12px;
