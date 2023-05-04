@@ -99,20 +99,6 @@ export default function HomeM() {
               </div>
         </div>
 
-        <div className="home-page-display-text">
-          <div className="home-page-display-text1">
-            <h3>Dcc Exchange, bringing the best trading AI.</h3>
-          </div>
-          <div className="home-page-display-text2">
-            <h3>Trading all kinds of crypto asset on spot</h3>
-          </div>
-          <div className="home-page-display-text3">
-            <h3>
-              Our support team are ready to give you 100% support 24hrs all
-              day
-            </h3>
-          </div>
-        </div>
       </div>
 
       <div className="home-middle-design">
@@ -187,7 +173,15 @@ export default function HomeM() {
 
             <div className="home-coin-section-body">
               <div className="home-coin-section-body-container">
-                  
+                  <div className="pairs">
+                      <h4>BTCUSDT</h4>
+                  </div>
+                  <div className="price">
+                      <h4>23,789.0</h4>
+                  </div>
+                  <div className="percent">
+                      <button>+2.34%</button>
+                  </div>
               </div>
             </div>
         </div>

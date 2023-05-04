@@ -11,7 +11,7 @@ export default function Welcome() {
 
   const handleContinue = (()=>{
     localStorage.setItem('firstHit', true)
-    navigate("/hot") 
+    navigate("/") 
   })
 
   return (

@@ -77,6 +77,8 @@
 .home-annountment-container{
   padding: 3px 7px;
   margin: 2px 7px;
+  display: flex;
+  gap: 5px;
 }
 .home-annountment-container .icon{
   width: 8%;
@@ -86,7 +88,7 @@
 .home-annountment-container .text{
   width: 88%;
   color: var(--primary-text-color);
-  font-size: 14px;
+  font-size: 8px;
 }
 .home-annountment-container  .notification-menu{
   color: var(--secondary-text-color);
@@ -138,6 +140,30 @@
   letter-spacing: 0.1em;
   color: #8C8B8E;
   }
+
+
+  .home-coin-section-body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+.home-coin-section-body-container{
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+
+}
+
+.home-coin-section-body-container .pairs{
+  width: 100%;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
 /* .coin-height {
   width: 100%;
   background: #240426;
