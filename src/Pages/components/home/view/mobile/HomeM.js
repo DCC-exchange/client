@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import merry from "../../images/merry dcc.svg";
-import mining from "../../images/mining dcc.svg";
-import convert from "../../images/convert dcc.svg";
-import position from "../../images/position dcc.svg";
-import deposit from "../../images/depositdcc.svg";
+// import mining from "../../images/mining dcc.svg";
+// import convert from "../../images/convert dcc.svg";
+// import position from "../../images/position dcc.svg";
+// import deposit from "../../images/depositdcc.svg";
 import trade from "../../images/trade exchange.svg";
 import laptop from "../../images/laptop dcc.svg";
 import bitcoin from "../../images/bitcoin dcc.svg";
-import home2 from "../../images/home2 img.svg";
+// import home2 from "../../images/home2 img.svg";
 import Menu from "./Menu";
 
 import { TfiAnnouncement, TfiMenuAlt } from "react-icons/tfi";
@@ -184,6 +183,12 @@ export default function HomeM() {
                         <h4>Losers</h4>
                     </div>
                 </div>
+            </div>
+
+            <div className="home-coin-section-body">
+              <div className="home-coin-section-body-container">
+                  
+              </div>
             </div>
         </div>
       </div>
