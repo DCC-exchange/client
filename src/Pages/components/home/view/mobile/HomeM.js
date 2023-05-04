@@ -38,7 +38,6 @@ export default function HomeM() {
       <Navbar hideMenu={hideMenu} />
     { openMenu && <Menu cancel={hideMenu} /> }
       <div className="homePage-container">
-
           <div className="home-login-display">
             <div className="home-login-display-container">
                 <div className="text">
@@ -56,9 +55,9 @@ export default function HomeM() {
               slidesPerView={1}
               spaceBetween={30}
               loop={true}
-              speed={1000}
+              speed={2000}
               autoplay={{
-                delay: 1000,
+                delay: 2000,
                 disableOnInteraction: false,
               }}
               className="mySwiper"

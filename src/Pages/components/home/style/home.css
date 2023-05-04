@@ -37,25 +37,32 @@
   padding: 5px 30px;
 }
 
-.home-sliding-images{
+.homePage-container .home-sliding-images{
   width: 100%;
   padding: 0;
   margin: 0;
 }
-.home-sliding-images-container{
-  padding: 10px 15px;
-  height: 140%;
+.homePage-container .home-sliding-images-container{
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
-.home-sliding-images-container{
+.homePage-container .home-sliding-images-container{
   display: flex;
   gap: 5px;
   width: 5px;
 }
 
-.home-display-cover {
+.home-sliding-images-container .home-display-cover {
+  align-items: center;
   position: relative;
-  width: 100%;
+  display: flex;
+  justify-content: center;
 }
+.home-sliding-images-container  .home-display-cover img{
+  width: 91%;
+}
+
 
 
 /* .coin-height {
