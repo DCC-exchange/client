@@ -221,6 +221,7 @@
     line-height: 18px;
     /* identical to box height */
     letter-spacing: 0.1em;
+    text-align: center;
 }
 
 
@@ -288,6 +289,8 @@
     line-height: 21px;
     letter-spacing: 0.1em;
     color: #000000;
+    padding: 10px;
+    text-align: center;
 }
 .desktop-market-coins-container .change-percent{
     width: 100%;
@@ -296,6 +299,8 @@
     line-height: 21px;
     letter-spacing: 0.1em;
     color: #01D016;
+    padding: 10px;
+    text-align: center;
 }
 .desktop-market-coins-container .high{
     width: 100%;
@@ -304,6 +309,8 @@
     line-height: 21px;
     letter-spacing: 0.1em;
     color: #000000;
+    padding: 10px;
+    text-align: center;
 }
 .desktop-market-coins-container .trade{
     width: 100%;
@@ -312,6 +319,8 @@
     line-height: 21px;
     letter-spacing: 0.1em;
     color: #8B7115;
+    padding: 10px;
+    text-align: center;
 }
 .desktop-market-coins-container .trade h4{
     cursor: pointer;
