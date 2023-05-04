@@ -1,5 +1,4 @@
 import React from "react";
-import contact from "../../images/conatct dcc.svg";
 import Ellipse from "../../images/Ellipse 31.svg";
 import { CgSearch } from "react-icons/cg";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
