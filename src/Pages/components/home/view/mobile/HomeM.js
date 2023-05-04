@@ -116,7 +116,9 @@ export default function HomeM() {
         </div>
       </div>
 
-      
+      <div className="home-middle-design">
+          <div className="home-middle-design-container"></div>
+      </div>
 
       {/* <div className="home-main-lists-first-flex">
         <div className="home-main-lists-first-flex2">
@@ -165,26 +167,26 @@ export default function HomeM() {
         <img src={home2} alt="home2" />
       </div> */}
 
-      <div className="home-main-trade-display">
-        <div className="home-main-trade-text">
-          <NavLink to="favourite">Favourite</NavLink>
-        </div>
-        <div className="home-main-trade-text">
-          <NavLink to="hot">Hot</NavLink>
-        </div>
-        <div className="home-main-trade-text">
-          <NavLink to="gainers">Gainers</NavLink>
-        </div>
-        <div className="home-main-trade-text">
-          <NavLink to="losers">Losers</NavLink>
-        </div>
-        <div className="home-main-trade-text">
-          <NavLink to="volume">Volume</NavLink>
+      <div className="home-coin-section">
+        <div className="home-coin-section-container">
+            <div className="home-coin-section-heading">
+                <div className="home-coin-section-heading-container">
+                    <div className="content">
+                        <h4>Hot Futures</h4>
+                    </div>
+                    <div className="content">
+                        <h4>Hot Spot</h4>
+                    </div>
+                    <div className="content">
+                        <h4>Gainers</h4>
+                    </div>
+                    <div className="content">
+                        <h4>Losers</h4>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
-    </div>
-    <div className="coin-height">
-      <Outlet />
     </div>
   </div>
   )
