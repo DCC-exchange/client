@@ -101,10 +101,6 @@ export default function HomeM() {
 
       </div>
 
-      <div className="home-middle-design">
-          <div className="home-middle-design-container"></div>
-      </div>
-
       {/* <div className="home-main-lists-first-flex">
         <div className="home-main-lists-first-flex2">
           <NavLink to="">
@@ -180,7 +176,7 @@ export default function HomeM() {
                       <h4>23,789.0</h4>
                   </div>
                   <div className="percent">
-                      <button>+2.34%</button>
+                      <button className="positive">+2.34%</button>
                   </div>
               </div>
             </div>
