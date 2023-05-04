@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import logo from "../../image/logodcc.svg"
+import logo from "../../image/dcc logo.svg"
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 import Derivative from './derivative/Derivative';

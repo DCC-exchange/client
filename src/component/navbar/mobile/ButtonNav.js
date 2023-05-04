@@ -12,7 +12,7 @@ export default function ButtomNav() {
     <>
       <div className="Navbar-down">
         <div className="NavBar-display-main-flex">
-        <NavLink to="/hot">
+        <NavLink to="/">
             <div className="NavBar-display-main-flex1">
                 <h1><AiOutlineHome /></h1>
             </div>
