@@ -44,6 +44,7 @@
 }
 .home-sliding-images-container{
   padding: 10px 15px;
+  height: 140%;
 }
 .home-sliding-images-container{
   display: flex;
@@ -53,7 +54,7 @@
 
 .home-display-cover {
   position: relative;
- padding-top: 2px;
+  width: 100%;
 }
 
 
