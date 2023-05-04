@@ -8,7 +8,7 @@
 
 .homePage-container {
   width: 100%;
-  padding-top: 60px;
+  padding-top: 50px;
   margin: 0;
 }
 
@@ -18,23 +18,25 @@
   width: 100%;
 }
 .home-login-display .home-login-display-container{
-    display: flex;
-    gap: 15px;
-    padding: 15px 20px;
-    color: var(--primary-text-color);
+  display: flex;
+  padding: 10px;
+  color: var(--primary-text-color);
 }
 .home-login-display .home-login-display-container .text{
   font-weight: 700;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 18px;
-  /* identical to box height */
-  letter-spacing: 0.2em;
+  margin: 5px;
+  letter-spacing: .2em;
 }
 .home-login-display .home-login-display-container .regi-btn button{
   border: none;
   background: var(--button-color);
   border-radius: 4px;
-  padding: 5px 30px;
+  color: var(--primary-text-color);
+  padding: 5px 18px;
+  font-size: 11px;
+  margin: 0px 12px;
 }
 
 .homePage-container .home-sliding-images{
@@ -49,8 +51,9 @@
 }
 .homePage-container .home-sliding-images-container{
   display: flex;
+  grid-gap: 5px;
   gap: 5px;
-  width: 5px;
+  width: 100%;
 }
 
 .home-sliding-images-container .home-display-cover {
@@ -60,7 +63,7 @@
   justify-content: center;
 }
 .home-sliding-images-container  .home-display-cover img{
-  width: 91%;
+  width: 90%;
 }
 
 
