@@ -10,9 +10,10 @@ import deposit from "../../images/depositdcc.svg";
 import trade from "../../images/trade exchange.svg";
 import laptop from "../../images/laptop dcc.svg";
 import bitcoin from "../../images/bitcoin dcc.svg";
-import annouceIcon from "../../images/announce.svg";
 import home2 from "../../images/home2 img.svg";
 import Menu from "./Menu";
+
+import { TfiAnnouncement, TfiMenuAlt } from "react-icons/tfi";
 
 import "swiper/swiper.min.css";
 
@@ -86,10 +87,19 @@ export default function HomeM() {
           </div>
       </div>
 
-      <div className="annountment">
-        <div className="annouceIcon">
-          <img src={annouceIcon} alt="" />
+      <div className="home-annountment">
+        <div className="home-annountment-container">
+              <div className="icon">
+                  <h4><TfiAnnouncement /></h4>
+              </div>
+              <div className="text">
+                <h4>Announcement from the management will be swapping here</h4>
+              </div>
+              <div className="notification-menu">
+                  <h4><TfiMenuAlt /></h4>
+              </div>
         </div>
+
         <div className="home-page-display-text">
           <div className="home-page-display-text1">
             <h3>Dcc Exchange, bringing the best trading AI.</h3>
@@ -106,7 +116,9 @@ export default function HomeM() {
         </div>
       </div>
 
-      <div className="home-main-lists-first-flex">
+      
+
+      {/* <div className="home-main-lists-first-flex">
         <div className="home-main-lists-first-flex2">
           <NavLink to="">
             <div className="image">
@@ -151,7 +163,7 @@ export default function HomeM() {
 
       <div className="home-second-image">
         <img src={home2} alt="home2" />
-      </div>
+      </div> */}
 
       <div className="home-main-trade-display">
         <div className="home-main-trade-text">
