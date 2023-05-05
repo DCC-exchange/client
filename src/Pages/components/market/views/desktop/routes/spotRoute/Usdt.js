@@ -21,7 +21,6 @@ useEffect(()=>{
     CryptoCoins()
 },[])
   
-console.log(Coins)
 
   return (
     <div className='desktop-market-coins'>
