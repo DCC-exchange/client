@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     background: var(--white-bg);
-    height: 100vh;
+    height: 100%;
 }
 .market-desktop-container{
     padding: 55px 40px;
@@ -71,12 +71,19 @@
     line-height: 15px;
     letter-spacing: 0.1em;
 }
-.market-desktop-container .market-card-details .volume span{
+.market-desktop-container .market-card-details .volume .positive{
     font-weight: 400;
     font-size: 10px;
     line-height: 15px;
     letter-spacing: 0.1em;
-    color: #EB0404;
+    color: var(--buy-text-color);
+}
+.market-desktop-container .market-card-details .volume .negative{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: var(--sell-text-btn);
 }
 
 /* ========================== Desktop market route ===================== */

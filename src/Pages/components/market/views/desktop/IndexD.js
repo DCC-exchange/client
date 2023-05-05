@@ -15,7 +15,6 @@ export default function IndexD() {
     CryptoCoins()
   },[])
 
-
     const [ defaultRoute, setDefaultRoute ] = useState(<Spot />)
     const [ spotActive, setSpotActive ] = useState(true)
     const [ favActive, setFavActive ] = useState(false)
