@@ -14,10 +14,10 @@ export default function UsdtM({isLoading, error, Coins}) {
         </div> }
 
             { Coins &&  Coins.map((coin)=>(
-                <div className="coin-drop-list-content">
+                <div key={coin.id} className="coin-drop-list-content">
                 <div className="image-name-container">
                     <div className="image">
-                        <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579" alt="" />
+                        <img src={coin.image} alt="" />
                     </div>
                     <div className="pair">
                         <h4>{coin.symbol} <span>/USDT</span> </h4>
@@ -29,15 +29,15 @@ export default function UsdtM({isLoading, error, Coins}) {
                             <h4>{coin.current_price}</h4>
                         </div>
                         {coin.price_change_percentage_24h >= 0 && (
-                               <div className="percent">
-                               <h4>+{coin.price_change_percentage_24h}% </h4>
-                           </div>
-                         )}
-                        {coin.price_change_percentage_24h < 0 && (
-                                <div className="percentoooo">
-                                <h4>{coin.price_change_percentage_24h}% </h4>
-                            </div>
-                        )}
+                      <button className="positive">
+                        +{parseFloat(coin.price_change_percentage_24h).toFixed(2)}%{" "}
+                      </button>
+                    )}
+                    {coin.price_change_percentage_24h < 0 && (
+                      <button className="negative">
+                          {parseFloat(coin.price_change_percentage_24h).toFixed(2)}%
+                      </button>
+                    )}
                     </div>
                 </div>
             </div>
