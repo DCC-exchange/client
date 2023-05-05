@@ -19,7 +19,7 @@ export default function UsdtM({isLoading, error, Coins, UpdateCoin}) {
             </div> }
 
             { Coins &&  Coins.map((coin)=>(
-                <div onClick={handleCoinSellect} key={coin.key} className="coin-drop-list-content">
+                <div onClick={()=>handleCoinSellect(coin)} key={coin.key} className="coin-drop-list-content">
                     <div className="image-name-container">
                         <div className="image">
                             <img src={coin.image} alt="" />
