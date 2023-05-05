@@ -56,7 +56,7 @@
 }
 .homeCoindrop-container .coin-percent{
     width: 100%;
-
+    padding: 14px;
 }
 .homeCoindrop-container .coin-percent .coin-percent-container{
     letter-spacing: 0.1em;
@@ -74,8 +74,8 @@
 .homeCoindrop-container .coin-percent .coin-percent-container .positive{
     letter-spacing: 0.1em;
     color: var(--buy-text-color);
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 900;
+    font-size: 13px;
 }
 
 .homeCoindrop-container .trade-section{
