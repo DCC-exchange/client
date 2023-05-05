@@ -45,7 +45,6 @@ export default function SpotMarket() {
     }
   })
 
-
   const  { CryptoCoins, Coins, isLoading, error } = useCryptoCoins()
 
   useEffect(()=>{

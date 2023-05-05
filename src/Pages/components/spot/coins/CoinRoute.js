@@ -16,6 +16,11 @@ export default function CoinRoute({handleShowCoinSlide, isLoading, error, Coins,
         handleShowCoinSlide()
     })
 
+    const handleUpdateCoin = ((e)=>{
+        handleShowCoinSlide()
+        UpdateCoin(e)
+    })
+
     const handleActive = ((e)=>{
         if(e === 1){
             setChangeRoute(false)
@@ -60,7 +65,7 @@ export default function CoinRoute({handleShowCoinSlide, isLoading, error, Coins,
                     </div>
                 </div>
                 <div className="coin-drop">
-                    { changeRoute ? <All Coins={Coins} isLoading={isLoading} error={error} UpdateCoin={UpdateCoin} /> : <Favourite /> }
+                    { changeRoute ? <All Coins={Coins} isLoading={isLoading} error={error} UpdateCoin={handleUpdateCoin} /> : <Favourite /> }
                 </div>
             </div>
         </div>
