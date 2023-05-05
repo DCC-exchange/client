@@ -33,17 +33,17 @@ export default function HotSpot() {
             <h4>{coin.current_price}</h4>
         </div>
         <div className="percent">
-          {coin.price_change_percentage_24h >= 0 && (
-              <button className="positive">
-                +{coin.price_change_percentage_24h}%{" "}
-              </button>
-            )}
-            {coin.price_change_percentage_24h < 0 && (
-              <button className="negative">
-                  {coin.price_change_percentage_24h}%
-              </button>
-            )}
-        </div>
+        {coin.price_change_percentage_24h >= 0 && (
+            <button className="positive">
+              +{parseFloat(coin.price_change_percentage_24h).toFixed(2)}%{" "}
+            </button>
+          )}
+          {coin.price_change_percentage_24h < 0 && (
+            <button className="negative">
+                {parseFloat(coin.price_change_percentage_24h).toFixed(2)}%
+            </button>
+          )}
+      </div>
     </div>
 
     ))}

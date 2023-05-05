@@ -188,7 +188,8 @@
   font-weight: 600;
   font-size: 10.6px;
   border-radius: 4px;
-  padding: 5.6px 18px;
+  width: 60px;
+  height: 26px;
 }
 
 .home-coin-section-body-container .percent .negative{
@@ -198,7 +199,8 @@
   font-weight: 600;
   font-size: 10.6px;
   border-radius: 4px;
-  padding: 5.6px 18px;
+  width: 60px;
+  height: 26px;
 }
 
 .home-coin-section-body .isloading-coin{
