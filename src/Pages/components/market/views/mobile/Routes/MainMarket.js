@@ -38,7 +38,7 @@ export default function MainMarket() {
             <div className="main-market-switch">
                 <div className="main-market-switch-container">
                     <div onClick={()=>handleSwitch(1)} className={spotActive ? "active" : "content"}>
-                        <h4>Spot</h4>
+                        <h4>SPOT</h4>
                     </div>
                     <div onClick={()=>handleSwitch(2)}   className={usdtActive ? "active" : "content"}>
                         <h4>USDT-M</h4>

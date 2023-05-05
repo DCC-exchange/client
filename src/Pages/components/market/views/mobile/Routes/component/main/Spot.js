@@ -17,6 +17,21 @@ export default function Spot() {
                     </div>
                 </div>
             </div>
+            <div className="body">
+              <div className="body-container">
+                  <div className="coin-pair">
+                      <h4>BTC <span>/USDT</span> </h4>
+                      <span>Spot</span>
+                  </div>
+                  <div className="price">
+                    <h4>29,000.7</h4>
+                    <span>Vol 1.3M</span>
+                  </div>
+                  <div className="percent">
+                      <button className='negative'>-2.34%</button>
+                  </div>
+              </div>
+            </div>
         </div>
     </div>
   )
