@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import homeImg from "./image/homeImg.png"
 import merry from "../../images/merry dcc.svg";
 import laptop from "../../images/laptop dcc.svg";
@@ -6,6 +6,8 @@ import bitcoin from "../../images/bitcoin dcc.svg";
 import trade from "../../images/trade exchange.svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import { useCryptoCoins } from "../../../../config/Coins"
 
 import "swiper/swiper.min.css";
 
@@ -17,6 +19,17 @@ import Coin from './routes/Coin';
 
 SwiperCore.use([Autoplay]);
 export default function HomeD() {
+
+    
+
+    const { CryptoCoins, Coins } = useCryptoCoins()
+
+    let firstSlide = ["btc", "eth",  "link", "ltc", ]
+    // let secondSlide = ["sol", "doge", "xrp", "matic"]
+
+    useEffect(()=>{
+        CryptoCoins()
+    },[])
 
     const [ spotActive, setSpotActive ] = useState(true)
     const [ usdtActive, setUsdtActive ] = useState(false)
@@ -91,36 +104,20 @@ export default function HomeD() {
                     }}
                         className="mySwiper" >
                     <SwiperSlide>
-                        <div className="coin-price">
+
+                     {Coins &&
+                        Coins.filter(newEl => firstSlide.includes(newEl.symbol)).map((coin) => (
+                        <div key={coin.id} className="coin-price">
                             <div className="coin-price-content">
                                 <div className="coin-price-details">
-                                    <h3>ETH/USDT <span>-2.8%</span></h3>
-                                    <h2>2.3628</h2>
-                                    <p>24H Volume 265,234</p>
-                                </div>
-                            </div>
-                            <div className="coin-price-content">
-                                <div className="coin-price-details">
-                                    <h3>ETH/USDT <span>-2.8%</span></h3>
-                                    <h2>2.3628</h2>
-                                    <p>24H Volume 265,234</p>
-                                </div>
-                            </div>
-                            <div className="coin-price-content">
-                                <div className="coin-price-details">
-                                    <h3>ETH/USDT <span>-2.8%</span></h3>
-                                    <h2>2.3628</h2>
-                                    <p>24H Volume 265,234</p>
-                                </div>
-                            </div>
-                            <div className="coin-price-content">
-                                <div className="coin-price-details">
-                                    <h3>ETH/USDT <span>-2.8%</span></h3>
-                                    <h2>2.3628</h2>
-                                    <p>24H Volume 265,234</p>
+                                    <h3>{coin.symbol}/USDT <span>+{parseFloat(coin.price_change_percentage_24h).toFixed(2)}%</span></h3>
+                                    <h2>{coin.current_price}</h2>
+                                    <p>24H Volume {coin.total_volume}</p>
                                 </div>
                             </div>
                         </div>
+                    ))}
+                    
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="coin-price">
