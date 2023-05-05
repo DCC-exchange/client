@@ -1,11 +1,7 @@
 import React from 'react'
 import { MdOutlineContentPasteSearch} from "react-icons/md";
 
-export default function UsdtM({Coins, isLoading, error}) {
-
-
-
-    console.log(Coins)
+export default function UsdtM({isLoading, error, Coins}) {
 
   return (
     <div className='coin-drop-list'>
@@ -42,7 +38,6 @@ export default function UsdtM({Coins, isLoading, error}) {
                                 <h4>{coin.price_change_percentage_24h}% </h4>
                             </div>
                         )}
-                       
                     </div>
                 </div>
             </div>

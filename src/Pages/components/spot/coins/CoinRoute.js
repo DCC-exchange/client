@@ -5,7 +5,7 @@ import { CgSearch } from "react-icons/cg";
 import All from './All';
 import Favourite from './Favourite';
 
-export default function CoinRoute({handleShowCoinSlide}) {
+export default function CoinRoute({handleShowCoinSlide, isLoading, error, Coins}) {
 
     const [ ActiveRoute1, setActive1] = useState('favourite1')
     const [ ActiveRoute2, setActive2] = useState('favourite')
@@ -60,7 +60,7 @@ export default function CoinRoute({handleShowCoinSlide}) {
                     </div>
                 </div>
                 <div className="coin-drop">
-                    { changeRoute ? <All /> : <Favourite /> }
+                    { changeRoute ? <All Coins={Coins} isLoading={isLoading} error={error} /> : <Favourite /> }
                 </div>
             </div>
         </div>

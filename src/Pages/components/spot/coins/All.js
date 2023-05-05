@@ -2,7 +2,7 @@ import React  from 'react'
 import UsdtM from './route/UsdtM'
 
 
-export default function All() {
+export default function All({isLoading, error, Coins}) {
 
   return (
     <div className="features-all-page">
@@ -19,7 +19,7 @@ export default function All() {
                             </div>
                         </div>
                     </div>
-                      <UsdtM /> 
+                      <UsdtM Coins={Coins} isLoading={isLoading} error={error} /> 
                 </div>
             </div>
         </div>

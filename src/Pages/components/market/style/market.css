@@ -218,15 +218,20 @@
     margin: 40px;
 }
 .market-spot-main .market-spot-main-container .body .no-data-container h3{
-    font-size: 16px;
+    font-size: 26px;
+    align-items: center;
     font-weight: 400;
-    margin-left: 20px;
+    padding-top: 100px;
+    justify-content: center;
+    display: flex;
     font-style: italic;
     color: var(--secondary-text-color);
 }
 .market-spot-main .market-spot-main-container .body .no-data-container h4{
-    text-align: center;
     font-size: 11px;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
     font-weight: 400;
     font-style: italic;
     color: var(--secondary-text-color);

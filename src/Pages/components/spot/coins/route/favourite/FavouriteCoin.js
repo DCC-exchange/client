@@ -3,7 +3,7 @@ import { MdOutlineContentPasteSearch} from "react-icons/md";
 
 export default function FavouriteCoin() {
 
-  const [ data ] = useState(true)
+  const [ data ] = useState(false)
 
   return (
     <div className='coin-drop-list'>
