@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
+
+import { useCryptoCoins } from '../../../../../../config/Coins' 
 
 export default function Usdt() {
 
@@ -13,26 +15,43 @@ export default function Usdt() {
       }
     })
 
+const { CryptoCoins, Coins, isLoading, error } = useCryptoCoins()
+
+useEffect(()=>{
+    CryptoCoins()
+},[])
+  
+console.log(Coins)
 
   return (
     <div className='desktop-market-coins'>
-        <div className="desktop-market-coins-container">
+
+        { isLoading && <div className="isloading-coin">
+                <h1>Loading...</h1>
+            </div> }
+            { error && <div className="isloading-coin">
+                <h1>Network Error</h1>
+            </div> }
+
+     {Coins &&
+            Coins.filter(newEl => newEl.symbol !== "usdt").map((coin) => (
+        <div key={coin.id} className="desktop-market-coins-container">
             <div className="logo-pairs">
                 <div className="star">
                     <h3 onClick={handleStarred}> { starred ? <AiFillStar /> : <AiOutlineStar /> } </h3>
                 </div>
                 <div className="logo">
-                    <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579" alt="" />
+                    <img src={coin.image} alt="" />
                 </div>
                 <div className="pair">
-                    <h4>BTC<span>/USDT</span></h4>
+                    <h4>{coin.symbol}<span>/USDT</span></h4>
                 </div>
             </div>
             <div className="price">
-                <h4>23,456.00</h4>
+                <h4>{coin.current_price}</h4>
             </div>
             <div className="change-percent">
-                <h4>2.34%</h4>
+                <h4>{parseFloat(coin.price_change_percentage_24h).toFixed(2)}%</h4>
             </div>
             <div className="high">
                 <h4>23,456.00</h4>
@@ -41,12 +60,13 @@ export default function Usdt() {
                 <h4>23,456.00</h4>
             </div>
             <div className="high">
-                <h4>23,456.00</h4>
+                <h4>{coin.total_volume}</h4>
             </div>
             <div className="trade">
                 <h4>Trade</h4>
             </div>
         </div>
+        ))}
     </div>
   )
 }

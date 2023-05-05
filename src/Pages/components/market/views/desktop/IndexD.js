@@ -111,7 +111,6 @@ export default function IndexD() {
                           </div>
                       </div>
                   </div>
-                  
                   {defaultRoute}
               </div>
             </div>
