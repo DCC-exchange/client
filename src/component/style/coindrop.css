@@ -55,19 +55,29 @@
     font-size: 12px;
 }
 .homeCoindrop-container .coin-percent{
-    letter-spacing: .1em;
-    color: var(--sell-text-btn);
-    font-weight: 500;
-    font-weight: 800;
-    font-size: 12px;
-    margin: 6px;
+    width: 100%;
+
 }
 .homeCoindrop-container .coin-percent .coin-percent-container{
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.homeCoindrop-container .coin-percent .coin-percent-container .negative{
     letter-spacing: 0.1em;
     color: var(--sell-text-btn);
     font-weight: 500;
     font-size: 12px;
 }
+
+.homeCoindrop-container .coin-percent .coin-percent-container .positive{
+    letter-spacing: 0.1em;
+    color: var(--buy-text-color);
+    font-weight: 500;
+    font-size: 12px;
+}
+
 .homeCoindrop-container .trade-section{
     padding: 0;
 }
