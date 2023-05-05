@@ -25,7 +25,8 @@ export default function HomeD() {
     const { CryptoCoins, Coins } = useCryptoCoins()
 
     let firstSlide = ["btc", "eth",  "link", "ltc", ]
-    // let secondSlide = ["sol", "doge", "xrp", "matic"]
+    let secondSlide = ["sol", "doge", "xrp", "matic"]
+    let thirdSlide = ["ada", "atom", "gala", "trx"]
 
     useEffect(()=>{
         CryptoCoins()
@@ -96,10 +97,10 @@ export default function HomeD() {
                 <Swiper 
                     slidesPerView={1}
                     spaceBetween={0}
-                    speed={2500}
+                    speed={3000}
                     loop={true}
                     autoplay={{
-                        delay: 1500,
+                        delay: 2500,
                         disableOnInteraction: false, 
                     }}
                         className="mySwiper" >
@@ -118,35 +119,31 @@ export default function HomeD() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="coin-price">
-                            <div className="coin-price-content">
-                                <div className="coin-price-details">
-                                    <h3>ETH/USDT <span>-2.8%</span></h3>
-                                    <h2>2.3628</h2>
-                                    <p>24H Volume 265,234</p>
-                                </div>
+                        <div  className="coin-price">
+                            {Coins &&
+                                Coins.filter(newEl => secondSlide.includes(newEl.symbol)).map((coin) => (
+                                <div key={coin.id} className="coin-price-content">
+                                    <div className="coin-price-details">
+                                        <h3>{coin.symbol}/USDT <span>+{parseFloat(coin.price_change_percentage_24h).toFixed(2)}%</span></h3>
+                                        <h2>{coin.current_price}</h2>
+                                        <p>24H Volume {coin.total_volume}</p>
+                                    </div>
                             </div>
-                            <div className="coin-price-content">
-                                <div className="coin-price-details">
-                                    <h3>ETH/USDT <span>-2.8%</span></h3>
-                                    <h2>2.3628</h2>
-                                    <p>24H Volume 265,234</p>
+                            ))}
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div  className="coin-price">
+                            {Coins &&
+                                Coins.filter(newEl => thirdSlide.includes(newEl.symbol)).map((coin) => (
+                                <div key={coin.id} className="coin-price-content">
+                                    <div className="coin-price-details">
+                                        <h3>{coin.symbol}/USDT <span>+{parseFloat(coin.price_change_percentage_24h).toFixed(2)}%</span></h3>
+                                        <h2>{coin.current_price}</h2>
+                                        <p>24H Volume {coin.total_volume}</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="coin-price-content">
-                                <div className="coin-price-details">
-                                    <h3>ETH/USDT <span>-2.8%</span></h3>
-                                    <h2>2.3628</h2>
-                                    <p>24H Volume 265,234</p>
-                                </div>
-                            </div>
-                            <div className="coin-price-content">
-                                <div className="coin-price-details">
-                                    <h3>ETH/USDT <span>-2.8%</span></h3>
-                                    <h2>2.3628</h2>
-                                    <p>24H Volume 265,234</p>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </SwiperSlide>
                 </Swiper>
