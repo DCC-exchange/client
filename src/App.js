@@ -23,11 +23,6 @@ import CoinsM from "./Pages/components/futures/route/CoinsM";
 // ==========================================================
 import { useAuthContext } from "./hooks/useAuthContext";
 import HomeIndex from "./Pages/components/home/HomeIndex";
-import Hot from "./Pages/components/home/view/mobile/route/Hot";
-import Losers from "./Pages/components/home/view/mobile/route/Losers";
-import Gainers from "./Pages/components/home/view/mobile/route/Gainers";
-import Volume from "./Pages/components/home/view/mobile/route/Volume";
-import Favourite from "./Pages/components/spot/coins/Favourite";
 import NavBar from "./component/navbar/NavBar";
 
 function App() {
@@ -55,14 +50,7 @@ function App() {
           {/* Welcome route */}
           <Route path="/welcome" element={<Welcome /> }></Route>
           {/* Home Route */}
-            <Route path="/" element={<HomeIndex />}>
-                <Route index element={<Hot />} />
-                <Route path="hot" element={<Hot />} />
-                <Route path="loser" element={<Losers />} />
-                <Route path="gainer" element={<Gainers />} />
-                <Route path="volume" element={<Volume />} />
-                <Route path="favourite" element={<Favourite />} />
-            </Route>
+            <Route path="/" element={<HomeIndex />}> </Route>
 
             {/* Spot route */}
             <Route path="/spot-trade" element={<Spot />}>

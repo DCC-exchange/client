@@ -19,6 +19,12 @@ import "swiper/swiper.min.css";
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Autoplay } from "swiper";
 import Navbar from "./Navbar";
+import HotSpot from "./route/HotSpot";
+import HotFutures from "./route/HotFutures";
+import Gainers from "./route/Gainers";
+import Losers from "./route/Losers";
+
+import "../../style/home.css"
 
 SwiperCore.use([Autoplay]);
 
@@ -33,6 +39,43 @@ export default function HomeM() {
           setOpenMenu(true);
         }
     })
+
+    const [ defaultRoute , setDefaultRoute ] = useState(<HotSpot />)
+
+    const [ spotActive, setSpotActive] = useState(true)
+    const [ futuresActive, setFuturesActive ] = useState(false)
+    const [ gainersActive, setGainersActive ] = useState(false)
+    const [ losersActive, setLosersActive ] = useState(false)
+
+    const handleSwitch = ((e)=>{
+      if(e === 1){
+        setDefaultRoute(<HotFutures />)
+        setSpotActive(false)
+        setFuturesActive(true)
+        setGainersActive(false)
+        setLosersActive(false)
+      }else if( e === 2){
+        setDefaultRoute(<HotSpot />)
+        setSpotActive(true)
+        setFuturesActive(false)
+        setGainersActive(false)
+        setLosersActive(false)
+      }else if( e === 3){
+        setDefaultRoute(<Gainers />)
+        setSpotActive(false)
+        setFuturesActive(false)
+        setGainersActive(true)
+        setLosersActive(false)
+      }else{
+        setDefaultRoute(<Losers />)
+        setSpotActive(false)
+        setFuturesActive(false)
+        setGainersActive(true)
+        setLosersActive(true)
+      }
+    })
+
+
   return (
     <div className="homePage">
       <Navbar hideMenu={hideMenu} />
@@ -152,34 +195,22 @@ export default function HomeM() {
         <div className="home-coin-section-container">
             <div className="home-coin-section-heading">
                 <div className="home-coin-section-heading-container">
-                    <div className="content">
+                    <div onClick={()=>handleSwitch(1)} className={futuresActive ? "active" : "content"}>
                         <h4>Hot Futures</h4>
                     </div>
-                    <div className="content">
+                    <div onClick={()=>handleSwitch(2)} className={spotActive ? "active" : "content"}>
                         <h4>Hot Spot</h4>
                     </div>
-                    <div className="content">
+                    <div onClick={()=>handleSwitch(3)} className={gainersActive ? "active" : "content"}>
                         <h4>Gainers</h4>
                     </div>
-                    <div className="content">
+                    <div onClick={()=>handleSwitch(4)} className={losersActive ? "active" : "content"}>
                         <h4>Losers</h4>
                     </div>
                 </div>
             </div>
 
-            <div className="home-coin-section-body">
-              <div className="home-coin-section-body-container">
-                  <div className="pairs">
-                      <h4>BTCUSDT</h4>
-                  </div>
-                  <div className="price">
-                      <h4>23,789.0</h4>
-                  </div>
-                  <div className="percent">
-                      <button className="positive">+2.34%</button>
-                  </div>
-              </div>
-            </div>
+            { defaultRoute }
         </div>
       </div>
     </div>
