@@ -10,7 +10,6 @@ export default function Spot() {
     CryptoCoins()
   },[])
 
-  console.log(Coins)
 
   return (
     <div className="market-spot-main">
@@ -45,7 +44,7 @@ export default function Spot() {
                   </div>
                   <div className="price">
                     {coin.current_price}
-                    <p>Vol 1.3M</p>
+                    <p>Vol {coin.total_volume}</p>
                   </div>
                   <div className="percent">
                   {coin.price_change_percentage_24h >= 0 && (
