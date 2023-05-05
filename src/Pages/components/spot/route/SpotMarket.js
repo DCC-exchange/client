@@ -53,9 +53,13 @@ export default function SpotMarket() {
   },[])
 
 
+  const handleCoinUpdate = ((e)=>{
+      console.log(e)
+  })
+
   return (
     <div className="spot-market">
-      { showCoinRoute && <CoinRoute Coins={Coins} isLoading={isLoading} error={error} handleShowCoinSlide={()=>handleShowCoinSlide(2)} /> }
+      { showCoinRoute && <CoinRoute UpdateCoin={handleCoinUpdate} Coins={Coins} isLoading={isLoading} error={error} handleShowCoinSlide={()=>handleShowCoinSlide(2)} /> }
         <div className="spot-market-container">
             <div className="coin-title">
               <div className="coin-title-container">
