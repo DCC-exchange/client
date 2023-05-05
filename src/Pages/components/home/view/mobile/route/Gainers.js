@@ -12,12 +12,12 @@ export default function Gainers() {
 
   return (
     <div className="home-coin-section-body">
-      { isLoading && <div className="isloading-coin">
-        <h1>Loading...</h1>
-    </div> }
-    { error && <div className="isloading-coin">
-        <h1>Network Error</h1>
-    </div> }
+        { isLoading && <div className="isloading-coin">
+          <h1>Loading...</h1>
+      </div> }
+      { error && <div className="isloading-coin">
+          <h1>Network Error</h1>
+      </div> }
 
   {Coins &&
       Coins.filter(newEl => newEl.price_change_percentage_24h > 8).map((coin) => (
