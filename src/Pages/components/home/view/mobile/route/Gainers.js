@@ -10,6 +10,8 @@ export default function Gainers() {
     CryptoCoins()
   },[])
 
+
+
   return (
     <div className="home-coin-section-body">
         { isLoading && <div className="isloading-coin">

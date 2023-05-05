@@ -1,6 +1,17 @@
 import React from 'react'
+import { useCryptoCoins } from '../../../../../../../config/Coins' 
+import { useEffect } from 'react'
 
 export default function Spot() {
+
+  const { CryptoCoins, Coins, isLoading, error } = useCryptoCoins()
+
+  useEffect(()=>{
+    CryptoCoins()
+  },[])
+
+  console.log(Coins)
+
   return (
     <div className="market-spot-main">
         <div className="market-spot-main-container">
@@ -18,19 +29,38 @@ export default function Spot() {
                 </div>
             </div>
             <div className="body">
+            { isLoading && <div className="isloading-coin">
+                <h1>Loading...</h1>
+            </div> }
+            { error && <div className="isloading-coin">
+                <h1>Network Error</h1>
+            </div> }
+
+            {Coins &&
+              Coins.filter(newEl => newEl.symbol !== "usdt").map((coin) => (
               <div className="body-container">
                   <div className="coin-pair">
-                      <h4>BTC <span>/USDT</span> </h4>
+                      <h4>{coin.symbol}<span>/USDT</span> </h4>
                       <span>Spot</span>
                   </div>
                   <div className="price">
-                    <h4>29,000.7</h4>
+                    {coin.current_price}
                     <span>Vol 1.3M</span>
                   </div>
                   <div className="percent">
-                      <button className='negative'>-2.34%</button>
+                  {coin.price_change_percentage_24h >= 0 && (
+                      <button className="positive">
+                        +{parseFloat(coin.price_change_percentage_24h).toFixed(2)}%{" "}
+                      </button>
+                    )}
+                    {coin.price_change_percentage_24h < 0 && (
+                      <button className="negative">
+                          {parseFloat(coin.price_change_percentage_24h).toFixed(2)}%
+                      </button>
+                    )}
                   </div>
               </div>
+            ))}
             </div>
         </div>
     </div>
