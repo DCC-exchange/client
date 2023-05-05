@@ -104,20 +104,18 @@ export default function HomeD() {
                     }}
                         className="mySwiper" >
                     <SwiperSlide>
-
-                     {Coins &&
-                        Coins.filter(newEl => firstSlide.includes(newEl.symbol)).map((coin) => (
-                        <div key={coin.id} className="coin-price">
-                            <div className="coin-price-content">
-                                <div className="coin-price-details">
-                                    <h3>{coin.symbol}/USDT <span>+{parseFloat(coin.price_change_percentage_24h).toFixed(2)}%</span></h3>
-                                    <h2>{coin.current_price}</h2>
-                                    <p>24H Volume {coin.total_volume}</p>
-                                </div>
+                        <div  className="coin-price">
+                            {Coins &&
+                                Coins.filter(newEl => firstSlide.includes(newEl.symbol)).map((coin) => (
+                                <div key={coin.id} className="coin-price-content">
+                                    <div className="coin-price-details">
+                                        <h3>{coin.symbol}/USDT <span>+{parseFloat(coin.price_change_percentage_24h).toFixed(2)}%</span></h3>
+                                        <h2>{coin.current_price}</h2>
+                                        <p>24H Volume {coin.total_volume}</p>
+                                    </div>
                             </div>
+                            ))}
                         </div>
-                    ))}
-                    
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="coin-price">
