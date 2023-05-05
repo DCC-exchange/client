@@ -45,7 +45,7 @@ export default function Spot() {
                   </div>
                   <div className="price">
                     {coin.current_price}
-                    <span>Vol 1.3M</span>
+                    <p>Vol 1.3M</p>
                   </div>
                   <div className="percent">
                   {coin.price_change_percentage_24h >= 0 && (

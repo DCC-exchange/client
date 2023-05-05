@@ -142,6 +142,8 @@
     width: 100%;
     padding: 0;
     margin: 0;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 .market-spot-main .market-spot-main-container .body-container{
@@ -164,7 +166,8 @@
     text-transform: uppercase;
 }
 
-.market-spot-main .market-spot-main-container .body-container span{
+.market-spot-main .market-spot-main-container .body-container span,
+.market-spot-main .market-spot-main-container .body-container p{
     color: var(--secondary-text-color);
     font-size: 11.3px;
     word-spacing: .1em;
