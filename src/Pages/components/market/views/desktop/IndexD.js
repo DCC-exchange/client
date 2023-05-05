@@ -10,7 +10,7 @@ import Perpetual from './routes/Perpetual';
 export default function IndexD() {
 
   const { CryptoCoins, Coins, isLoading, error } = useCryptoCoins()
-
+  let filtCoin = [ "btc","eth",  "xrp", "doge", ]
   useEffect(()=>{
     CryptoCoins()
   },[])
@@ -53,7 +53,7 @@ export default function IndexD() {
                     <h1>Network Error</h1>
                 </div> }
 
-               { Coins && Coins.map((detail)=>(
+               { Coins && Coins.filter(newEl => filtCoin.includes(newEl.symbol)).map((detail) => (
                   <div key={detail.id} className="market-card-container">
                     <div className="market-card-content">
                         <div className="market-card-imgae">
