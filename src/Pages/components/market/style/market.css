@@ -29,39 +29,111 @@
 }
 .market-page-container .mobile-market-route .mobile-market-route-container{
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
+    width: 100%;
+    gap: 100%;
     display: flex;
 }
 .market-page-container .mobile-market-route .mobile-market-route-container .content{
     width: 100%;
-    padding: 5px;
-    text-align: center;
 }
 .market-page-container .mobile-market-route .mobile-market-route-container .content-search{
-    width: 50%;
-    padding: 5px;
+    width: 100%;
     text-align: center;
 }
 .market-page-container .mobile-market-route .mobile-market-route-container .content-search a{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: .1em;
     color: #8c8b8e;
 }
 .market-page-container .mobile-market-route .mobile-market-route-container .content a{
     text-decoration: none;
     font-weight: 500;
-    font-size: 11px;
-    /* line-height: 18px; */
+    font-size: 13px;
     letter-spacing: .1em;
     color: #8c8b8e;
 }
 .market-page-container .mobile-market-route .mobile-market-route-container  a.active{
     text-decoration: none;
     font-weight: 900;
-    font-size: 11.5px;
-    /* line-height: 18px; */
+    font-size: 13px;
     letter-spacing: .1em;
     color: #fff;
 }
+
+/* ================ main market switch ================ */
+
+.main-market{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main-market-container{
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.main-market-container .main-market-switch{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.main-market-switch-container{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    gap: 15px;
+}
+.main-market-switch-container .content{
+    color: var(--secondary-text-color);
+    word-spacing: .1em;
+    font-size: 11px;
+    font-weight: 500;
+}
+.main-market-switch-container .content h4{
+    padding: 4px;
+}
+.main-market-switch-container .active h4{
+    padding: 4px 10px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    word-spacing: .1em;
+    font-size: 11px;
+    background: var(--button-bg);
+}
+
+
+/* ======================== spot coin contents ========================= */
+
+.market-spot-main{
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    background: #1b0b1f;
+    border-radius: 30px 30px 0 0;
+}
+
+.market-spot-main .market-spot-main-container{
+     padding: 0;
+     margin: 0;
+}
+
+.market-spot-main .market-spot-main-container .header{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.market-spot-main .market-spot-main-container .header .header-container{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+.market-spot-main .market-spot-main-container .header .header-container .content{
+    width: 100%;
+    color: var(--secondary-text-color);
+}
+
 

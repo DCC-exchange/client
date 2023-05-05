@@ -1,10 +1,11 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import { CgSearch } from "react-icons/cg";
 
 export default function IndexM() {
   return (
     <div className='market-page'>
+      <div className="round_icon"></div>
         <div className="market-page-container">
             <div className="mobile-market-route">
                 <div className="mobile-market-route-container">
@@ -15,7 +16,7 @@ export default function IndexM() {
                     </div>
                     <div className="content">
                         <NavLink to="main">
-                            Market
+                            Markets
                         </NavLink>
                     </div>
                     <div className="content-search">
@@ -25,6 +26,7 @@ export default function IndexM() {
                     </div>
                 </div>
             </div>
+            <Outlet />
         </div>
     </div>
   )

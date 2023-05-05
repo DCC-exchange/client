@@ -10,9 +10,6 @@ import SpotWallet from "./Pages/components/Wallet/spot/Spot";
 import FuturesRec from "./Pages/components/Wallet/futures/futuresRec";
 import Market from "./Pages/components/market/Market";
 import MarketChart from "./Pages/components/market/MarketChart";
-import MarketSpot from "./Pages/components/market/routes/MarketSpot";
-import MarketFavorite from "./Pages/components/market/routes/MarketFavorite";
-import Future from "./Pages/components/market/routes/Future";
 import Spot from "./Pages/components/spot/Spot";
 import Convert from "./Pages/components/spot/route/Convert";
 import SpotMarket from "./Pages/components/spot/route/SpotMarket";
@@ -24,6 +21,9 @@ import CoinsM from "./Pages/components/futures/route/CoinsM";
 import { useAuthContext } from "./hooks/useAuthContext";
 import HomeIndex from "./Pages/components/home/HomeIndex";
 import NavBar from "./component/navbar/NavBar";
+import MainMarket from "./Pages/components/market/views/mobile/Routes/MainMarket";
+import Search from "./Pages/components/market/views/mobile/Routes/Search";
+import Favourite from "./Pages/components/spot/coins/Favourite";
 
 function App() {
 
@@ -74,10 +74,10 @@ function App() {
 
             {/* Market route */}
             <Route path="/market" element={<Market />}>
-                <Route index element={<MarketSpot />} />
-                <Route path="main" element={<MarketSpot />} />
-                <Route path="search" element={<MarketFavorite />} />
-                <Route path="favourite" element={<Future />} />
+                <Route index element={<MainMarket />} />
+                <Route path="main" element={<MainMarket />} />
+                <Route path="search" element={<Search />} />
+                <Route path="favourite" element={<Favourite />} />
             </Route>
 
             {/* Market Chart */}
