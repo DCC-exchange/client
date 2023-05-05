@@ -70,7 +70,7 @@ export default function HomeM() {
         setDefaultRoute(<Losers />)
         setSpotActive(false)
         setFuturesActive(false)
-        setGainersActive(true)
+        setGainersActive(false)
         setLosersActive(true)
       }
     })
