@@ -1,33 +1,31 @@
 import React from 'react'
-import { NavLink, Outlet } from 'react-router-dom';
-import search from "../../images/search.svg";
+import { NavLink } from 'react-router-dom';
+import { CgSearch } from "react-icons/cg";
 
 export default function IndexM() {
   return (
-    <div className='market'>
-    <div className='market-container'>
-        <div className='search_header'>
-            <img  src={search} alt="search"/>
-            <input type="text"  placeholder='Search Coin'/>
+    <div className='market-page'>
+        <div className="market-page-container">
+            <div className="mobile-market-route">
+                <div className="mobile-market-route-container">
+                    <div className="content">
+                        <NavLink to="favourite">
+                            favourite
+                        </NavLink>
+                    </div>
+                    <div className="content">
+                        <NavLink to="main">
+                            Market
+                        </NavLink>
+                    </div>
+                    <div className="content-search">
+                        <NavLink to="search">
+                            <CgSearch />
+                        </NavLink>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className='round_icon'> </div>
-        <div className='market-routes'>
-          <div className='market-routes-container'>
-            <div className="market-route-content">
-                  <NavLink to='market-favourites'>Favourites</NavLink>
-            </div>
-            <div className="market-route-content">
-                <NavLink to='spot'>Spot</NavLink>
-            </div>
-            <div className="market-route-content">
-               <NavLink to='market-features'>Features</NavLink>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="Market-contents-display">
-        <Outlet />
-      </div>
-  </div>
+    </div>
   )
 }

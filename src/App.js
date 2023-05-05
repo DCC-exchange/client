@@ -41,7 +41,6 @@ function App() {
 
   return (
     <div className="App">
-
         {/*============== Navbar route ================= */}
           <NavBar />
 
@@ -76,9 +75,9 @@ function App() {
             {/* Market route */}
             <Route path="/market" element={<Market />}>
                 <Route index element={<MarketSpot />} />
-                <Route path="spot" element={<MarketSpot />} />
-                <Route path="market-favourites" element={<MarketFavorite />} />
-                <Route path="market-features" element={<Future />} />
+                <Route path="main" element={<MarketSpot />} />
+                <Route path="search" element={<MarketFavorite />} />
+                <Route path="favourite" element={<Future />} />
             </Route>
 
             {/* Market Chart */}
@@ -92,7 +91,6 @@ function App() {
                 <Route path="futures" element={ user ? <FuturesRec /> : <Navigate to="/sign/login" /> } />
             </Route>
         </Routes>
-
     </div>
   );
 }

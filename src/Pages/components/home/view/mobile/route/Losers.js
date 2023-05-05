@@ -37,7 +37,7 @@ export default function Losers() {
           )}
           {coin.price_change_percentage_24h < 0 && (
             <button className="negative">
-                -{parseFloat(coin.price_change_percentage_24h).toFixed(2)}%
+                {parseFloat(coin.price_change_percentage_24h).toFixed(2)}%
             </button>
           )}
       </div>
