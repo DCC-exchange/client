@@ -23,7 +23,8 @@ import HomeIndex from "./Pages/components/home/HomeIndex";
 import NavBar from "./component/navbar/NavBar";
 import MainMarket from "./Pages/components/market/views/mobile/Routes/MainMarket";
 import Search from "./Pages/components/market/views/mobile/Routes/Search";
-import Favourite from "./Pages/components/spot/coins/Favourite";
+import Favourite from "./Pages/components/market/views/mobile/Routes/Favourite";
+
 
 function App() {
 
