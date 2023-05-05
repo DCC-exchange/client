@@ -51,13 +51,22 @@ console.log(Coins)
                 <h4>{coin.current_price}</h4>
             </div>
             <div className="change-percent">
-                <h4>{parseFloat(coin.price_change_percentage_24h).toFixed(2)}%</h4>
+                {coin.price_change_percentage_24h >= 0 && (
+                      <h4 className="positive">
+                        +{parseFloat(coin.price_change_percentage_24h).toFixed(2)}%{" "}
+                      </h4>
+                    )}
+                    {coin.price_change_percentage_24h < 0 && (
+                      <h4 className="negative">
+                          {parseFloat(coin.price_change_percentage_24h).toFixed(2)}%
+                      </h4>
+                    )}
             </div>
             <div className="high">
-                <h4>23,456.00</h4>
+                <h4>{coin.high_24h}</h4> 
             </div>
             <div className="high">
-                <h4>23,456.00</h4>
+                <h4>{coin.low_24h}</h4>
             </div>
             <div className="high">
                 <h4>{coin.total_volume}</h4>

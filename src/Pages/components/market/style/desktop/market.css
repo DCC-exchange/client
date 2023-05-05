@@ -289,11 +289,18 @@
     width: 100%;
     font-weight: 500;
     font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+.desktop-market-coins-container .change-percent .positive{
     line-height: 21px;
     letter-spacing: 0.1em;
-    color: #01D016;
-    padding: 10px;
-    text-align: center;
+    color: var(--buy-text-color);
+}
+.desktop-market-coins-container .change-percent .negative{
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: var(--sell-text-btn);
 }
 .desktop-market-coins-container .high{
     width: 100%;
