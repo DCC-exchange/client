@@ -124,20 +124,19 @@
     width: 100%;
 }
 .market-spot-main .market-spot-main-container .header .header-container{
+    gap: 17%;
     display: flex;
     padding: 10px;
     margin: 0 10px;
-    font-size: 11px;
+    font-size: 10px;
+    justify-content: space-around;
 }
 .market-spot-main .market-spot-main-container .header .header-container .content{
-    width: 100%;
     color: var(--secondary-text-color);
 }
 .market-spot-main .market-spot-main-container .header .header-container .percent{
-    width: 100%;
     color: var(--secondary-text-color);
 }
-
 
 .market-spot-main .market-spot-main-container .body{
     width: 100%;
@@ -147,11 +146,15 @@
 
 .market-spot-main .market-spot-main-container .body-container{
     display: flex;
-    padding: 5px;
-    margin: 5px;
+    margin: 10px 0;
     justify-content: space-around;
     width: 100%;
-    gap: 20%;
+    grid-gap: 10%;
+    gap: 10%;
+    color: var(--primary-text-color);
+    font-size: 12.3px;
+    font-weight: 700;
+    word-spacing: 0.1em;
 }
 .market-spot-main .market-spot-main-container .body-container {
     color: var(--primary-text-color);
@@ -175,6 +178,7 @@
     font-size: 10.6px;
     border-radius: 4px;
     width: 60px;
+    margin: 3px;
     height: 26px;
   }
   
@@ -186,6 +190,7 @@
     font-size: 10.6px;
     border-radius: 4px;
     width: 60px;
+    margin: 3px;
     height: 26px;
   }
   
