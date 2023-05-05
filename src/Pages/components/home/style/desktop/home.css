@@ -161,11 +161,10 @@ color: var(--secondary-text-color);
     padding: 0;
     margin: 0;
     background: var(--white-bg);
-    height: 100vh;
+    height: 100%;
 }
 .home-market-container{
-    padding: 25px;
-    margin: 25px;
+    padding: 70px 80px;
 }
 .home-market-container .sliding-images{
     padding: 0;
@@ -204,13 +203,13 @@ color: var(--secondary-text-color);
     color: var(--backgoud-color-secondary);
 }
 .market-route-contents .market-route-details{
-    padding: 7px 20px;
+    padding: 6px 18px;
     cursor: pointer;
 }
 .market-route-contents .active{
-    padding: 7px 20px;
     background: rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    padding: 6px 18px;
     cursor: pointer;
 }
 
