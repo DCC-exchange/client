@@ -54,14 +54,14 @@ export default function SpotMarket() {
 
   const handleCoinUpdate = ((e)=>{
       console.log(e)
-      setDefaultCoin("sol")
+      setDefaultCoin(["sol"])
   })
 
 
-  const [ defaultCoin, setDefaultCoin ] = useState("btc")
+  const [ defaultCoin, setDefaultCoin ] = useState(["btc"])
 
 let defCoin =  Coins.filter((el)=>{
-      return defaultCoin === el.symbol
+      return defaultCoin.includes(el.symbol)
 })
 console.log(defCoin)
 
