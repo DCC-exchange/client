@@ -3,8 +3,6 @@ import Spot from './component/main/Spot'
 import Usdt from './component/main/Usdt'
 import Coin from './component/main/Coin'
 
-
-
 export default function MainMarket() {
 
     const [defaultRoute, setDefaultRoute ] = useState(<Spot />)
