@@ -31,17 +31,16 @@ export default function Gainers() {
       <div className="percent">
         {coin.price_change_percentage_24h >= 0 && (
             <button className="positive">
-              +{coin.price_change_percentage_24h}%{" "}
+              +{parseFloat(coin.price_change_percentage_24h).toFixed(2)}%{" "}
             </button>
           )}
           {coin.price_change_percentage_24h < 0 && (
             <button className="negative">
-                {coin.price_change_percentage_24h}%
+                {parseFloat(coin.price_change_percentage_24h).toFixed(2)}%
             </button>
           )}
       </div>
     </div>
-
     ))}
 
 </div>
