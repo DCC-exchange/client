@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+
+import { useCryptoCoins } from '../../../../config/Coins'
 
 import { IoSearch } from "react-icons/io5";
 import Spot from './routes/Spot';
@@ -6,42 +8,13 @@ import Favourite from './routes/Favourite';
 import Perpetual from './routes/Perpetual';
 
 export default function IndexD() {
-  const coinCard = [{
-    id:1,
-    image:"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
-    pairs: "BTC/USDT",
-    price: "23,3748.00",
-    percent: '-2.53%',
-    usdPrice: "34,268.00",
-    volume: "234,378.00"
-  },
-  {
-    id:2,
-    image:"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
-    pairs: "BTC/USDT",
-    price: "23,3748.00",
-    percent: '-2.53%',
-    usdPrice: "34,268.00",
-    volume: "234,378.00"
-  },
-  {
-    id:3,
-    image:"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
-    pairs: "BTC/USDT",
-    price: "23,3748.00",
-    percent: '-2.53%',
-    usdPrice: "34,268.00",
-    volume: "234,378.00"
-  },
-  {
-    id:4,
-    image:"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
-    pairs: "BTC/USDT",
-    price: "23,3748.00",
-    percent: '-2.53',
-    usdPrice: "34,268.00",
-    volume: "234,378.00"
-  }]
+
+  const { CryptoCoins, Coins, isLoading, error } = useCryptoCoins()
+
+  useEffect(()=>{
+    CryptoCoins()
+  },[])
+
 
     const [ defaultRoute, setDefaultRoute ] = useState(<Spot />)
     const [ spotActive, setSpotActive ] = useState(true)
@@ -70,8 +43,17 @@ export default function IndexD() {
   return (
     <div className="market-desktop">
         <div className="market-desktop-container">
+         
             <div className="market-coin-cards">
-              { coinCard.map((detail)=>(
+
+                { isLoading && <div className="isloading-coin">
+                    <h1>Loading...</h1>
+                </div> }
+                { error && <div className="isloading-coin">
+                    <h1>Network Error</h1>
+                </div> }
+
+               { Coins && Coins.map((detail)=>(
                   <div key={detail.id} className="market-card-container">
                     <div className="market-card-content">
                         <div className="market-card-imgae">
@@ -79,17 +61,31 @@ export default function IndexD() {
                         </div>
                         <div className="market-card-details">
                           <div className="coin-pair">
-                            <h3>{detail.pairs}</h3>
-                            <h2>{detail.price} <span>= USD{detail.usdPrice}</span></h2>
+                            <h3>{detail.symbol}</h3>
+                            <h2>{detail.current_price} <span>= USD{detail.current_price}</span></h2>
                           </div>
                             <div className="volume">
-                                <h4><span>{detail.percent}% </span> Volume {detail.volume}</h4>
+                                <h4>
+                                {detail.price_change_percentage_24h >= 0 && (
+                                    <span className="positive">
+                                      +{parseFloat(detail.price_change_percentage_24h).toFixed(2)}%{" "}
+                                    </span>
+                                  )}
+                                  {detail.price_change_percentage_24h < 0 && (
+                                    <span className="negative">
+                                        {parseFloat(detail.price_change_percentage_24h).toFixed(2)}%
+                                    </span>
+                                  )}
+                                   Volume {detail.total_volume}</h4>
                             </div>  
                         </div>
                     </div>
                 </div>
               )) }
             </div>
+
+
+
             <div className="market-dashboard">
               <div className="market-dashboard-container">
                   <div className="market-dashboard-route">

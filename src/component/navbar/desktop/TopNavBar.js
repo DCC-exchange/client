@@ -42,7 +42,7 @@ export default function TopNavBar() {
   })
 
   const handleMarketnavigate = (()=>{
-      Navigate("/market/spot")
+      Navigate("/market")
   })
 
   return (
