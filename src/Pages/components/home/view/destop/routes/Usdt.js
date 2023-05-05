@@ -55,9 +55,6 @@ export default function Usdt() {
        <div className="trade-section">
            <div className="trade-btn-container">
                <div className="trade-btn-content">
-                   <button>Buy</button>
-               </div>
-               <div className="trade-btn-content">
                    <button>Trade</button>
                </div>
            </div>

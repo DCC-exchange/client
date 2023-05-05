@@ -17,10 +17,8 @@
 
 .home-page-container{
     margin: 0;
-    padding: 0;
     width: 100%;
-    padding-top: 56px;
-    padding-bottom: 70px;
+    padding: 66px 0 0 0;
 }
 
 .home-text-container{
@@ -136,6 +134,7 @@ color: var(--secondary-text-color);
     font-size: 15px;
     line-height: 25px;
     letter-spacing: .2em;
+    text-transform: uppercase;
 }
 .coin-price-details span{
     color: var(--buy-text-color);
@@ -161,10 +160,9 @@ color: var(--secondary-text-color);
     padding: 0;
     margin: 0;
     background: var(--white-bg);
-    height: 100%;
 }
-.home-market-container{
-    padding: 70px 80px;
+.home-page .home-market .home-market-container{
+    padding: 60px;
 }
 .home-market-container .sliding-images{
     padding: 0;
@@ -237,7 +235,7 @@ color: var(--secondary-text-color);
     letter-spacing: 0.1em;
 }
 .home-coin-heading-container .pair-container{
-    width: 100%;
+    width: 28%;
     padding: 5px;
 }
 .home-coin-heading-container .price-container{
