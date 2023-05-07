@@ -191,19 +191,50 @@
 .spot-classic-route-content{
     display: flex;
     gap: 15px;
-    border-bottom: rgba(0, 0, 0, 0.356);
+    border-bottom: rgba(0, 0, 0, 0.527);
 }
 .spot-classic-route-content .item{
     color: var(--secondary-text-color);
     font-weight: 300;
     word-spacing: .1em;
-    padding: 7px;
-    font-size: 12px;
+    padding: 10px;
+    font-size: 13px;
 }
 .spot-classic-route-content .active{
     color: var(--primary-text-color);
     font-weight: 700;
     word-spacing: .1em;
-    padding: 7px;
-    font-size: 12.34px;
+    padding: 10px;
+    font-size: 13.34px;
+}
+
+.spot-classic-route .search{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.spot-classic-route  .search-container{
+    padding: 10px;
+    margin: 10px;
+}
+.spot-classic-route  .search-container .search-content{
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    background: #45234A;
+}
+.spot-classic-route  .search-container .input{
+    padding: 0;
+}
+.spot-classic-route  .search-container .input input{
+    background: none;
+    outline: none;
+    border: none;
+    padding: 6px;
+    font-weight: 600;
+    font-size: 11px;
+    color: var(--secondary-text-color);
+}
+.spot-classic-route  .search-container .input input::placeholder{
+    color: var(--secondary-text-color);
 }
