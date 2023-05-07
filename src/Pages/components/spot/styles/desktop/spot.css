@@ -11,13 +11,13 @@
 
 .spot-classic-route{
     width: 25%;
-    height: 1000px;
+    height: 850px;
     background: #1b0b1f
 }
 
 .spot-classic-chart{
     width: 54%;
-    height: 1000px;
+    height: 850px;
 }
 
 /* ===================================== Order Book ================================= */
@@ -26,7 +26,7 @@
     position: relative;
     width: 21%;
     background: #1b0b1f;
-    height: 1000px;
+    height: 850px;
 }
 .spot-classic-orderbook .spot-classic-orderbook-container{
     padding: 0;
@@ -51,17 +51,16 @@
 }
 .spot-classic-orderbook-display-route-img{
     display: flex;
+    grid-gap: 10px;
     gap: 10px;
+    margin: 10px;
 }
 .spot-classic-orderbook-display-route-img img{
-    width: 30px;
-    border: var(--secondary-text-color);
+    width: 24px;
 }
 .spot-classic-orderbook-display-content-header-container .content{
     padding: 10px;
 }
-
-
 .spot-classic-orderbook-display-content-header{
     width: 100%;
     padding: 0;
@@ -72,6 +71,7 @@
     justify-content: space-around;
     color: var(--secondary-text-color);
     font-size: 11px;
+    gap: 25px;
     font-weight: 500;
 }
 .spot-classic-orderbook-display-content-body{
@@ -83,10 +83,11 @@
     display: flex;
     justify-content: space-around;
     color: var(--primary-text-color);
-    font-weight:400;
+    font-weight: 400;
     font-size: 10px;
-    margin: 5px;
-    padding: 5px;
+    gap: 30px;
+    margin: 5px 0;
+    padding: 5px 0;
     cursor: pointer;
 }
 .spot-classic-orderbook-display-content-body .container:hover{
@@ -116,7 +117,8 @@
 }
 .spot-classic-orderbook .recent-trades .recent-trades-container{
     padding: 0;
-    margin: 0;height: 100%;
+    margin: 0;
+    height: 100%;
     width: 100%;
 }
 .recent-trades .recent-trades-container .recent-trades-header{
@@ -155,8 +157,14 @@
 .recent-trades-container .recent-trades-body-content{
     display: flex;
     justify-content: space-around;
-    font-size: 10px;
+    font-size: 12px;
+    gap: 20px;
+    padding: 5px;
+    margin: 5px;
     color: var(--primary-text-color);
+}
+.recent-trades-container .recent-trades-body-content::-webkit-scrollbar{
+    display: none;
 }
 .recent-trades-container .recent-trades-body-content .price{
     color: var(--sell-text-btn);
