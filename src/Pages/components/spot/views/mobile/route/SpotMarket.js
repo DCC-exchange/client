@@ -12,7 +12,7 @@ import { IoAddCircleOutline } from "react-icons/io5";
 import MarketPrice from '../trade/marketPrice/MarketPrice';
 import CoinRoute from '../coins/CoinRoute';
 import Index from '../trade/position/Index';
-import { useCryptoCoins } from "../../../config/Coins"
+import { useCryptoCoins } from "../../../../../config/Coins"
 
 export default function SpotMarket() {
 
