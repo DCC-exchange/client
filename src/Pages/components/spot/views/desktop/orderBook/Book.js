@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 
-export default function Index() {
+export default function Book() {
 
     const [ MarkeyPrice ] = useState(0.367)
 

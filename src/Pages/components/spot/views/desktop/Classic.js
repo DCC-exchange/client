@@ -1,5 +1,5 @@
 import React from 'react'
-import Index from './orderBook'
+import Book from "./orderBook/Book"
 
 export default function Classic() {
   return (
@@ -15,7 +15,7 @@ export default function Classic() {
                   <h3>Candle chart</h3>
               </div>
             </div>
-            <Index />
+            <Book />
         </div>
     </div>
   )
