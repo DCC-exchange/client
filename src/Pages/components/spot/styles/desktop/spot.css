@@ -1,0 +1,26 @@
+.spot-classic{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.spot-classic-container{
+    display: flex;
+    padding-top: 65px;
+    gap: 8px;
+}
+
+.spot-classic-route{
+    width: 23%;
+    height: 1000px;
+    background: #1b0b1f
+}
+
+.spot-classic-chart{
+    width: 65%;
+    height: 1000px;
+}
+
+.spot-classic-orderbook{
+    width: 12%;
+    background: #1b0b1f
+}
