@@ -57,10 +57,6 @@ export default function SpotMarket() {
 
   })
 
-
-
-
-
   return (
     <div className="spot-market">
       { showCoinRoute && <CoinRoute UpdateCoin={handleCoinUpdate} Coins={Coins} isLoading={isLoading} error={error} handleShowCoinSlide={()=>handleShowCoinSlide(2)} /> }

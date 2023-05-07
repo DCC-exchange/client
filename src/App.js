@@ -10,9 +10,7 @@ import SpotWallet from "./Pages/components/Wallet/spot/Spot";
 import FuturesRec from "./Pages/components/Wallet/futures/futuresRec";
 import Market from "./Pages/components/market/Market";
 import MarketChart from "./Pages/components/market/MarketChart";
-import Spot from "./Pages/components/spot/Spot";
-import Convert from "./Pages/components/spot/route/Convert";
-import SpotMarket from "./Pages/components/spot/route/SpotMarket";
+
 import Futures from "./Pages/components/futures/Futures";
 import UsdtM from "./Pages/components/futures/route/UsdtM";
 import CoinsM from "./Pages/components/futures/route/CoinsM";
@@ -24,6 +22,11 @@ import NavBar from "./component/navbar/NavBar";
 import MainMarket from "./Pages/components/market/views/mobile/Routes/MainMarket";
 import Search from "./Pages/components/market/views/mobile/Routes/Search";
 import Favourite from "./Pages/components/market/views/mobile/Routes/Favourite";
+import SpotMarket from "./Pages/components/spot/views/mobile/route/SpotMarket";
+import Convert from "./Pages/components/spot/views/mobile/route/Convert";
+import Spot from "./Pages/components/spot/Spot";
+import Classic from "./Pages/components/spot/views/desktop/Classic";
+
 
 
 function App() {
@@ -57,6 +60,7 @@ function App() {
                 <Route index element={<SpotMarket />} />
                 <Route path="convert" element={<Convert />} />
                 <Route path="spot-market" element={<SpotMarket />} />
+                <Route path="classic" element={<Classic />} />
             </Route>
 
             {/* Futures route */}

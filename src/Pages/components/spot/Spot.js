@@ -1,22 +1,24 @@
 import React from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
-import "./styles/spot.css"
-import "./styles/limit.css"
-import "./styles/marketPrice.css"
+import IndexM from './views/mobile/IndexM'
+import Classic from './views/desktop/Classic'
+
+// Mobile css link
+import "./styles/mobile/spot.css"
+import "./styles/mobile/limit.css"
+import "./styles/mobile/marketPrice.css"
+
+// Desktop css link
+import "./styles/desktop/spot.css"
+
 export default function Spot() {
   return (
-    <div className="spot-trade">
-        <div className="spot-trade-container">
-            <div className="spot-trade-navigation">
-                <NavLink to="convert">
-                    <p>Convert</p>
-                </NavLink>
-                <NavLink to="spot-market">
-                    <p>Spot</p>
-                </NavLink>
-            </div>
-            <Outlet />
-        </div>
+    <div className="market-page">
+      <div className="mobile-view">
+          <IndexM />
+      </div>
+      <div className="destop-view">
+         <Classic />
+      </div>
     </div>
   )
 }
