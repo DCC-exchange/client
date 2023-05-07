@@ -207,6 +207,7 @@
     word-spacing: .1em;
     padding: 10px;
     font-size: 13.34px;
+    border-bottom: 2px solid #fff;
 }
 
 .spot-classic-route .search{
@@ -246,4 +247,29 @@
     position: absolute;
     top: 8px;
     right: 10px;
+}
+
+.classic-spot-coins{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.classic-spot-coins-container{
+    padding: 5px;
+}
+
+.classic-spot-coins-header{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.classic-spot-coins-header .classic-spot-coins-header-container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 11px
 }
