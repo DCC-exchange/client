@@ -2,10 +2,10 @@ import React,{ useState, useEffect} from 'react'
 import { BiTransfer } from "react-icons/bi";
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 import { BsBarChart} from "react-icons/bs";
-import buyActive from "../images/buyActive1.svg"
-import buyInActive from "../images/sellBtn.svg"
-import sellActive from "../images/ActiveSell.svg"
-import sellInActive from "../images/inactiveSell.svg"
+import buyActive from "../../../images/buyActive1.svg"
+import buyInActive from "../../../images/sellBtn.svg"
+import sellActive from "../../../images/ActiveSell.svg"
+import sellInActive from "../../../images/inactiveSell.svg"
 import Buy from '../trade/buy/Buy';
 import Sell from '../trade/sell/Sell';
 import { IoAddCircleOutline } from "react-icons/io5";
