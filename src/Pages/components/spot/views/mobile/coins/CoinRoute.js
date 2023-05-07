@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { RiCloseLine } from "react-icons/ri";
-import "../styles/coinRoute.css"
 import { CgSearch } from "react-icons/cg";
 import All from './All';
 import Favourite from './Favourite';

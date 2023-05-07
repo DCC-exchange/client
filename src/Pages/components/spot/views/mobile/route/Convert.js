@@ -2,7 +2,7 @@ import React from 'react'
 import { FaAngleLeft } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom'
 import { RiArrowDropDownFill } from "react-icons/ri";
-import "../styles/convert.css"
+
 
 export default function Convert() {
 

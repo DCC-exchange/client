@@ -6,7 +6,8 @@ import Classic from './views/desktop/Classic'
 import "./styles/mobile/spot.css"
 import "./styles/mobile/limit.css"
 import "./styles/mobile/marketPrice.css"
-
+import "./styles/mobile/convert.css"
+import "./styles/mobile/coinRoute.css"
 // Desktop css link
 import "./styles/desktop/spot.css"
 
