@@ -153,6 +153,10 @@
 }
 .recent-trades-container .recent-trades-body-container{
     overflow-y: scroll;
+    height: 300px;
+}
+.recent-trades-container .recent-trades-body-container::-webkit-scrollbar{
+    display: none;
 }
 .recent-trades-container .recent-trades-body-content{
     display: flex;
@@ -168,4 +172,34 @@
 }
 .recent-trades-container .recent-trades-body-content .price{
     color: var(--sell-text-btn);
+}
+
+/* ========================= spot coin route ============================ */
+.spot-classic-route{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.spot-classic-route-container{
+    padding: 0;
+    margin: 0;
+}
+.spot-classic-route-content{
+    display: flex;
+    gap: 15px;
+    border-bottom: rgba(0, 0, 0, 0.356);
+}
+.spot-classic-route-content .item{
+    color: var(--secondary-text-color);
+    font-weight: 300;
+    word-spacing: .1em;
+    padding: 7px;
+    font-size: 11px;
+}
+.spot-classic-route-content .active{
+    color: var(--primary-text-color);
+    font-weight: 700;
+    word-spacing: .1em;
+    padding: 7px;
+    font-size: 11.34px;
 }
