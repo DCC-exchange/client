@@ -10,17 +10,17 @@
 }
 
 .spot-classic-route{
-    width: 23%;
+    width: 25%;
     height: 1000px;
     background: #1b0b1f
 }
 
 .spot-classic-chart{
-    width: 65%;
+    width: 55%;
     height: 1000px;
 }
 
 .spot-classic-orderbook{
-    width: 12%;
+    width: 20%;
     background: #1b0b1f
 }
