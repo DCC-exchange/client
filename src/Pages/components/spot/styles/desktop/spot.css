@@ -44,22 +44,23 @@
     padding: 10px;
 }
 
-.spot-classic-orderbook-display-content-header{
+.spot-classic-orderbook-display-route{
     width: 100%;
     padding: 0;
     margin: 0;
 }
-.spot-classic-orderbook-display-content-header-container{
+.spot-classic-orderbook-display-route-img{
     display: flex;
     gap: 10px;
+}
+.spot-classic-orderbook-display-route-img img{
+    width: 30px;
+    border: var(--secondary-text-color);
 }
 .spot-classic-orderbook-display-content-header-container .content{
     padding: 10px;
 }
-.spot-classic-orderbook-display-content-header-container .content img{
-    width: 30px;
-    border: var(--secondary-text-color);
-}
+
 
 .spot-classic-orderbook-display-content-header{
     width: 100%;
@@ -108,12 +109,12 @@
     color: var(--primary-text-color);
 }
 
-.spot-classic .recent-trades{
+.spot-classic-orderbook .recent-trades{
     width: 100%;
     padding: 0;
     margin: 0;
 }
-.spot-classic .recent-trades .recent-trades-container{
+.spot-classic-orderbook .recent-trades .recent-trades-container{
     padding: 0;
     margin: 0;height: 100%;
     width: 100%;
@@ -131,32 +132,32 @@
     font-weight: 800;
 }
 
-.recent-trades-container .recent-trades-header .recent-trades-title{
+.recent-trades-container .recent-trades-title{
     width: 100%;
     padding: 0;
     margin: 0;
 }
-.recent-trades-container .recent-trades-header .recent-trades-title-container{
+.recent-trades-container .recent-trades-title-container{
     display: flex;
     justify-content: space-around;
     font-size: 11px;
     font-weight: 300;
     color: var(--secondary-text-color);
 }
-.recent-trades-container .recent-trades-header  .recent-trades-body{
+.recent-trades-container  .recent-trades-body{
     padding: 0;
     margin: 0;
     width: 100%;
 }
-.recent-trades-container .recent-trades-header .recent-trades-body-container{
+.recent-trades-container .recent-trades-body-container{
     overflow-y: scroll;
 }
-.recent-trades-container .recent-trades-header .recent-trades-body-content{
+.recent-trades-container .recent-trades-body-content{
     display: flex;
     justify-content: space-around;
     font-size: 10px;
     color: var(--primary-text-color);
 }
-.recent-trades-container .recent-trades-header .recent-trades-body-content .price{
+.recent-trades-container .recent-trades-body-content .price{
     color: var(--sell-text-btn);
 }
