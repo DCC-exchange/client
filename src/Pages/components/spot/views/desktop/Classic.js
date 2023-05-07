@@ -1,4 +1,5 @@
 import React from 'react'
+import Index from './orderBook'
 
 export default function Classic() {
   return (
@@ -14,11 +15,7 @@ export default function Classic() {
                   <h3>Candle chart</h3>
               </div>
             </div>
-            <div className="spot-classic-orderbook">
-              <div className="spot-classic-orderbook-container">
-                  <h3>Order Book</h3>
-              </div>
-            </div>
+            <Index />
         </div>
     </div>
   )

@@ -16,11 +16,147 @@
 }
 
 .spot-classic-chart{
-    width: 53%;
+    width: 54%;
     height: 1000px;
 }
 
+/* ===================================== Order Book ================================= */
+
 .spot-classic-orderbook{
-    width: 22%;
-    background: #1b0b1f
+    position: relative;
+    width: 21%;
+    background: #1b0b1f;
+    height: 1000px;
+}
+.spot-classic-orderbook .spot-classic-orderbook-container{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.spot-classic-orderbook-container .spot-classic-orderbook-header{
+    color: var(--primary-text-color);
+    font-weight: 600;
+    font-size: 12px;
+    word-spacing: .1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+}
+.spot-classic-orderbook-container .spot-classic-orderbook-header h3{
+    padding: 10px;
+}
+
+.spot-classic-orderbook-display-content-header{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.spot-classic-orderbook-display-content-header-container{
+    display: flex;
+    gap: 10px;
+}
+.spot-classic-orderbook-display-content-header-container .content{
+    padding: 10px;
+}
+.spot-classic-orderbook-display-content-header-container .content img{
+    width: 30px;
+    border: var(--secondary-text-color);
+}
+
+.spot-classic-orderbook-display-content-header{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.spot-classic-orderbook-display-content-header .spot-classic-orderbook-display-content-header-container{
+    display: flex;
+    justify-content: space-around;
+    color: var(--secondary-text-color);
+    font-size: 11px;
+    font-weight: 500;
+}
+.spot-classic-orderbook-display-content-body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.spot-classic-orderbook-display-content-body .container{
+    display: flex;
+    justify-content: space-around;
+    color: var(--primary-text-color);
+    font-weight:400;
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.spot-classic-orderbook-display-content-body .container:hover{
+    background: #45234A;
+}
+.spot-classic-orderbook-display-content-body .container .sell-price{
+    color: var(--sell-text-btn);
+}
+
+.spot-classic-orderbook-display-content-price{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.spot-classic-orderbook-display-content-price .content{
+    padding: 10px;
+    font-weight: 800;
+    font-size: 12.23px;
+    word-spacing: .2em;
+    color: var(--primary-text-color);
+}
+
+.spot-classic .recent-trades{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.spot-classic .recent-trades .recent-trades-container{
+    padding: 0;
+    margin: 0;height: 100%;
+    width: 100%;
+}
+.recent-trades .recent-trades-container .recent-trades-header{
+    background: #45234A;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.recent-trades-container .recent-trades-header .recent-trades-header-container{
+    padding: 10px;
+    color: var(--primary-text-color);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.recent-trades-container .recent-trades-header .recent-trades-title{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.recent-trades-container .recent-trades-header .recent-trades-title-container{
+    display: flex;
+    justify-content: space-around;
+    font-size: 11px;
+    font-weight: 300;
+    color: var(--secondary-text-color);
+}
+.recent-trades-container .recent-trades-header  .recent-trades-body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.recent-trades-container .recent-trades-header .recent-trades-body-container{
+    overflow-y: scroll;
+}
+.recent-trades-container .recent-trades-header .recent-trades-body-content{
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    color: var(--primary-text-color);
+}
+.recent-trades-container .recent-trades-header .recent-trades-body-content .price{
+    color: var(--sell-text-btn);
 }
