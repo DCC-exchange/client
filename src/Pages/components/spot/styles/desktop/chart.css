@@ -27,6 +27,12 @@
     font-weight: 600;
     text-transform: uppercase;
 }
+.classic-chart-header-container .header-name .header-name-pair span{
+    color: var(--primary-text-color);
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
 .classic-chart-header-container .header-name .header-fullname{
     color: var(--secondary-text-color);
     font-size: 11px;
@@ -40,9 +46,31 @@
     text-transform: capitalize;
 }
 
-.current-price{
+.classic-chart-header-container .current-price{
     width: 100%;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 17px;
     color: var(--buy-text-color);
+}
+.classic-chart-header-container .hours-change,
+ .classic-chart-header-container .high{
+    width: 100%;
+}
+.classic-chart-header-container .hours-change span, .classic-chart-header-container .high span{
+    font-weight: 300;
+    font-size: 12px;
+    word-spacing: .1em;
+    color: var(--secondary-text-color);
+}
+.classic-chart-header-container .hours-change h4{
+    font-weight: 300;
+    font-size: 11px;
+    word-spacing: .1em;
+    color: var(--buy-text-color);
+}
+
+.classic-chart-header-container .high h4{
+    font-weight: 300;
+    font-size: 11px;
+    word-spacing: .1em;
+    color: var(--primary-text-color);
 }

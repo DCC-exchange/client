@@ -9,7 +9,7 @@ export default function Chart() {
                 <div className="classic-chart-header-container">
                     <div className="header-name">
                         <div className="header-name-pair">
-                            <h4>BTC/USDT</h4>
+                            <h4>BTC <span>/USDT</span></h4>
                         </div>
                         <div className="header-fullname">
                             <h4>BTC <span>(Bitcoin)</span> </h4>
