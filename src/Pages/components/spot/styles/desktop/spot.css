@@ -276,8 +276,6 @@
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 11px;
-    overflow-y: scroll;
-    height: 300px;
 }
 .classic-spot-coins-header .classic-spot-coins-header-container::-webkit-scrollbar{
     display:none;
@@ -301,16 +299,25 @@
     justify-content: space-around;
     gap: 20px;
     color: var(--primary-text-color);
+    overflow-y: scroll;
+    height: 700px;
 }
 .classic-spot-coins-body-container .pair{
     font-weight: 500;
     font-size: 11px;
+    text-transform: uppercase;
     word-spacing: .1em;
     color: var(--primary-text-color);
+}
+.classic-spot-coins-body-container .price{
+    font-weight: 500;
+    font-size: 11px;
+    word-spacing: .1em;
 }
 .classic-spot-coins-body-container .percent{
     font-weight: 500;
     font-size: 11px;
+    display: flex;
     word-spacing: .1em;
 }
 .classic-spot-coins-body-container .positive{
@@ -318,4 +325,4 @@ color: var(--buy-text-color);
 }
 .classic-spot-coins-body-container .negative{
     color: var(--sell-text-btn);
- }
+}
