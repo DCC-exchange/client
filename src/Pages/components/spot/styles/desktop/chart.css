@@ -9,6 +9,7 @@
 }
 .classic-chart-container .classic-chart-header{
     width: 100%;
+    position: relative;
     padding: 0;
     margin: 0;
     background: #1b0b1f;
@@ -75,6 +76,7 @@
     color: var(--primary-text-color);
 }
 .classic-chart-header-container .shine-mode{
-    width: 100%;
-    color: var(--secondary-text-color);
+   position: absolute;
+   top: 15px;
+   right: 15px;
 }
