@@ -35,7 +35,7 @@ export default function Chart() {
                         <h4>29,268.90</h4>
                     </div>
                     <div className="high">
-                        <span>24H Volume BTC</span>
+                        <span>24H Volume(BTC)</span>
                         <h4>29,268.90</h4>
                     </div>
                     <div className="shine-mode">
