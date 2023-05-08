@@ -304,6 +304,8 @@
     justify-content: space-around;
     gap: 20px;
     color: var(--primary-text-color);
+    padding: 5px;
+    margin: 5px;
  
 }
 .classic-spot-coins-body-container .pair{
