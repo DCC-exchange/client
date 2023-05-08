@@ -1,6 +1,7 @@
 import React from 'react'
 import Book from "./orderBook/Book"
 import ClassicRoute from './route/ClassicRoute'
+import Chart from './chart/Chart'
 
 export default function Classic() {
   return (
@@ -8,9 +9,7 @@ export default function Classic() {
         <div className="spot-classic-container">
             <ClassicRoute />
             <div className="spot-classic-chart">
-              <div className="spot-classic-chart-container">
-                  <h3>Candle chart</h3>
-              </div>
+                <Chart />
             </div>
             <Book />
         </div>

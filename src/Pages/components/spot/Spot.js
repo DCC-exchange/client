@@ -10,6 +10,7 @@ import "./styles/mobile/convert.css"
 import "./styles/mobile/coinRoute.css"
 // Desktop css link
 import "./styles/desktop/spot.css"
+import "./styles/desktop/chart.css"
 
 export default function Spot() {
   return (

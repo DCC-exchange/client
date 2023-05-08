@@ -153,7 +153,7 @@
 }
 .recent-trades-container .recent-trades-body-container{
     overflow-y: scroll;
-    height: 300px;
+    height: 200px;
 }
 .recent-trades-container .recent-trades-body-container::-webkit-scrollbar{
     display: none;
@@ -207,7 +207,6 @@
     word-spacing: .1em;
     padding: 10px;
     font-size: 13.34px;
-    border-bottom: 2px solid #fff;
 }
 .spot-classic-route-content .active h4{
     color: var(--primary-text-color);
@@ -306,25 +305,29 @@
     color: var(--primary-text-color);
     padding: 5px;
     margin: 5px;
- 
 }
 .classic-spot-coins-body-container .pair{
-    font-weight: 500;
-    font-size: 11px;
     text-transform: uppercase;
     word-spacing: .1em;
     color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 11px;
+    width: 100%;
+    word-spacing: 0.1em;
 }
 .classic-spot-coins-body-container .price{
     font-weight: 500;
     font-size: 11px;
-    word-spacing: .1em;
+    width: 100%;
+    word-spacing: 0.1em;
 }
 .classic-spot-coins-body-container .percent{
     font-weight: 500;
     font-size: 11px;
     display: flex;
     word-spacing: .1em;
+    width: 100%;
+    gap: 10px;
 }
 .classic-spot-coins-body-container .positive{
 color: var(--buy-text-color);
