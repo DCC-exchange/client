@@ -285,6 +285,11 @@
     padding: 0;
     margin: 0;
     width: 100%;
+    overflow-y: scroll;
+    height: 700px;
+}
+.classic-spot-coins-body::-webkit-scrollbar{
+    display:none;
 }
 .classic-spot-coins-body .isloading-coin{
     font-size: 10px;
@@ -299,8 +304,7 @@
     justify-content: space-around;
     gap: 20px;
     color: var(--primary-text-color);
-    overflow-y: scroll;
-    height: 700px;
+ 
 }
 .classic-spot-coins-body-container .pair{
     font-weight: 500;
